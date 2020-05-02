@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1000
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ref_gl", "ref_gl.vcxproj", "{5DF6AFEA-E973-4541-8E0F-9AAFBF4A35D0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5DF6AFEA-E973-4541-8E0F-9AAFBF4A35D0}.Debug|x86.ActiveCfg = Debug|Win32
+		{5DF6AFEA-E973-4541-8E0F-9AAFBF4A35D0}.Debug|x86.Build.0 = Debug|Win32
+		{5DF6AFEA-E973-4541-8E0F-9AAFBF4A35D0}.Release|x86.ActiveCfg = Release|Win32
+		{5DF6AFEA-E973-4541-8E0F-9AAFBF4A35D0}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4F9B1530-F5D1-421F-8A01-B8C76C85E272}
+	EndGlobalSection
+EndGlobal

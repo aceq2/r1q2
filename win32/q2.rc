@@ -1,0 +1,50 @@
+LANGUAGE 9, 3
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "q2.ico"
+IDI_ICON2               ICON                    "icon2.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 8,0,1,2
+ PRODUCTVERSION 8,0,1,2
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040004b0"
+        BEGIN
+            VALUE "Comments", "http://www.r1ch.net/stuff/r1q2/"
+            VALUE "CompanyName", "r1ch.net"
+            VALUE "FileDescription", "R1Q2 - Enhanced Quake II Client/Server"
+            VALUE "FileVersion", "8, 0, 1, 2"
+            VALUE "InternalName", "r1q2"
+            VALUE "LegalCopyright", "Copyright (C) 2002-2008"
+            VALUE "OriginalFilename", "r1q2.exe"
+            VALUE "ProductName", "Quake II"
+            VALUE "ProductVersion", "Release"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x400, 1200
+    END
+END

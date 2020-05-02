@@ -1,0 +1,645 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="4286286956">
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;buffer&apos; can be reduced." verbose="The scope of the variable &apos;buffer&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file0="C:\Users\--KentMathias--\Documents\r1q2\client\qmenu.c" file="C:\Users\--KentMathias--\Documents\r1q2\client\qmenu.c" line="650"/>
+            <symbol>buffer</symbol>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:129:17" call-funcname="Menu_ItemAtCursor" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="481" my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:130:10" my-argnr="1"/>
+<function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:129:17" call-funcname="Menu_ItemAtCursor" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="510" my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:132:6" my-argnr="1"/>
+  </FileInfo>
+  <FileInfo check="Bounds checking">
+    <ArrayUsage array="keydown" index="134" fileName="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="195"/>
+    <ArraySize array="chat_custom_cmd" size="32"/>
+    <ArraySize array="chat_custom_prompt" size="32"/>
+    <ArraySize array="cl_dlights" size="32"/>
+    <ArraySize array="cl_entities" size="1024"/>
+    <ArraySize array="cl_localents" size="1024"/>
+    <ArraySize array="cl_parse_entities" size="1024"/>
+    <ArraySize array="crosshair_pic" size="8"/>
+    <ArraySize array="key_repeats" size="256"/>
+    <ArraySize array="keybindings" size="256"/>
+    <ArraySize array="map_leafs" size="65536"/>
+    <ArraySize array="net_message_buffer" size="4096"/>
+    <ArraySize array="vec3_origin" size="3"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c:23:14" my-argnr="1" my-argname="a" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="49"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c:24:14" my-argnr="1" my-argname="a" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="55"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c:73:10" my-argnr="1" my-argname="f" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="75"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c:83:6" my-argnr="1" my-argname="f" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="88"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:125:6" my-argnr="1" my-argname="menu" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="264"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:126:6" my-argnr="1" my-argname="m" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="291"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:127:6" my-argnr="1" my-argname="menu" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="336"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:128:6" my-argnr="1" my-argname="menu" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="350"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:135:7" my-argnr="3" my-argname="string" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="435"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:136:7" my-argnr="3" my-argname="string" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="445"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:137:7" my-argnr="3" my-argname="string" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="455"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:138:7" my-argnr="3" my-argname="string" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="465"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:129:17" my-argnr="1" my-argname="m" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="473"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:131:6" my-argnr="1" my-argname="m" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="505"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:133:6" my-argnr="1" my-argname="menu" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="531"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c:27:14" my-argnr="1" my-argname="l" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="569"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c:28:14" my-argnr="1" my-argname="s" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="585"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c:29:14" my-argnr="1" my-argname="s" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="591"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c:30:14" my-argnr="1" my-argname="s" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="608"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c:33:14" my-argnr="1" my-argname="s" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="637"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c:32:14" my-argnr="1" my-argname="s" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="652"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:135:7" my-argnr="3" my-argname="string" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="435"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:136:7" my-argnr="3" my-argname="string" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="445"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:137:7" my-argnr="3" my-argname="string" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="455"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:138:7" my-argnr="3" my-argname="string" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="465"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c:29:14" my-argnr="1" my-argname="s" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="591"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c:33:14" my-argnr="1" my-argname="s" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="637"/>
+  </FileInfo>
+        <error id="invalidPointerCast" severity="portability" msg="Casting from float* to integer* is not portable due to different binary data representations on different platforms." verbose="Casting from float* to integer* is not portable due to different binary data representations on different platforms." cwe="704">
+            <location file0="C:\Users\--KentMathias--\Documents\r1q2\client\qmenu.c" file="C:\Users\--KentMathias--\Documents\r1q2\client\qmenu.c" line="614"/>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:129:17" call-funcname="Menu_ItemAtCursor" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="481" my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:130:10" my-argnr="1"/>
+<function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:129:17" call-funcname="Menu_ItemAtCursor" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="510" my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:132:6" my-argnr="1"/>
+  </FileInfo>
+  <FileInfo check="Bounds checking">
+    <ArrayUsage array="keydown" index="134" fileName="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="195"/>
+    <ArraySize array="chat_custom_cmd" size="32"/>
+    <ArraySize array="chat_custom_prompt" size="32"/>
+    <ArraySize array="cl_dlights" size="32"/>
+    <ArraySize array="cl_entities" size="1024"/>
+    <ArraySize array="cl_localents" size="1024"/>
+    <ArraySize array="cl_parse_entities" size="1024"/>
+    <ArraySize array="crosshair_pic" size="8"/>
+    <ArraySize array="key_repeats" size="256"/>
+    <ArraySize array="keybindings" size="256"/>
+    <ArraySize array="map_leafs" size="65536"/>
+    <ArraySize array="net_message_buffer" size="4096"/>
+    <ArraySize array="vec3_origin" size="3"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c:23:14" my-argnr="1" my-argname="a" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="49"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c:24:14" my-argnr="1" my-argname="a" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="55"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c:73:10" my-argnr="1" my-argname="f" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="75"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c:83:6" my-argnr="1" my-argname="f" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="88"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:125:6" my-argnr="1" my-argname="menu" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="264"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:126:6" my-argnr="1" my-argname="m" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="291"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:127:6" my-argnr="1" my-argname="menu" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="336"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:128:6" my-argnr="1" my-argname="menu" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="350"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:135:7" my-argnr="3" my-argname="string" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="435"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:136:7" my-argnr="3" my-argname="string" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="445"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:137:7" my-argnr="3" my-argname="string" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="455"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:138:7" my-argnr="3" my-argname="string" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="465"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:129:17" my-argnr="1" my-argname="m" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="473"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:131:6" my-argnr="1" my-argname="m" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="505"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:133:6" my-argnr="1" my-argname="menu" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="531"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c:27:14" my-argnr="1" my-argname="l" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="569"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c:28:14" my-argnr="1" my-argname="s" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="585"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c:29:14" my-argnr="1" my-argname="s" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="591"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c:30:14" my-argnr="1" my-argname="s" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="608"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c:33:14" my-argnr="1" my-argname="s" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="637"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c:32:14" my-argnr="1" my-argname="s" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="652"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:135:7" my-argnr="3" my-argname="string" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="435"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:136:7" my-argnr="3" my-argname="string" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="445"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:137:7" my-argnr="3" my-argname="string" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="455"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:138:7" my-argnr="3" my-argname="string" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="465"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c:29:14" my-argnr="1" my-argname="s" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="591"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c:33:14" my-argnr="1" my-argname="s" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="637"/>
+  </FileInfo>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error">
+            <location file0="C:\Users\--KentMathias--\Documents\r1q2\client\qmenu.c" file="C:\Users\--KentMathias--\Documents\r1q2\curl\curl.h" line="963"/>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:129:17" call-funcname="Menu_ItemAtCursor" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="481" my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:130:10" my-argnr="1"/>
+<function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:129:17" call-funcname="Menu_ItemAtCursor" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="510" my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:132:6" my-argnr="1"/>
+  </FileInfo>
+  <FileInfo check="Bounds checking">
+    <ArrayUsage array="keydown" index="134" fileName="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="195"/>
+    <ArraySize array="chat_custom_cmd" size="32"/>
+    <ArraySize array="chat_custom_prompt" size="32"/>
+    <ArraySize array="cl_dlights" size="32"/>
+    <ArraySize array="cl_entities" size="1024"/>
+    <ArraySize array="cl_localents" size="1024"/>
+    <ArraySize array="cl_parse_entities" size="1024"/>
+    <ArraySize array="crosshair_pic" size="8"/>
+    <ArraySize array="key_repeats" size="256"/>
+    <ArraySize array="keybindings" size="256"/>
+    <ArraySize array="map_leafs" size="65536"/>
+    <ArraySize array="net_message_buffer" size="4096"/>
+    <ArraySize array="vec3_origin" size="3"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c:23:14" my-argnr="1" my-argname="a" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="49"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c:24:14" my-argnr="1" my-argname="a" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="55"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c:73:10" my-argnr="1" my-argname="f" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="75"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c:83:6" my-argnr="1" my-argname="f" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="88"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:125:6" my-argnr="1" my-argname="menu" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="264"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:126:6" my-argnr="1" my-argname="m" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="291"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:127:6" my-argnr="1" my-argname="menu" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="336"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:128:6" my-argnr="1" my-argname="menu" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="350"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:135:7" my-argnr="3" my-argname="string" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="435"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:136:7" my-argnr="3" my-argname="string" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="445"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:137:7" my-argnr="3" my-argname="string" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="455"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:138:7" my-argnr="3" my-argname="string" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="465"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:129:17" my-argnr="1" my-argname="m" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="473"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:131:6" my-argnr="1" my-argname="m" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="505"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:133:6" my-argnr="1" my-argname="menu" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="531"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c:27:14" my-argnr="1" my-argname="l" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="569"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c:28:14" my-argnr="1" my-argname="s" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="585"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c:29:14" my-argnr="1" my-argname="s" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="591"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c:30:14" my-argnr="1" my-argname="s" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="608"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c:33:14" my-argnr="1" my-argname="s" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="637"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c:32:14" my-argnr="1" my-argname="s" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="652"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:135:7" my-argnr="3" my-argname="string" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="435"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:136:7" my-argnr="3" my-argname="string" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="445"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:137:7" my-argnr="3" my-argname="string" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="455"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:138:7" my-argnr="3" my-argname="string" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="465"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c:29:14" my-argnr="1" my-argname="s" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="591"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c:33:14" my-argnr="1" my-argname="s" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="637"/>
+  </FileInfo>
+  <FileInfo check="ctu">
+<function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:129:17" call-funcname="Menu_ItemAtCursor" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="481" my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:130:10" my-argnr="1"/>
+<function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:129:17" call-funcname="Menu_ItemAtCursor" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="510" my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:132:6" my-argnr="1"/>
+  </FileInfo>
+  <FileInfo check="Bounds checking">
+    <ArrayUsage array="keydown" index="134" fileName="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="195"/>
+    <ArraySize array="chat_custom_cmd" size="32"/>
+    <ArraySize array="chat_custom_prompt" size="32"/>
+    <ArraySize array="cl_dlights" size="32"/>
+    <ArraySize array="cl_entities" size="1024"/>
+    <ArraySize array="cl_localents" size="1024"/>
+    <ArraySize array="cl_parse_entities" size="1024"/>
+    <ArraySize array="crosshair_pic" size="8"/>
+    <ArraySize array="key_repeats" size="256"/>
+    <ArraySize array="keybindings" size="256"/>
+    <ArraySize array="map_leafs" size="65536"/>
+    <ArraySize array="net_message_buffer" size="4096"/>
+    <ArraySize array="vec3_origin" size="3"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c:23:14" my-argnr="1" my-argname="a" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="49"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c:24:14" my-argnr="1" my-argname="a" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="55"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c:73:10" my-argnr="1" my-argname="f" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="75"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c:83:6" my-argnr="1" my-argname="f" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="88"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:125:6" my-argnr="1" my-argname="menu" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="264"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:126:6" my-argnr="1" my-argname="m" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="291"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:127:6" my-argnr="1" my-argname="menu" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="336"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:128:6" my-argnr="1" my-argname="menu" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="350"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:135:7" my-argnr="3" my-argname="string" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="435"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:136:7" my-argnr="3" my-argname="string" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="445"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:137:7" my-argnr="3" my-argname="string" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="455"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:138:7" my-argnr="3" my-argname="string" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="465"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:129:17" my-argnr="1" my-argname="m" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="473"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:131:6" my-argnr="1" my-argname="m" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="505"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:133:6" my-argnr="1" my-argname="menu" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="531"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c:27:14" my-argnr="1" my-argname="l" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="569"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c:28:14" my-argnr="1" my-argname="s" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="585"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c:29:14" my-argnr="1" my-argname="s" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="591"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c:30:14" my-argnr="1" my-argname="s" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="608"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c:33:14" my-argnr="1" my-argname="s" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="637"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c:32:14" my-argnr="1" my-argname="s" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="652"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:135:7" my-argnr="3" my-argname="string" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="435"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:136:7" my-argnr="3" my-argname="string" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="445"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:137:7" my-argnr="3" my-argname="string" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="455"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:138:7" my-argnr="3" my-argname="string" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="465"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c:29:14" my-argnr="1" my-argname="s" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="591"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c:33:14" my-argnr="1" my-argname="s" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="637"/>
+  </FileInfo>
+  <FileInfo check="ctu">
+<function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:129:17" call-funcname="Menu_ItemAtCursor" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="481" my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:130:10" my-argnr="1"/>
+<function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:129:17" call-funcname="Menu_ItemAtCursor" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="510" my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:132:6" my-argnr="1"/>
+  </FileInfo>
+  <FileInfo check="Bounds checking">
+    <ArrayUsage array="keydown" index="134" fileName="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="195"/>
+    <ArraySize array="chat_custom_cmd" size="32"/>
+    <ArraySize array="chat_custom_prompt" size="32"/>
+    <ArraySize array="cl_dlights" size="32"/>
+    <ArraySize array="cl_entities" size="1024"/>
+    <ArraySize array="cl_localents" size="1024"/>
+    <ArraySize array="cl_parse_entities" size="1024"/>
+    <ArraySize array="crosshair_pic" size="8"/>
+    <ArraySize array="key_repeats" size="256"/>
+    <ArraySize array="keybindings" size="256"/>
+    <ArraySize array="map_leafs" size="65536"/>
+    <ArraySize array="net_message_buffer" size="4096"/>
+    <ArraySize array="vec3_origin" size="3"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c:23:14" my-argnr="1" my-argname="a" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="49"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c:24:14" my-argnr="1" my-argname="a" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="55"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c:73:10" my-argnr="1" my-argname="f" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="75"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c:83:6" my-argnr="1" my-argname="f" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="88"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:125:6" my-argnr="1" my-argname="menu" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="264"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:126:6" my-argnr="1" my-argname="m" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="291"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:127:6" my-argnr="1" my-argname="menu" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="336"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:128:6" my-argnr="1" my-argname="menu" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="350"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:135:7" my-argnr="3" my-argname="string" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="435"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:136:7" my-argnr="3" my-argname="string" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="445"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:137:7" my-argnr="3" my-argname="string" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="455"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:138:7" my-argnr="3" my-argname="string" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="465"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:129:17" my-argnr="1" my-argname="m" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="473"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:131:6" my-argnr="1" my-argname="m" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="505"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:133:6" my-argnr="1" my-argname="menu" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="531"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c:27:14" my-argnr="1" my-argname="l" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="569"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c:28:14" my-argnr="1" my-argname="s" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="585"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c:29:14" my-argnr="1" my-argname="s" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="591"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c:30:14" my-argnr="1" my-argname="s" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="608"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c:33:14" my-argnr="1" my-argname="s" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="637"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c:32:14" my-argnr="1" my-argname="s" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="652"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:135:7" my-argnr="3" my-argname="string" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="435"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:136:7" my-argnr="3" my-argname="string" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="445"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:137:7" my-argnr="3" my-argname="string" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="455"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:138:7" my-argnr="3" my-argname="string" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="465"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c:29:14" my-argnr="1" my-argname="s" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="591"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c:33:14" my-argnr="1" my-argname="s" filename="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.c" linenr="637"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="Action_DoEnter" lineNumber="47"/>
+    <functiondecl functionName="Action_Draw" lineNumber="53"/>
+    <functiondecl functionName="Field_DoEnter" lineNumber="73"/>
+    <functiondecl functionName="Field_Draw" lineNumber="83"/>
+    <functiondecl functionName="Field_Key" lineNumber="133"/>
+    <functiondecl functionName="Menu_AddItem" lineNumber="262"/>
+    <functiondecl functionName="Menu_AdjustCursor" lineNumber="284"/>
+    <functiondecl functionName="Menu_Center" lineNumber="332"/>
+    <functiondecl functionName="Menu_Draw" lineNumber="342"/>
+    <functiondecl functionName="Menu_DrawStatusBar" lineNumber="413"/>
+    <functiondecl functionName="Menu_DrawString" lineNumber="431"/>
+    <functiondecl functionName="Menu_DrawStringDark" lineNumber="441"/>
+    <functiondecl functionName="Menu_DrawStringR2L" lineNumber="451"/>
+    <functiondecl functionName="Menu_DrawStringR2LDark" lineNumber="461"/>
+    <functiondecl functionName="Menu_ItemAtCursor" lineNumber="471"/>
+    <functiondecl functionName="Menu_SelectItem" lineNumber="479"/>
+    <functiondecl functionName="Menu_SetStatusBar" lineNumber="503"/>
+    <functiondecl functionName="Menu_SlideItem" lineNumber="508"/>
+    <functiondecl functionName="Menu_TallySlots" lineNumber="526"/>
+    <functiondecl functionName="MenuList_Draw" lineNumber="564"/>
+    <functiondecl functionName="Separator_Draw" lineNumber="583"/>
+    <functiondecl functionName="Slider_DoSlide" lineNumber="589"/>
+    <functiondecl functionName="Slider_Draw" lineNumber="604"/>
+    <functiondecl functionName="SpinControl_DoSlide" lineNumber="635"/>
+    <functiondecl functionName="SpinControl_Draw" lineNumber="648"/>
+    <functiondecl functionName="Action_DoEnter" lineNumber="47"/>
+    <functiondecl functionName="Action_Draw" lineNumber="53"/>
+    <functiondecl functionName="Field_DoEnter" lineNumber="73"/>
+    <functiondecl functionName="Field_Draw" lineNumber="83"/>
+    <functiondecl functionName="Field_Key" lineNumber="133"/>
+    <functiondecl functionName="Menu_AddItem" lineNumber="262"/>
+    <functiondecl functionName="Menu_AdjustCursor" lineNumber="284"/>
+    <functiondecl functionName="Menu_Center" lineNumber="332"/>
+    <functiondecl functionName="Menu_Draw" lineNumber="342"/>
+    <functiondecl functionName="Menu_DrawStatusBar" lineNumber="413"/>
+    <functiondecl functionName="Menu_DrawString" lineNumber="431"/>
+    <functiondecl functionName="Menu_DrawStringDark" lineNumber="441"/>
+    <functiondecl functionName="Menu_DrawStringR2L" lineNumber="451"/>
+    <functiondecl functionName="Menu_DrawStringR2LDark" lineNumber="461"/>
+    <functiondecl functionName="Menu_ItemAtCursor" lineNumber="471"/>
+    <functiondecl functionName="Menu_SelectItem" lineNumber="479"/>
+    <functiondecl functionName="Menu_SetStatusBar" lineNumber="503"/>
+    <functiondecl functionName="Menu_SlideItem" lineNumber="508"/>
+    <functiondecl functionName="Menu_TallySlots" lineNumber="526"/>
+    <functiondecl functionName="MenuList_Draw" lineNumber="564"/>
+    <functiondecl functionName="Separator_Draw" lineNumber="583"/>
+    <functiondecl functionName="Slider_DoSlide" lineNumber="589"/>
+    <functiondecl functionName="Slider_Draw" lineNumber="604"/>
+    <functiondecl functionName="SpinControl_DoSlide" lineNumber="635"/>
+    <functiondecl functionName="SpinControl_Draw" lineNumber="648"/>
+    <functiondecl functionName="Action_DoEnter" lineNumber="47"/>
+    <functiondecl functionName="Action_Draw" lineNumber="53"/>
+    <functiondecl functionName="Field_DoEnter" lineNumber="73"/>
+    <functiondecl functionName="Field_Draw" lineNumber="83"/>
+    <functiondecl functionName="Field_Key" lineNumber="133"/>
+    <functiondecl functionName="Menu_AddItem" lineNumber="262"/>
+    <functiondecl functionName="Menu_AdjustCursor" lineNumber="284"/>
+    <functiondecl functionName="Menu_Center" lineNumber="332"/>
+    <functiondecl functionName="Menu_Draw" lineNumber="342"/>
+    <functiondecl functionName="Menu_DrawStatusBar" lineNumber="413"/>
+    <functiondecl functionName="Menu_DrawString" lineNumber="431"/>
+    <functiondecl functionName="Menu_DrawStringDark" lineNumber="441"/>
+    <functiondecl functionName="Menu_DrawStringR2L" lineNumber="451"/>
+    <functiondecl functionName="Menu_DrawStringR2LDark" lineNumber="461"/>
+    <functiondecl functionName="Menu_ItemAtCursor" lineNumber="471"/>
+    <functiondecl functionName="Menu_SelectItem" lineNumber="479"/>
+    <functiondecl functionName="Menu_SetStatusBar" lineNumber="503"/>
+    <functiondecl functionName="Menu_SlideItem" lineNumber="508"/>
+    <functiondecl functionName="Menu_TallySlots" lineNumber="526"/>
+    <functiondecl functionName="MenuList_Draw" lineNumber="564"/>
+    <functiondecl functionName="Separator_Draw" lineNumber="583"/>
+    <functiondecl functionName="Slider_DoSlide" lineNumber="589"/>
+    <functiondecl functionName="Slider_Draw" lineNumber="604"/>
+    <functiondecl functionName="SpinControl_DoSlide" lineNumber="635"/>
+    <functiondecl functionName="SpinControl_Draw" lineNumber="648"/>
+    <functiondecl functionName="Action_DoEnter" lineNumber="47"/>
+    <functiondecl functionName="Action_Draw" lineNumber="53"/>
+    <functiondecl functionName="Field_DoEnter" lineNumber="73"/>
+    <functiondecl functionName="Field_Draw" lineNumber="83"/>
+    <functiondecl functionName="Field_Key" lineNumber="133"/>
+    <functiondecl functionName="Menu_AddItem" lineNumber="262"/>
+    <functiondecl functionName="Menu_AdjustCursor" lineNumber="284"/>
+    <functiondecl functionName="Menu_Center" lineNumber="332"/>
+    <functiondecl functionName="Menu_Draw" lineNumber="342"/>
+    <functiondecl functionName="Menu_DrawStatusBar" lineNumber="413"/>
+    <functiondecl functionName="Menu_DrawString" lineNumber="431"/>
+    <functiondecl functionName="Menu_DrawStringDark" lineNumber="441"/>
+    <functiondecl functionName="Menu_DrawStringR2L" lineNumber="451"/>
+    <functiondecl functionName="Menu_DrawStringR2LDark" lineNumber="461"/>
+    <functiondecl functionName="Menu_ItemAtCursor" lineNumber="471"/>
+    <functiondecl functionName="Menu_SelectItem" lineNumber="479"/>
+    <functiondecl functionName="Menu_SetStatusBar" lineNumber="503"/>
+    <functiondecl functionName="Menu_SlideItem" lineNumber="508"/>
+    <functiondecl functionName="Menu_TallySlots" lineNumber="526"/>
+    <functiondecl functionName="MenuList_Draw" lineNumber="564"/>
+    <functiondecl functionName="Separator_Draw" lineNumber="583"/>
+    <functiondecl functionName="Slider_DoSlide" lineNumber="589"/>
+    <functiondecl functionName="Slider_Draw" lineNumber="604"/>
+    <functiondecl functionName="SpinControl_DoSlide" lineNumber="635"/>
+    <functiondecl functionName="SpinControl_Draw" lineNumber="648"/>
+    <functiondecl functionName="Action_DoEnter" lineNumber="47"/>
+    <functiondecl functionName="Action_Draw" lineNumber="53"/>
+    <functiondecl functionName="Field_DoEnter" lineNumber="73"/>
+    <functiondecl functionName="Field_Draw" lineNumber="83"/>
+    <functiondecl functionName="Field_Key" lineNumber="133"/>
+    <functiondecl functionName="Menu_AddItem" lineNumber="262"/>
+    <functiondecl functionName="Menu_AdjustCursor" lineNumber="284"/>
+    <functiondecl functionName="Menu_Center" lineNumber="332"/>
+    <functiondecl functionName="Menu_Draw" lineNumber="342"/>
+    <functiondecl functionName="Menu_DrawStatusBar" lineNumber="413"/>
+    <functiondecl functionName="Menu_DrawString" lineNumber="431"/>
+    <functiondecl functionName="Menu_DrawStringDark" lineNumber="441"/>
+    <functiondecl functionName="Menu_DrawStringR2L" lineNumber="451"/>
+    <functiondecl functionName="Menu_DrawStringR2LDark" lineNumber="461"/>
+    <functiondecl functionName="Menu_ItemAtCursor" lineNumber="471"/>
+    <functiondecl functionName="Menu_SelectItem" lineNumber="479"/>
+    <functiondecl functionName="Menu_SetStatusBar" lineNumber="503"/>
+    <functiondecl functionName="Menu_SlideItem" lineNumber="508"/>
+    <functiondecl functionName="Menu_TallySlots" lineNumber="526"/>
+    <functiondecl functionName="MenuList_Draw" lineNumber="564"/>
+    <functiondecl functionName="Separator_Draw" lineNumber="583"/>
+    <functiondecl functionName="Slider_DoSlide" lineNumber="589"/>
+    <functiondecl functionName="Slider_Draw" lineNumber="604"/>
+    <functiondecl functionName="SpinControl_DoSlide" lineNumber="635"/>
+    <functiondecl functionName="SpinControl_Draw" lineNumber="648"/>
+    <functioncall functionName="Action_DoEnter"/>
+    <functioncall functionName="Action_Draw"/>
+    <functioncall functionName="CLSET_FPS"/>
+    <functioncall functionName="CLSET_MAX"/>
+    <functioncall functionName="CLSET_NOBLEND"/>
+    <functioncall functionName="CLSET_NOGUN"/>
+    <functioncall functionName="CLSET_PLAYERUPDATE_REQUESTS"/>
+    <functioncall functionName="CLSET_RECORDING"/>
+    <functioncall functionName="Com_Error"/>
+    <functioncall functionName="DrawChar"/>
+    <functioncall functionName="DrawFill"/>
+    <functioncall functionName="EVENT_NONE"/>
+    <functioncall functionName="EV_FALL"/>
+    <functioncall functionName="EV_FALLFAR"/>
+    <functioncall functionName="EV_FALLSHORT"/>
+    <functioncall functionName="EV_FOOTSTEP"/>
+    <functioncall functionName="EV_ITEM_RESPAWN"/>
+    <functioncall functionName="EV_OTHER_TELEPORT"/>
+    <functioncall functionName="EV_PLAYER_TELEPORT"/>
+    <functioncall functionName="Field_DoEnter"/>
+    <functioncall functionName="Field_Draw"/>
+    <functioncall functionName="HANDLE_DUPE"/>
+    <functioncall functionName="HANDLE_NONE"/>
+    <functioncall functionName="HANDLE_OPEN"/>
+    <functioncall functionName="MULTICAST_ALL"/>
+    <functioncall functionName="MULTICAST_ALL_R"/>
+    <functioncall functionName="MULTICAST_PHS"/>
+    <functioncall functionName="MULTICAST_PHS_R"/>
+    <functioncall functionName="MULTICAST_PVS"/>
+    <functioncall functionName="MULTICAST_PVS_R"/>
+    <functioncall functionName="MenuList_Draw"/>
+    <functioncall functionName="Menu_DrawStatusBar"/>
+    <functioncall functionName="Menu_DrawString"/>
+    <functioncall functionName="Menu_DrawStringDark"/>
+    <functioncall functionName="Menu_DrawStringR2L"/>
+    <functioncall functionName="Menu_DrawStringR2LDark"/>
+    <functioncall functionName="Menu_ItemAtCursor"/>
+    <functioncall functionName="Menu_TallySlots"/>
+    <functioncall functionName="NA_BROADCAST"/>
+    <functioncall functionName="NA_IP"/>
+    <functioncall functionName="NA_LOOPBACK"/>
+    <functioncall functionName="NS_CLIENT"/>
+    <functioncall functionName="NS_SERVER"/>
+    <functioncall functionName="PM_DEAD"/>
+    <functioncall functionName="PM_FREEZE"/>
+    <functioncall functionName="PM_GIB"/>
+    <functioncall functionName="PM_NORMAL"/>
+    <functioncall functionName="PM_SPECTATOR"/>
+    <functioncall functionName="SVSET_FPS"/>
+    <functioncall functionName="SVSET_MAX"/>
+    <functioncall functionName="SVSET_PLAYERUPDATES"/>
+    <functioncall functionName="Separator_Draw"/>
+    <functioncall functionName="Slider_DoSlide"/>
+    <functioncall functionName="Slider_Draw"/>
+    <functioncall functionName="SpinControl_DoSlide"/>
+    <functioncall functionName="SpinControl_Draw"/>
+    <functioncall functionName="Sys_GetClipboardData"/>
+    <functioncall functionName="Sys_Milliseconds"/>
+    <functioncall functionName="TAGMALLOC_ALIAS"/>
+    <functioncall functionName="TAGMALLOC_BLACKHOLE"/>
+    <functioncall functionName="TAGMALLOC_CLIENTS"/>
+    <functioncall functionName="TAGMALLOC_CLIENT_DLL"/>
+    <functioncall functionName="TAGMALLOC_CLIENT_DOWNLOAD"/>
+    <functioncall functionName="TAGMALLOC_CLIENT_IGNORE"/>
+    <functioncall functionName="TAGMALLOC_CLIENT_KEYBIND"/>
+    <functioncall functionName="TAGMALLOC_CLIENT_LOC"/>
+    <functioncall functionName="TAGMALLOC_CLIENT_SFX"/>
+    <functioncall functionName="TAGMALLOC_CLIENT_SOUNDCACHE"/>
+    <functioncall functionName="TAGMALLOC_CL_BASELINES"/>
+    <functioncall functionName="TAGMALLOC_CL_ENTS"/>
+    <functioncall functionName="TAGMALLOC_CL_MESSAGES"/>
+    <functioncall functionName="TAGMALLOC_CL_PARTICLES"/>
+    <functioncall functionName="TAGMALLOC_CMD"/>
+    <functioncall functionName="TAGMALLOC_CMDBANS"/>
+    <functioncall functionName="TAGMALLOC_CMDBUFF"/>
+    <functioncall functionName="TAGMALLOC_CMDTOKEN"/>
+    <functioncall functionName="TAGMALLOC_CVAR"/>
+    <functioncall functionName="TAGMALLOC_CVARBANS"/>
+    <functioncall functionName="TAGMALLOC_FSCACHE"/>
+    <functioncall functionName="TAGMALLOC_FSLOADFILE"/>
+    <functioncall functionName="TAGMALLOC_FSLOADPAK"/>
+    <functioncall functionName="TAGMALLOC_LINK"/>
+    <functioncall functionName="TAGMALLOC_LOADMAP"/>
+    <functioncall functionName="TAGMALLOC_LRCON"/>
+    <functioncall functionName="TAGMALLOC_MAX_TAGS"/>
+    <functioncall functionName="TAGMALLOC_NOT_TAGGED"/>
+    <functioncall functionName="TAGMALLOC_REDBLACK"/>
+    <functioncall functionName="TAGMALLOC_SEARCHPATH"/>
+    <functioncall functionName="TAGMALLOC_TRIGGER"/>
+    <functioncall functionName="TE_BFG_BIGEXPLOSION"/>
+    <functioncall functionName="TE_BFG_EXPLOSION"/>
+    <functioncall functionName="TE_BFG_LASER"/>
+    <functioncall functionName="TE_BLASTER"/>
+    <functioncall functionName="TE_BLASTER2"/>
+    <functioncall functionName="TE_BLOOD"/>
+    <functioncall functionName="TE_BLUEHYPERBLASTER"/>
+    <functioncall functionName="TE_BOSSTPORT"/>
+    <functioncall functionName="TE_BUBBLETRAIL"/>
+    <functioncall functionName="TE_BUBBLETRAIL2"/>
+    <functioncall functionName="TE_BULLET_SPARKS"/>
+    <functioncall functionName="TE_CHAINFIST_SMOKE"/>
+    <functioncall functionName="TE_DBALL_GOAL"/>
+    <functioncall functionName="TE_DEBUGTRAIL"/>
+    <functioncall functionName="TE_ELECTRIC_SPARKS"/>
+    <functioncall functionName="TE_EXPLOSION1"/>
+    <functioncall functionName="TE_EXPLOSION1_BIG"/>
+    <functioncall functionName="TE_EXPLOSION1_NP"/>
+    <functioncall functionName="TE_EXPLOSION2"/>
+    <functioncall functionName="TE_FLAME"/>
+    <functioncall functionName="TE_FLASHLIGHT"/>
+    <functioncall functionName="TE_FLECHETTE"/>
+    <functioncall functionName="TE_FORCEWALL"/>
+    <functioncall functionName="TE_GRAPPLE_CABLE"/>
+    <functioncall functionName="TE_GREENBLOOD"/>
+    <functioncall functionName="TE_GRENADE_EXPLOSION"/>
+    <functioncall functionName="TE_GRENADE_EXPLOSION_WATER"/>
+    <functioncall functionName="TE_GUNSHOT"/>
+    <functioncall functionName="TE_HEATBEAM"/>
+    <functioncall functionName="TE_HEATBEAM_SPARKS"/>
+    <functioncall functionName="TE_HEATBEAM_STEAM"/>
+    <functioncall functionName="TE_LASER_SPARKS"/>
+    <functioncall functionName="TE_LIGHTNING"/>
+    <functioncall functionName="TE_MEDIC_CABLE_ATTACK"/>
+    <functioncall functionName="TE_MONSTER_HEATBEAM"/>
+    <functioncall functionName="TE_MOREBLOOD"/>
+    <functioncall functionName="TE_NUKEBLAST"/>
+    <functioncall functionName="TE_PARASITE_ATTACK"/>
+    <functioncall functionName="TE_PLAIN_EXPLOSION"/>
+    <functioncall functionName="TE_PLASMA_EXPLOSION"/>
+    <functioncall functionName="TE_RAILTRAIL"/>
+    <functioncall functionName="TE_RAILTRAIL2"/>
+    <functioncall functionName="TE_ROCKET_EXPLOSION"/>
+    <functioncall functionName="TE_ROCKET_EXPLOSION_WATER"/>
+    <functioncall functionName="TE_SCREEN_SPARKS"/>
+    <functioncall functionName="TE_SHIELD_SPARKS"/>
+    <functioncall functionName="TE_SHOTGUN"/>
+    <functioncall functionName="TE_SPARKS"/>
+    <functioncall functionName="TE_SPLASH"/>
+    <functioncall functionName="TE_STEAM"/>
+    <functioncall functionName="TE_TELEPORT_EFFECT"/>
+    <functioncall functionName="TE_TRACKER_EXPLOSION"/>
+    <functioncall functionName="TE_TUNNEL_SPARKS"/>
+    <functioncall functionName="TE_WELDING_SPARKS"/>
+    <functioncall functionName="TE_WIDOWBEAMOUT"/>
+    <functioncall functionName="TE_WIDOWSPLASH"/>
+    <functioncall functionName="a"/>
+    <functioncall functionName="break"/>
+    <functioncall functionName="buffer"/>
+    <functioncall functionName="ca_active"/>
+    <functioncall functionName="ca_connected"/>
+    <functioncall functionName="ca_connecting"/>
+    <functioncall functionName="ca_disconnected"/>
+    <functioncall functionName="ca_uninitialized"/>
+    <functioncall functionName="callback"/>
+    <functioncall functionName="cbd"/>
+    <functioncall functionName="char"/>
+    <functioncall functionName="citem"/>
+    <functioncall functionName="clc_bad"/>
+    <functioncall functionName="clc_move"/>
+    <functioncall functionName="clc_multimoves"/>
+    <functioncall functionName="clc_nop"/>
+    <functioncall functionName="clc_setting"/>
+    <functioncall functionName="clc_stringcmd"/>
+    <functioncall functionName="clc_userinfo"/>
+    <functioncall functionName="cursor"/>
+    <functioncall functionName="cursor_offset"/>
+    <functioncall functionName="cursordraw"/>
+    <functioncall functionName="curvalue"/>
+    <functioncall functionName="default"/>
+    <functioncall functionName="dir"/>
+    <functioncall functionName="f"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="float"/>
+    <functioncall functionName="for"/>
+    <functioncall functionName="free"/>
+    <functioncall functionName="height"/>
+    <functioncall functionName="i"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="int"/>
+    <functioncall functionName="isdigit"/>
+    <functioncall functionName="item"/>
+    <functioncall functionName="itemnames"/>
+    <functioncall functionName="key"/>
+    <functioncall functionName="key_console"/>
+    <functioncall functionName="key_game"/>
+    <functioncall functionName="key_menu"/>
+    <functioncall functionName="key_message"/>
+    <functioncall functionName="length"/>
+    <functioncall functionName="m"/>
+    <functioncall functionName="maxvalue"/>
+    <functioncall functionName="memmove"/>
+    <functioncall functionName="menu"/>
+    <functioncall functionName="minvalue"/>
+    <functioncall functionName="name"/>
+    <functioncall functionName="nitems"/>
+    <functioncall functionName="ownerdraw"/>
+    <functioncall functionName="parent"/>
+    <functioncall functionName="ps_active"/>
+    <functioncall functionName="ps_none"/>
+    <functioncall functionName="ps_pending"/>
+    <functioncall functionName="range"/>
+    <functioncall functionName="return"/>
+    <functioncall functionName="s"/>
+    <functioncall functionName="sizeof"/>
+    <functioncall functionName="ss_cinematic"/>
+    <functioncall functionName="ss_dead"/>
+    <functioncall functionName="ss_demo"/>
+    <functioncall functionName="ss_game"/>
+    <functioncall functionName="ss_loading"/>
+    <functioncall functionName="ss_pic"/>
+    <functioncall functionName="statusbar"/>
+    <functioncall functionName="statusbarfunc"/>
+    <functioncall functionName="strchr"/>
+    <functioncall functionName="strcpy"/>
+    <functioncall functionName="string"/>
+    <functioncall functionName="strlen"/>
+    <functioncall functionName="strncpy"/>
+    <functioncall functionName="strtok"/>
+    <functioncall functionName="svc_bad"/>
+    <functioncall functionName="svc_centerprint"/>
+    <functioncall functionName="svc_configstring"/>
+    <functioncall functionName="svc_deltapacketentities"/>
+    <functioncall functionName="svc_disconnect"/>
+    <functioncall functionName="svc_download"/>
+    <functioncall functionName="svc_frame"/>
+    <functioncall functionName="svc_inventory"/>
+    <functioncall functionName="svc_layout"/>
+    <functioncall functionName="svc_max_enttypes"/>
+    <functioncall functionName="svc_muzzleflash"/>
+    <functioncall functionName="svc_muzzleflash2"/>
+    <functioncall functionName="svc_nop"/>
+    <functioncall functionName="svc_packetentities"/>
+    <functioncall functionName="svc_playerinfo"/>
+    <functioncall functionName="svc_playerupdate"/>
+    <functioncall functionName="svc_print"/>
+    <functioncall functionName="svc_reconnect"/>
+    <functioncall functionName="svc_serverdata"/>
+    <functioncall functionName="svc_setting"/>
+    <functioncall functionName="svc_sound"/>
+    <functioncall functionName="svc_spawnbaseline"/>
+    <functioncall functionName="svc_stufftext"/>
+    <functioncall functionName="svc_temp_entity"/>
+    <functioncall functionName="svc_zdownload"/>
+    <functioncall functionName="svc_zpacket"/>
+    <functioncall functionName="switch"/>
+    <functioncall functionName="tempbuffer"/>
+    <functioncall functionName="toupper"/>
+    <functioncall functionName="true"/>
+    <functioncall functionName="type"/>
+    <functioncall functionName="visible_length"/>
+    <functioncall functionName="visible_offset"/>
+    <functioncall functionName="while"/>
+    <functioncall functionName="width"/>
+    <functioncall functionName="x"/>
+    <functioncall functionName="y"/>
+  </FileInfo>
+</analyzerinfo>

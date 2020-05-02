@@ -1,0 +1,645 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="1621873417">
+        <error id="invalidPointerCast" severity="portability" msg="Casting from float* to integer* is not portable due to different binary data representations on different platforms." verbose="Casting from float* to integer* is not portable due to different binary data representations on different platforms." cwe="704">
+            <location file0="C:\Users\--KentMathias--\Documents\r1q2\client\cl_view.c" file="C:\Users\--KentMathias--\Documents\r1q2\client\cl_view.c" line="451"/>
+        </error>
+        <error id="invalidPointerCast" severity="portability" msg="Casting from float* to integer* is not portable due to different binary data representations on different platforms." verbose="Casting from float* to integer* is not portable due to different binary data representations on different platforms." cwe="704">
+            <location file0="C:\Users\--KentMathias--\Documents\r1q2\client\cl_view.c" file="C:\Users\--KentMathias--\Documents\r1q2\client\cl_view.c" line="509"/>
+        </error>
+        <error id="invalidPointerCast" severity="portability" msg="Casting from float* to integer* is not portable due to different binary data representations on different platforms." verbose="Casting from float* to integer* is not portable due to different binary data representations on different platforms." cwe="704">
+            <location file0="C:\Users\--KentMathias--\Documents\r1q2\client\cl_view.c" file="C:\Users\--KentMathias--\Documents\r1q2\client\cl_view.c" line="726"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;p&apos; can be reduced." verbose="The scope of the variable &apos;p&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file0="C:\Users\--KentMathias--\Documents\r1q2\client\cl_view.c" file="C:\Users\--KentMathias--\Documents\r1q2\client\cl_view.c" line="178"/>
+            <symbol>p</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;d&apos; can be reduced." verbose="The scope of the variable &apos;d&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file0="C:\Users\--KentMathias--\Documents\r1q2\client\cl_view.c" file="C:\Users\--KentMathias--\Documents\r1q2\client\cl_view.c" line="180"/>
+            <symbol>d</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;r&apos; can be reduced." verbose="The scope of the variable &apos;r&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file0="C:\Users\--KentMathias--\Documents\r1q2\client\cl_view.c" file="C:\Users\--KentMathias--\Documents\r1q2\client\cl_view.c" line="180"/>
+            <symbol>r</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;u&apos; can be reduced." verbose="The scope of the variable &apos;u&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file0="C:\Users\--KentMathias--\Documents\r1q2\client\cl_view.c" file="C:\Users\--KentMathias--\Documents\r1q2\client\cl_view.c" line="180"/>
+            <symbol>u</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;f&apos; can be reduced." verbose="The scope of the variable &apos;f&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file0="C:\Users\--KentMathias--\Documents\r1q2\client\cl_view.c" file="C:\Users\--KentMathias--\Documents\r1q2\client\cl_view.c" line="209"/>
+            <symbol>f</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;r&apos; can be reduced." verbose="The scope of the variable &apos;r&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file0="C:\Users\--KentMathias--\Documents\r1q2\client\cl_view.c" file="C:\Users\--KentMathias--\Documents\r1q2\client\cl_view.c" line="209"/>
+            <symbol>r</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;ent&apos; can be reduced." verbose="The scope of the variable &apos;ent&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file0="C:\Users\--KentMathias--\Documents\r1q2\client\cl_view.c" file="C:\Users\--KentMathias--\Documents\r1q2\client\cl_view.c" line="210"/>
+            <symbol>ent</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;f&apos; can be reduced." verbose="The scope of the variable &apos;f&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file0="C:\Users\--KentMathias--\Documents\r1q2\client\cl_view.c" file="C:\Users\--KentMathias--\Documents\r1q2\client\cl_view.c" line="248"/>
+            <symbol>f</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;r&apos; can be reduced." verbose="The scope of the variable &apos;r&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file0="C:\Users\--KentMathias--\Documents\r1q2\client\cl_view.c" file="C:\Users\--KentMathias--\Documents\r1q2\client\cl_view.c" line="248"/>
+            <symbol>r</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;dl&apos; can be reduced." verbose="The scope of the variable &apos;dl&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file0="C:\Users\--KentMathias--\Documents\r1q2\client\cl_view.c" file="C:\Users\--KentMathias--\Documents\r1q2\client\cl_view.c" line="249"/>
+            <symbol>dl</symbol>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/screen.h:52:6" call-funcname="SCR_AddDirtyPoint" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="311" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/screen.h:52:6" call-funcname="SCR_AddDirtyPoint" call-argnr="2" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="311" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:829:6" call-funcname="Netchan_Transmit" call-argnr="2" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="333" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:829:6" call-funcname="Netchan_Transmit" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="333" call-argexpr="(void*)0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:829:6" call-funcname="Netchan_Transmit" call-argnr="2" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="362" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:829:6" call-funcname="Netchan_Transmit" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="362" call-argexpr="(void*)0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:829:6" call-funcname="Netchan_Transmit" call-argnr="2" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="437" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:829:6" call-funcname="Netchan_Transmit" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="437" call-argexpr="(void*)0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:1011:8" call-funcname="Com_Error" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="514" call-argexpr="fov_x" call-argvaluetype="0" call-argvalue="0" warning="true">
+  <path filename="C:\Users\--KentMathias--\Documents\r1q2\client\cl_view.c" linenr="513" info="Assuming that condition 'fov_x<1' is not redundant"/>
+</function-call><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="930" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="934" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="935" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="936" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="937" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="939" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="941" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="942" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="943" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="945" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="946" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="947" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="949" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="951" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="952" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/>  </FileInfo>
+  <FileInfo check="Bounds checking">
+    <ArraySize array="chat_custom_cmd" size="32"/>
+    <ArraySize array="chat_custom_prompt" size="32"/>
+    <ArraySize array="cl_dlights" size="32"/>
+    <ArraySize array="cl_entities" size="1024"/>
+    <ArraySize array="cl_localents" size="1024"/>
+    <ArraySize array="cl_parse_entities" size="1024"/>
+    <ArraySize array="crosshair_pic" size="8"/>
+    <ArraySize array="key_repeats" size="256"/>
+    <ArraySize array="keybindings" size="256"/>
+    <ArraySize array="map_leafs" size="65536"/>
+    <ArraySize array="net_message_buffer" size="4096"/>
+    <ArraySize array="r_dlights" size="32"/>
+    <ArraySize array="r_entities" size="128"/>
+    <ArraySize array="r_lightstyles" size="256"/>
+    <ArraySize array="vec3_origin" size="3"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c:865:6" my-argnr="1" my-argname="self" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="867"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c:875:6" my-argnr="1" my-argname="self" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="880"/>
+  </FileInfo>
+  <FileInfo check="ctu">
+<function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/screen.h:52:6" call-funcname="SCR_AddDirtyPoint" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="311" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/screen.h:52:6" call-funcname="SCR_AddDirtyPoint" call-argnr="2" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="311" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:829:6" call-funcname="Netchan_Transmit" call-argnr="2" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="333" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:829:6" call-funcname="Netchan_Transmit" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="333" call-argexpr="(void*)0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:829:6" call-funcname="Netchan_Transmit" call-argnr="2" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="362" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:829:6" call-funcname="Netchan_Transmit" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="362" call-argexpr="(void*)0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:829:6" call-funcname="Netchan_Transmit" call-argnr="2" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="437" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:829:6" call-funcname="Netchan_Transmit" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="437" call-argexpr="(void*)0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:1011:8" call-funcname="Com_Error" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="514" call-argexpr="fov_x" call-argvaluetype="0" call-argvalue="0" warning="true">
+  <path filename="C:\Users\--KentMathias--\Documents\r1q2\client\cl_view.c" linenr="513" info="Assuming that condition 'fov_x<1' is not redundant"/>
+</function-call><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="930" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="934" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="935" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="936" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="937" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="939" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="941" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="942" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="943" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="945" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="946" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="947" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="949" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="951" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="952" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/>  </FileInfo>
+  <FileInfo check="Bounds checking">
+    <ArraySize array="chat_custom_cmd" size="32"/>
+    <ArraySize array="chat_custom_prompt" size="32"/>
+    <ArraySize array="cl_dlights" size="32"/>
+    <ArraySize array="cl_entities" size="1024"/>
+    <ArraySize array="cl_localents" size="1024"/>
+    <ArraySize array="cl_parse_entities" size="1024"/>
+    <ArraySize array="crosshair_pic" size="8"/>
+    <ArraySize array="key_repeats" size="256"/>
+    <ArraySize array="keybindings" size="256"/>
+    <ArraySize array="map_leafs" size="65536"/>
+    <ArraySize array="net_message_buffer" size="4096"/>
+    <ArraySize array="r_dlights" size="32"/>
+    <ArraySize array="r_entities" size="128"/>
+    <ArraySize array="r_lightstyles" size="256"/>
+    <ArraySize array="vec3_origin" size="3"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c:865:6" my-argnr="1" my-argname="self" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="867"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c:875:6" my-argnr="1" my-argname="self" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="880"/>
+  </FileInfo>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error">
+            <location file0="C:\Users\--KentMathias--\Documents\r1q2\client\cl_view.c" file="C:\Users\--KentMathias--\Documents\r1q2\curl\curl.h" line="963"/>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/screen.h:52:6" call-funcname="SCR_AddDirtyPoint" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="311" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/screen.h:52:6" call-funcname="SCR_AddDirtyPoint" call-argnr="2" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="311" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:829:6" call-funcname="Netchan_Transmit" call-argnr="2" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="333" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:829:6" call-funcname="Netchan_Transmit" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="333" call-argexpr="(void*)0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:829:6" call-funcname="Netchan_Transmit" call-argnr="2" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="362" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:829:6" call-funcname="Netchan_Transmit" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="362" call-argexpr="(void*)0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:829:6" call-funcname="Netchan_Transmit" call-argnr="2" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="437" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:829:6" call-funcname="Netchan_Transmit" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="437" call-argexpr="(void*)0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:1011:8" call-funcname="Com_Error" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="514" call-argexpr="fov_x" call-argvaluetype="0" call-argvalue="0" warning="true">
+  <path filename="C:\Users\--KentMathias--\Documents\r1q2\client\cl_view.c" linenr="513" info="Assuming that condition 'fov_x<1' is not redundant"/>
+</function-call><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="930" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="934" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="935" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="936" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="937" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="939" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="941" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="942" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="943" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="945" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="946" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="947" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="949" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="951" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="952" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/>  </FileInfo>
+  <FileInfo check="Bounds checking">
+    <ArraySize array="chat_custom_cmd" size="32"/>
+    <ArraySize array="chat_custom_prompt" size="32"/>
+    <ArraySize array="cl_dlights" size="32"/>
+    <ArraySize array="cl_entities" size="1024"/>
+    <ArraySize array="cl_localents" size="1024"/>
+    <ArraySize array="cl_parse_entities" size="1024"/>
+    <ArraySize array="crosshair_pic" size="8"/>
+    <ArraySize array="key_repeats" size="256"/>
+    <ArraySize array="keybindings" size="256"/>
+    <ArraySize array="map_leafs" size="65536"/>
+    <ArraySize array="net_message_buffer" size="4096"/>
+    <ArraySize array="r_dlights" size="32"/>
+    <ArraySize array="r_entities" size="128"/>
+    <ArraySize array="r_lightstyles" size="256"/>
+    <ArraySize array="vec3_origin" size="3"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c:865:6" my-argnr="1" my-argname="self" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="867"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c:875:6" my-argnr="1" my-argname="self" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="880"/>
+  </FileInfo>
+  <FileInfo check="ctu">
+<function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/screen.h:52:6" call-funcname="SCR_AddDirtyPoint" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="311" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/screen.h:52:6" call-funcname="SCR_AddDirtyPoint" call-argnr="2" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="311" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:829:6" call-funcname="Netchan_Transmit" call-argnr="2" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="333" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:829:6" call-funcname="Netchan_Transmit" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="333" call-argexpr="(void*)0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:829:6" call-funcname="Netchan_Transmit" call-argnr="2" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="362" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:829:6" call-funcname="Netchan_Transmit" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="362" call-argexpr="(void*)0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:829:6" call-funcname="Netchan_Transmit" call-argnr="2" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="437" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:829:6" call-funcname="Netchan_Transmit" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="437" call-argexpr="(void*)0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:1011:8" call-funcname="Com_Error" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="514" call-argexpr="fov_x" call-argvaluetype="0" call-argvalue="0" warning="true">
+  <path filename="C:\Users\--KentMathias--\Documents\r1q2\client\cl_view.c" linenr="513" info="Assuming that condition 'fov_x<1' is not redundant"/>
+</function-call><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="930" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="934" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="935" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="936" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="937" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="939" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="941" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="942" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="943" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="945" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="946" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="947" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="949" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="951" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="952" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/>  </FileInfo>
+  <FileInfo check="Bounds checking">
+    <ArraySize array="chat_custom_cmd" size="32"/>
+    <ArraySize array="chat_custom_prompt" size="32"/>
+    <ArraySize array="cl_dlights" size="32"/>
+    <ArraySize array="cl_entities" size="1024"/>
+    <ArraySize array="cl_localents" size="1024"/>
+    <ArraySize array="cl_parse_entities" size="1024"/>
+    <ArraySize array="crosshair_pic" size="8"/>
+    <ArraySize array="key_repeats" size="256"/>
+    <ArraySize array="keybindings" size="256"/>
+    <ArraySize array="map_leafs" size="65536"/>
+    <ArraySize array="net_message_buffer" size="4096"/>
+    <ArraySize array="r_dlights" size="32"/>
+    <ArraySize array="r_entities" size="128"/>
+    <ArraySize array="r_lightstyles" size="256"/>
+    <ArraySize array="vec3_origin" size="3"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c:865:6" my-argnr="1" my-argname="self" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="867"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c:875:6" my-argnr="1" my-argname="self" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="880"/>
+  </FileInfo>
+  <FileInfo check="ctu">
+<function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/screen.h:52:6" call-funcname="SCR_AddDirtyPoint" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="311" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/screen.h:52:6" call-funcname="SCR_AddDirtyPoint" call-argnr="2" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="311" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:829:6" call-funcname="Netchan_Transmit" call-argnr="2" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="333" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:829:6" call-funcname="Netchan_Transmit" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="333" call-argexpr="(void*)0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:829:6" call-funcname="Netchan_Transmit" call-argnr="2" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="362" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:829:6" call-funcname="Netchan_Transmit" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="362" call-argexpr="(void*)0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:829:6" call-funcname="Netchan_Transmit" call-argnr="2" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="437" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:829:6" call-funcname="Netchan_Transmit" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="437" call-argexpr="(void*)0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:1011:8" call-funcname="Com_Error" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="514" call-argexpr="fov_x" call-argvaluetype="0" call-argvalue="0" warning="true">
+  <path filename="C:\Users\--KentMathias--\Documents\r1q2\client\cl_view.c" linenr="513" info="Assuming that condition 'fov_x<1' is not redundant"/>
+</function-call><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="930" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="934" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="935" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="936" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="937" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="939" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="941" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="942" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="943" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="945" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="946" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="947" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="949" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="951" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:652:17" call-funcname="Cvar_Get" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="952" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/>  </FileInfo>
+  <FileInfo check="Bounds checking">
+    <ArraySize array="chat_custom_cmd" size="32"/>
+    <ArraySize array="chat_custom_prompt" size="32"/>
+    <ArraySize array="cl_dlights" size="32"/>
+    <ArraySize array="cl_entities" size="1024"/>
+    <ArraySize array="cl_localents" size="1024"/>
+    <ArraySize array="cl_parse_entities" size="1024"/>
+    <ArraySize array="crosshair_pic" size="8"/>
+    <ArraySize array="key_repeats" size="256"/>
+    <ArraySize array="keybindings" size="256"/>
+    <ArraySize array="map_leafs" size="65536"/>
+    <ArraySize array="net_message_buffer" size="4096"/>
+    <ArraySize array="r_dlights" size="32"/>
+    <ArraySize array="r_entities" size="128"/>
+    <ArraySize array="r_lightstyles" size="256"/>
+    <ArraySize array="vec3_origin" size="3"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c:865:6" my-argnr="1" my-argname="self" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="867"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c:875:6" my-argnr="1" my-argname="self" filename="C:/Users/--KentMathias--/Documents/r1q2/client/cl_view.c" linenr="880"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="V_ClearScene" lineNumber="82"/>
+    <functiondecl functionName="V_AddEntity" lineNumber="95"/>
+    <functiondecl functionName="V_AddParticle" lineNumber="110"/>
+    <functiondecl functionName="V_AddLight" lineNumber="132"/>
+    <functiondecl functionName="V_AddLightStyle" lineNumber="154"/>
+    <functiondecl functionName="V_TestParticles" lineNumber="176"/>
+    <functiondecl functionName="V_TestEntities" lineNumber="206"/>
+    <functiondecl functionName="V_TestLights" lineNumber="245"/>
+    <functiondecl functionName="Get_Mset_fog" lineNumber="273"/>
+    <functiondecl functionName="CL_PrepRefresh" lineNumber="298"/>
+    <functiondecl functionName="CalcFov" lineNumber="502"/>
+    <functiondecl functionName="V_Gun_Next_f" lineNumber="532"/>
+    <functiondecl functionName="V_Gun_Prev_f" lineNumber="538"/>
+    <functiondecl functionName="V_Gun_Model_f" lineNumber="546"/>
+    <functiondecl functionName="SCR_DrawCrosshair" lineNumber="567"/>
+    <functiondecl functionName="Set_Fog" lineNumber="599"/>
+    <functiondecl functionName="draw_rect" lineNumber="627"/>
+    <functiondecl functionName="V_RenderView" lineNumber="646"/>
+    <functiondecl functionName="V_Viewpos_f" lineNumber="858"/>
+    <functiondecl functionName="OnCrossHairChange" lineNumber="865"/>
+    <functiondecl functionName="_particlecount_changed" lineNumber="875"/>
+    <functiondecl functionName="V_Init" lineNumber="919"/>
+    <functiondecl functionName="V_ClearScene" lineNumber="82"/>
+    <functiondecl functionName="V_AddEntity" lineNumber="95"/>
+    <functiondecl functionName="V_AddParticle" lineNumber="110"/>
+    <functiondecl functionName="V_AddLight" lineNumber="132"/>
+    <functiondecl functionName="V_AddLightStyle" lineNumber="154"/>
+    <functiondecl functionName="V_TestParticles" lineNumber="176"/>
+    <functiondecl functionName="V_TestEntities" lineNumber="206"/>
+    <functiondecl functionName="V_TestLights" lineNumber="245"/>
+    <functiondecl functionName="Get_Mset_fog" lineNumber="273"/>
+    <functiondecl functionName="CL_PrepRefresh" lineNumber="298"/>
+    <functiondecl functionName="CalcFov" lineNumber="502"/>
+    <functiondecl functionName="V_Gun_Next_f" lineNumber="532"/>
+    <functiondecl functionName="V_Gun_Prev_f" lineNumber="538"/>
+    <functiondecl functionName="V_Gun_Model_f" lineNumber="546"/>
+    <functiondecl functionName="SCR_DrawCrosshair" lineNumber="567"/>
+    <functiondecl functionName="Set_Fog" lineNumber="599"/>
+    <functiondecl functionName="draw_rect" lineNumber="627"/>
+    <functiondecl functionName="V_RenderView" lineNumber="646"/>
+    <functiondecl functionName="V_Viewpos_f" lineNumber="858"/>
+    <functiondecl functionName="OnCrossHairChange" lineNumber="865"/>
+    <functiondecl functionName="_particlecount_changed" lineNumber="875"/>
+    <functiondecl functionName="V_Init" lineNumber="919"/>
+    <functiondecl functionName="V_ClearScene" lineNumber="82"/>
+    <functiondecl functionName="V_AddEntity" lineNumber="95"/>
+    <functiondecl functionName="V_AddParticle" lineNumber="110"/>
+    <functiondecl functionName="V_AddLight" lineNumber="132"/>
+    <functiondecl functionName="V_AddLightStyle" lineNumber="154"/>
+    <functiondecl functionName="V_TestParticles" lineNumber="176"/>
+    <functiondecl functionName="V_TestEntities" lineNumber="206"/>
+    <functiondecl functionName="V_TestLights" lineNumber="245"/>
+    <functiondecl functionName="Get_Mset_fog" lineNumber="273"/>
+    <functiondecl functionName="CL_PrepRefresh" lineNumber="298"/>
+    <functiondecl functionName="CalcFov" lineNumber="502"/>
+    <functiondecl functionName="V_Gun_Next_f" lineNumber="532"/>
+    <functiondecl functionName="V_Gun_Prev_f" lineNumber="538"/>
+    <functiondecl functionName="V_Gun_Model_f" lineNumber="546"/>
+    <functiondecl functionName="SCR_DrawCrosshair" lineNumber="567"/>
+    <functiondecl functionName="Set_Fog" lineNumber="599"/>
+    <functiondecl functionName="draw_rect" lineNumber="627"/>
+    <functiondecl functionName="V_RenderView" lineNumber="646"/>
+    <functiondecl functionName="V_Viewpos_f" lineNumber="858"/>
+    <functiondecl functionName="OnCrossHairChange" lineNumber="865"/>
+    <functiondecl functionName="_particlecount_changed" lineNumber="875"/>
+    <functiondecl functionName="V_Init" lineNumber="919"/>
+    <functiondecl functionName="V_ClearScene" lineNumber="82"/>
+    <functiondecl functionName="V_AddEntity" lineNumber="95"/>
+    <functiondecl functionName="V_AddParticle" lineNumber="110"/>
+    <functiondecl functionName="V_AddLight" lineNumber="132"/>
+    <functiondecl functionName="V_AddLightStyle" lineNumber="154"/>
+    <functiondecl functionName="V_TestParticles" lineNumber="176"/>
+    <functiondecl functionName="V_TestEntities" lineNumber="206"/>
+    <functiondecl functionName="V_TestLights" lineNumber="245"/>
+    <functiondecl functionName="Get_Mset_fog" lineNumber="273"/>
+    <functiondecl functionName="CL_PrepRefresh" lineNumber="298"/>
+    <functiondecl functionName="CalcFov" lineNumber="502"/>
+    <functiondecl functionName="V_Gun_Next_f" lineNumber="532"/>
+    <functiondecl functionName="V_Gun_Prev_f" lineNumber="538"/>
+    <functiondecl functionName="V_Gun_Model_f" lineNumber="546"/>
+    <functiondecl functionName="SCR_DrawCrosshair" lineNumber="567"/>
+    <functiondecl functionName="Set_Fog" lineNumber="599"/>
+    <functiondecl functionName="draw_rect" lineNumber="627"/>
+    <functiondecl functionName="V_RenderView" lineNumber="646"/>
+    <functiondecl functionName="V_Viewpos_f" lineNumber="858"/>
+    <functiondecl functionName="OnCrossHairChange" lineNumber="865"/>
+    <functiondecl functionName="_particlecount_changed" lineNumber="875"/>
+    <functiondecl functionName="V_Init" lineNumber="919"/>
+    <functiondecl functionName="V_ClearScene" lineNumber="82"/>
+    <functiondecl functionName="V_AddEntity" lineNumber="95"/>
+    <functiondecl functionName="V_AddParticle" lineNumber="110"/>
+    <functiondecl functionName="V_AddLight" lineNumber="132"/>
+    <functiondecl functionName="V_AddLightStyle" lineNumber="154"/>
+    <functiondecl functionName="V_TestParticles" lineNumber="176"/>
+    <functiondecl functionName="V_TestEntities" lineNumber="206"/>
+    <functiondecl functionName="V_TestLights" lineNumber="245"/>
+    <functiondecl functionName="Get_Mset_fog" lineNumber="273"/>
+    <functiondecl functionName="CL_PrepRefresh" lineNumber="298"/>
+    <functiondecl functionName="CalcFov" lineNumber="502"/>
+    <functiondecl functionName="V_Gun_Next_f" lineNumber="532"/>
+    <functiondecl functionName="V_Gun_Prev_f" lineNumber="538"/>
+    <functiondecl functionName="V_Gun_Model_f" lineNumber="546"/>
+    <functiondecl functionName="SCR_DrawCrosshair" lineNumber="567"/>
+    <functiondecl functionName="Set_Fog" lineNumber="599"/>
+    <functiondecl functionName="draw_rect" lineNumber="627"/>
+    <functiondecl functionName="V_RenderView" lineNumber="646"/>
+    <functiondecl functionName="V_Viewpos_f" lineNumber="858"/>
+    <functiondecl functionName="OnCrossHairChange" lineNumber="865"/>
+    <functiondecl functionName="_particlecount_changed" lineNumber="875"/>
+    <functiondecl functionName="V_Init" lineNumber="919"/>
+    <functioncall functionName="BeginRegistration"/>
+    <functioncall functionName="CLSET_FPS"/>
+    <functioncall functionName="CLSET_MAX"/>
+    <functioncall functionName="CLSET_NOBLEND"/>
+    <functioncall functionName="CLSET_NOGUN"/>
+    <functioncall functionName="CLSET_PLAYERUPDATE_REQUESTS"/>
+    <functioncall functionName="CLSET_RECORDING"/>
+    <functioncall functionName="CL_AddEntities"/>
+    <functioncall functionName="CL_ClearParticles"/>
+    <functioncall functionName="CL_ClearTEnts"/>
+    <functioncall functionName="CL_LoadClientinfo"/>
+    <functioncall functionName="CL_ParseClientinfo"/>
+    <functioncall functionName="CL_RegisterTEntModels"/>
+    <functioncall functionName="CM_InlineModel"/>
+    <functioncall functionName="CalcFov"/>
+    <functioncall functionName="Cmd_AddCommand"/>
+    <functioncall functionName="Cmd_Argc"/>
+    <functioncall functionName="Cmd_Argv"/>
+    <functioncall functionName="Com_Error"/>
+    <functioncall functionName="Com_Printf"/>
+    <functioncall functionName="Com_sprintf"/>
+    <functioncall functionName="Con_ClearNotify"/>
+    <functioncall functionName="Cvar_ForceSet"/>
+    <functioncall functionName="Cvar_Get"/>
+    <functioncall functionName="Cvar_Set"/>
+    <functioncall functionName="Cvar_SetValue"/>
+    <functioncall functionName="DrawChar"/>
+    <functioncall functionName="DrawPic"/>
+    <functioncall functionName="EVENT_NONE"/>
+    <functioncall functionName="EV_FALL"/>
+    <functioncall functionName="EV_FALLFAR"/>
+    <functioncall functionName="EV_FALLSHORT"/>
+    <functioncall functionName="EV_FOOTSTEP"/>
+    <functioncall functionName="EV_ITEM_RESPAWN"/>
+    <functioncall functionName="EV_OTHER_TELEPORT"/>
+    <functioncall functionName="EV_PLAYER_TELEPORT"/>
+    <functioncall functionName="EndRegistration"/>
+    <functioncall functionName="GL_DEPTH_BUFFER_BIT"/>
+    <functioncall functionName="GL_EXP"/>
+    <functioncall functionName="GL_EXP2"/>
+    <functioncall functionName="GL_FOG"/>
+    <functioncall functionName="GL_FOG_COLOR"/>
+    <functioncall functionName="GL_FOG_DENSITY"/>
+    <functioncall functionName="GL_FOG_END"/>
+    <functioncall functionName="GL_FOG_HINT"/>
+    <functioncall functionName="GL_FOG_MODE"/>
+    <functioncall functionName="GL_FOG_START"/>
+    <functioncall functionName="GL_LINEAR"/>
+    <functioncall functionName="GL_NICEST"/>
+    <functioncall functionName="GL_POLYGON"/>
+    <functioncall functionName="Get_Mset_fog"/>
+    <functioncall functionName="HANDLE_DUPE"/>
+    <functioncall functionName="HANDLE_NONE"/>
+    <functioncall functionName="HANDLE_OPEN"/>
+    <functioncall functionName="MOVETYPE_BOUNCE"/>
+    <functioncall functionName="MOVETYPE_FLYMISSILE"/>
+    <functioncall functionName="MOVETYPE_NONE"/>
+    <functioncall functionName="MOVETYPE_TOSS"/>
+    <functioncall functionName="MULTICAST_ALL"/>
+    <functioncall functionName="MULTICAST_ALL_R"/>
+    <functioncall functionName="MULTICAST_PHS"/>
+    <functioncall functionName="MULTICAST_PHS_R"/>
+    <functioncall functionName="MULTICAST_PVS"/>
+    <functioncall functionName="MULTICAST_PVS_R"/>
+    <functioncall functionName="NA_BROADCAST"/>
+    <functioncall functionName="NA_IP"/>
+    <functioncall functionName="NA_LOOPBACK"/>
+    <functioncall functionName="NS_CLIENT"/>
+    <functioncall functionName="NS_SERVER"/>
+    <functioncall functionName="Netchan_Transmit"/>
+    <functioncall functionName="OnCrossHairChange"/>
+    <functioncall functionName="PM_DEAD"/>
+    <functioncall functionName="PM_FREEZE"/>
+    <functioncall functionName="PM_GIB"/>
+    <functioncall functionName="PM_NORMAL"/>
+    <functioncall functionName="PM_SPECTATOR"/>
+    <functioncall functionName="RegisterModel"/>
+    <functioncall functionName="RegisterPic"/>
+    <functioncall functionName="RenderFrame"/>
+    <functioncall functionName="SCR_AddDirtyPoint"/>
+    <functioncall functionName="SCR_DrawCrosshair"/>
+    <functioncall functionName="SCR_TouchPics"/>
+    <functioncall functionName="SCR_UpdateScreen"/>
+    <functioncall functionName="SVSET_FPS"/>
+    <functioncall functionName="SVSET_MAX"/>
+    <functioncall functionName="SVSET_PLAYERUPDATES"/>
+    <functioncall functionName="S_StopAllSounds"/>
+    <functioncall functionName="SetSky"/>
+    <functioncall functionName="Sys_Milliseconds"/>
+    <functioncall functionName="Sys_SendKeyEvents"/>
+    <functioncall functionName="TAGMALLOC_ALIAS"/>
+    <functioncall functionName="TAGMALLOC_BLACKHOLE"/>
+    <functioncall functionName="TAGMALLOC_CLIENTS"/>
+    <functioncall functionName="TAGMALLOC_CLIENT_DLL"/>
+    <functioncall functionName="TAGMALLOC_CLIENT_DOWNLOAD"/>
+    <functioncall functionName="TAGMALLOC_CLIENT_IGNORE"/>
+    <functioncall functionName="TAGMALLOC_CLIENT_KEYBIND"/>
+    <functioncall functionName="TAGMALLOC_CLIENT_LOC"/>
+    <functioncall functionName="TAGMALLOC_CLIENT_SFX"/>
+    <functioncall functionName="TAGMALLOC_CLIENT_SOUNDCACHE"/>
+    <functioncall functionName="TAGMALLOC_CL_BASELINES"/>
+    <functioncall functionName="TAGMALLOC_CL_ENTS"/>
+    <functioncall functionName="TAGMALLOC_CL_MESSAGES"/>
+    <functioncall functionName="TAGMALLOC_CL_PARTICLES"/>
+    <functioncall functionName="TAGMALLOC_CMD"/>
+    <functioncall functionName="TAGMALLOC_CMDBANS"/>
+    <functioncall functionName="TAGMALLOC_CMDBUFF"/>
+    <functioncall functionName="TAGMALLOC_CMDTOKEN"/>
+    <functioncall functionName="TAGMALLOC_CVAR"/>
+    <functioncall functionName="TAGMALLOC_CVARBANS"/>
+    <functioncall functionName="TAGMALLOC_FSCACHE"/>
+    <functioncall functionName="TAGMALLOC_FSLOADFILE"/>
+    <functioncall functionName="TAGMALLOC_FSLOADPAK"/>
+    <functioncall functionName="TAGMALLOC_LINK"/>
+    <functioncall functionName="TAGMALLOC_LOADMAP"/>
+    <functioncall functionName="TAGMALLOC_LRCON"/>
+    <functioncall functionName="TAGMALLOC_MAX_TAGS"/>
+    <functioncall functionName="TAGMALLOC_NOT_TAGGED"/>
+    <functioncall functionName="TAGMALLOC_REDBLACK"/>
+    <functioncall functionName="TAGMALLOC_SEARCHPATH"/>
+    <functioncall functionName="TAGMALLOC_TRIGGER"/>
+    <functioncall functionName="TE_BFG_BIGEXPLOSION"/>
+    <functioncall functionName="TE_BFG_EXPLOSION"/>
+    <functioncall functionName="TE_BFG_LASER"/>
+    <functioncall functionName="TE_BLASTER"/>
+    <functioncall functionName="TE_BLASTER2"/>
+    <functioncall functionName="TE_BLOOD"/>
+    <functioncall functionName="TE_BLUEHYPERBLASTER"/>
+    <functioncall functionName="TE_BOSSTPORT"/>
+    <functioncall functionName="TE_BUBBLETRAIL"/>
+    <functioncall functionName="TE_BUBBLETRAIL2"/>
+    <functioncall functionName="TE_BULLET_SPARKS"/>
+    <functioncall functionName="TE_CHAINFIST_SMOKE"/>
+    <functioncall functionName="TE_DBALL_GOAL"/>
+    <functioncall functionName="TE_DEBUGTRAIL"/>
+    <functioncall functionName="TE_ELECTRIC_SPARKS"/>
+    <functioncall functionName="TE_EXPLOSION1"/>
+    <functioncall functionName="TE_EXPLOSION1_BIG"/>
+    <functioncall functionName="TE_EXPLOSION1_NP"/>
+    <functioncall functionName="TE_EXPLOSION2"/>
+    <functioncall functionName="TE_FLAME"/>
+    <functioncall functionName="TE_FLASHLIGHT"/>
+    <functioncall functionName="TE_FLECHETTE"/>
+    <functioncall functionName="TE_FORCEWALL"/>
+    <functioncall functionName="TE_GRAPPLE_CABLE"/>
+    <functioncall functionName="TE_GREENBLOOD"/>
+    <functioncall functionName="TE_GRENADE_EXPLOSION"/>
+    <functioncall functionName="TE_GRENADE_EXPLOSION_WATER"/>
+    <functioncall functionName="TE_GUNSHOT"/>
+    <functioncall functionName="TE_HEATBEAM"/>
+    <functioncall functionName="TE_HEATBEAM_SPARKS"/>
+    <functioncall functionName="TE_HEATBEAM_STEAM"/>
+    <functioncall functionName="TE_LASER_SPARKS"/>
+    <functioncall functionName="TE_LIGHTNING"/>
+    <functioncall functionName="TE_MEDIC_CABLE_ATTACK"/>
+    <functioncall functionName="TE_MONSTER_HEATBEAM"/>
+    <functioncall functionName="TE_MOREBLOOD"/>
+    <functioncall functionName="TE_NUKEBLAST"/>
+    <functioncall functionName="TE_PARASITE_ATTACK"/>
+    <functioncall functionName="TE_PLAIN_EXPLOSION"/>
+    <functioncall functionName="TE_PLASMA_EXPLOSION"/>
+    <functioncall functionName="TE_RAILTRAIL"/>
+    <functioncall functionName="TE_RAILTRAIL2"/>
+    <functioncall functionName="TE_ROCKET_EXPLOSION"/>
+    <functioncall functionName="TE_ROCKET_EXPLOSION_WATER"/>
+    <functioncall functionName="TE_SCREEN_SPARKS"/>
+    <functioncall functionName="TE_SHIELD_SPARKS"/>
+    <functioncall functionName="TE_SHOTGUN"/>
+    <functioncall functionName="TE_SPARKS"/>
+    <functioncall functionName="TE_SPLASH"/>
+    <functioncall functionName="TE_STEAM"/>
+    <functioncall functionName="TE_TELEPORT_EFFECT"/>
+    <functioncall functionName="TE_TRACKER_EXPLOSION"/>
+    <functioncall functionName="TE_TUNNEL_SPARKS"/>
+    <functioncall functionName="TE_WELDING_SPARKS"/>
+    <functioncall functionName="TE_WIDOWBEAMOUT"/>
+    <functioncall functionName="TE_WIDOWSPLASH"/>
+    <functioncall functionName="V_ClearScene"/>
+    <functioncall functionName="V_Gun_Model_f"/>
+    <functioncall functionName="V_Gun_Next_f"/>
+    <functioncall functionName="V_Gun_Prev_f"/>
+    <functioncall functionName="V_TestEntities"/>
+    <functioncall functionName="V_TestLights"/>
+    <functioncall functionName="V_TestParticles"/>
+    <functioncall functionName="V_Viewpos_f"/>
+    <functioncall functionName="Z_Free"/>
+    <functioncall functionName="Z_TagMalloc"/>
+    <functioncall functionName="_particlecount_changed"/>
+    <functioncall functionName="a"/>
+    <functioncall functionName="alpha"/>
+    <functioncall functionName="areabits"/>
+    <functioncall functionName="atan"/>
+    <functioncall functionName="atof"/>
+    <functioncall functionName="axis"/>
+    <functioncall functionName="b"/>
+    <functioncall functionName="baseclientinfo"/>
+    <functioncall functionName="blend"/>
+    <functioncall functionName="break"/>
+    <functioncall functionName="buff"/>
+    <functioncall functionName="ca_active"/>
+    <functioncall functionName="ca_connected"/>
+    <functioncall functionName="ca_connecting"/>
+    <functioncall functionName="ca_disconnected"/>
+    <functioncall functionName="ca_uninitialized"/>
+    <functioncall functionName="cl_particlecount"/>
+    <functioncall functionName="clc_bad"/>
+    <functioncall functionName="clc_move"/>
+    <functioncall functionName="clc_multimoves"/>
+    <functioncall functionName="clc_nop"/>
+    <functioncall functionName="clc_setting"/>
+    <functioncall functionName="clc_stringcmd"/>
+    <functioncall functionName="clc_userinfo"/>
+    <functioncall functionName="clientinfo"/>
+    <functioncall functionName="color"/>
+    <functioncall functionName="continue"/>
+    <functioncall functionName="count"/>
+    <functioncall functionName="crosshair_height"/>
+    <functioncall functionName="crosshair_pic"/>
+    <functioncall functionName="crosshair_width"/>
+    <functioncall functionName="curtime"/>
+    <functioncall functionName="default"/>
+    <functioncall functionName="defer_rendering"/>
+    <functioncall functionName="deltaframe"/>
+    <functioncall functionName="density"/>
+    <functioncall functionName="end"/>
+    <functioncall functionName="entities"/>
+    <functioncall functionName="entitycmpfnc"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="float"/>
+    <functioncall functionName="fog"/>
+    <functioncall functionName="fogColor"/>
+    <functioncall functionName="for"/>
+    <functioncall functionName="force_refdef"/>
+    <functioncall functionName="fov_x"/>
+    <functioncall functionName="fps"/>
+    <functioncall functionName="frameMsg"/>
+    <functioncall functionName="frames_seconds"/>
+    <functioncall functionName="frames_this_second"/>
+    <functioncall functionName="frametime"/>
+    <functioncall functionName="g"/>
+    <functioncall functionName="glBegin"/>
+    <functioncall functionName="glClear"/>
+    <functioncall functionName="glColor3f"/>
+    <functioncall functionName="glDisable"/>
+    <functioncall functionName="glEnable"/>
+    <functioncall functionName="glEnd"/>
+    <functioncall functionName="glFogf"/>
+    <functioncall functionName="glFogfv"/>
+    <functioncall functionName="glFogi"/>
+    <functioncall functionName="glHint"/>
+    <functioncall functionName="glVertex3f"/>
+    <functioncall functionName="gun_frame"/>
+    <functioncall functionName="height"/>
+    <functioncall functionName="i"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="int"/>
+    <functioncall functionName="intensity"/>
+    <functioncall functionName="intvalue"/>
+    <functioncall functionName="j"/>
+    <functioncall functionName="key_console"/>
+    <functioncall functionName="key_game"/>
+    <functioncall functionName="key_menu"/>
+    <functioncall functionName="key_message"/>
+    <functioncall functionName="last_fov"/>
+    <functioncall functionName="mapname"/>
+    <functioncall functionName="maxclients"/>
+    <functioncall functionName="memset"/>
+    <functioncall functionName="mins"/>
+    <functioncall functionName="model"/>
+    <functioncall functionName="name"/>
+    <functioncall functionName="netchan"/>
+    <functioncall functionName="noFrameFromServerPacket"/>
+    <functioncall functionName="num_cl_weaponmodels"/>
+    <functioncall functionName="num_entities"/>
+    <functioncall functionName="num_particles"/>
+    <functioncall functionName="origin"/>
+    <functioncall functionName="overflowMsg"/>
+    <functioncall functionName="parseMsg"/>
+    <functioncall functionName="parse_entities"/>
+    <functioncall functionName="particles"/>
+    <functioncall functionName="ps_active"/>
+    <functioncall functionName="ps_none"/>
+    <functioncall functionName="ps_pending"/>
+    <functioncall functionName="qsort"/>
+    <functioncall functionName="r"/>
+    <functioncall functionName="r_dlights"/>
+    <functioncall functionName="r_entities"/>
+    <functioncall functionName="r_lightstyles"/>
+    <functioncall functionName="r_numdlights"/>
+    <functioncall functionName="r_numentities"/>
+    <functioncall functionName="r_numparticles"/>
+    <functioncall functionName="r_particles"/>
+    <functioncall functionName="rateMsg"/>
+    <functioncall functionName="rdflags"/>
+    <functioncall functionName="realtime"/>
+    <functioncall functionName="refdef"/>
+    <functioncall functionName="refresh_prepped"/>
+    <functioncall functionName="return"/>
+    <functioncall functionName="rotate"/>
+    <functioncall functionName="secs"/>
+    <functioncall functionName="serverPacketCount"/>
+    <functioncall functionName="sizeof"/>
+    <functioncall functionName="skin"/>
+    <functioncall functionName="spc"/>
+    <functioncall functionName="ss_cinematic"/>
+    <functioncall functionName="ss_dead"/>
+    <functioncall functionName="ss_demo"/>
+    <functioncall functionName="ss_game"/>
+    <functioncall functionName="ss_loading"/>
+    <functioncall functionName="ss_pic"/>
+    <functioncall functionName="sscanf"/>
+    <functioncall functionName="start"/>
+    <functioncall functionName="strcpy"/>
+    <functioncall functionName="string"/>
+    <functioncall functionName="strlen"/>
+    <functioncall functionName="strncpy"/>
+    <functioncall functionName="style"/>
+    <functioncall functionName="surpressCount"/>
+    <functioncall functionName="svc_bad"/>
+    <functioncall functionName="svc_centerprint"/>
+    <functioncall functionName="svc_configstring"/>
+    <functioncall functionName="svc_deltapacketentities"/>
+    <functioncall functionName="svc_disconnect"/>
+    <functioncall functionName="svc_download"/>
+    <functioncall functionName="svc_frame"/>
+    <functioncall functionName="svc_inventory"/>
+    <functioncall functionName="svc_layout"/>
+    <functioncall functionName="svc_max_enttypes"/>
+    <functioncall functionName="svc_muzzleflash"/>
+    <functioncall functionName="svc_muzzleflash2"/>
+    <functioncall functionName="svc_nop"/>
+    <functioncall functionName="svc_packetentities"/>
+    <functioncall functionName="svc_playerinfo"/>
+    <functioncall functionName="svc_playerupdate"/>
+    <functioncall functionName="svc_print"/>
+    <functioncall functionName="svc_reconnect"/>
+    <functioncall functionName="svc_serverdata"/>
+    <functioncall functionName="svc_setting"/>
+    <functioncall functionName="svc_sound"/>
+    <functioncall functionName="svc_spawnbaseline"/>
+    <functioncall functionName="svc_stufftext"/>
+    <functioncall functionName="svc_temp_entity"/>
+    <functioncall functionName="svc_zdownload"/>
+    <functioncall functionName="svc_zpacket"/>
+    <functioncall functionName="switch"/>
+    <functioncall functionName="tan"/>
+    <functioncall functionName="timedemo_start"/>
+    <functioncall functionName="true"/>
+    <functioncall functionName="value"/>
+    <functioncall functionName="while"/>
+    <functioncall functionName="width"/>
+    <functioncall functionName="x"/>
+    <functioncall functionName="y"/>
+  </FileInfo>
+</analyzerinfo>

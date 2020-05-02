@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="91549651">
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error">
+            <location file0="C:\Users\--KentMathias--\Documents\r1q2\client\cl_http.c" file="C:\Users\--KentMathias--\Documents\r1q2\curl\curl.h" line="963"/>
+        </error>
+</analyzerinfo>

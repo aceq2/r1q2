@@ -1,0 +1,1702 @@
+<?xml version="1.0"?>
+<analyzerinfo checksum="1180871749">
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;creditsIndex[256]&apos; accessed at index 256, which is out of bounds." verbose="Array &apos;creditsIndex[256]&apos; accessed at index 256, which is out of bounds." cwe="119">
+            <location file0="C:\Users\--KentMathias--\Documents\r1q2\client\menu.c" file="C:\Users\--KentMathias--\Documents\r1q2\client\menu.c" line="2133" info="Array index out of bounds"/>
+            <symbol>creditsIndex</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;item&apos; can be reduced." verbose="The scope of the variable &apos;item&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file0="C:\Users\--KentMathias--\Documents\r1q2\client\menu.c" file="C:\Users\--KentMathias--\Documents\r1q2\client\menu.c" line="150"/>
+            <symbol>item</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;b&apos; can be reduced." verbose="The scope of the variable &apos;b&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file0="C:\Users\--KentMathias--\Documents\r1q2\client\menu.c" file="C:\Users\--KentMathias--\Documents\r1q2\client\menu.c" line="650"/>
+            <symbol>b</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;b&apos; can be reduced." verbose="The scope of the variable &apos;b&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file0="C:\Users\--KentMathias--\Documents\r1q2\client\menu.c" file="C:\Users\--KentMathias--\Documents\r1q2\client\menu.c" line="669"/>
+            <symbol>b</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;n&apos; can be reduced." verbose="The scope of the variable &apos;n&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file0="C:\Users\--KentMathias--\Documents\r1q2\client\menu.c" file="C:\Users\--KentMathias--\Documents\r1q2\client\menu.c" line="2104"/>
+            <symbol>n</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;isdeveloper&apos; can be reduced." verbose="The scope of the variable &apos;isdeveloper&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file0="C:\Users\--KentMathias--\Documents\r1q2\client\menu.c" file="C:\Users\--KentMathias--\Documents\r1q2\client\menu.c" line="2107"/>
+            <symbol>isdeveloper</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;f&apos; can be reduced." verbose="The scope of the variable &apos;f&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file0="C:\Users\--KentMathias--\Documents\r1q2\client\menu.c" file="C:\Users\--KentMathias--\Documents\r1q2\client\menu.c" line="2360"/>
+            <symbol>f</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;c&apos; can be reduced." verbose="The scope of the variable &apos;c&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file0="C:\Users\--KentMathias--\Documents\r1q2\client\menu.c" file="C:\Users\--KentMathias--\Documents\r1q2\client\menu.c" line="3861"/>
+            <symbol>c</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;scratch&apos; can be reduced." verbose="The scope of the variable &apos;scratch&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file0="C:\Users\--KentMathias--\Documents\r1q2\client\menu.c" file="C:\Users\--KentMathias--\Documents\r1q2\client\menu.c" line="4107"/>
+            <symbol>scratch</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;i&apos; can be reduced." verbose="The scope of the variable &apos;i&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file0="C:\Users\--KentMathias--\Documents\r1q2\client\menu.c" file="C:\Users\--KentMathias--\Documents\r1q2\client\menu.c" line="4174"/>
+            <symbol>i</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;s&apos; can be reduced." verbose="The scope of the variable &apos;s&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file0="C:\Users\--KentMathias--\Documents\r1q2\client\menu.c" file="C:\Users\--KentMathias--\Documents\r1q2\client\menu.c" line="4306"/>
+            <symbol>s</symbol>
+        </error>
+        <error id="shadowVar" severity="style" msg="Local variable a shadows outer variable" verbose="Local variable a shadows outer variable" cwe="398">
+            <location file0="C:\Users\--KentMathias--\Documents\r1q2\client\menu.c" file="C:\Users\--KentMathias--\Documents\r1q2\client\menu.c" line="3861" info="Shadow variable"/>
+            <location file0="C:\Users\--KentMathias--\Documents\r1q2\client\menu.c" file="C:\Users\--KentMathias--\Documents\r1q2\client\menu.c" line="3806" info="Shadowed declaration"/>
+            <symbol>a</symbol>
+        </error>
+        <error id="shadowVar" severity="style" msg="Local variable b shadows outer variable" verbose="Local variable b shadows outer variable" cwe="398">
+            <location file0="C:\Users\--KentMathias--\Documents\r1q2\client\menu.c" file="C:\Users\--KentMathias--\Documents\r1q2\client\menu.c" line="3861" info="Shadow variable"/>
+            <location file0="C:\Users\--KentMathias--\Documents\r1q2\client\menu.c" file="C:\Users\--KentMathias--\Documents\r1q2\client\menu.c" line="3806" info="Shadowed declaration"/>
+            <symbol>b</symbol>
+        </error>
+        <error id="shadowVar" severity="style" msg="Local variable c shadows outer variable" verbose="Local variable c shadows outer variable" cwe="398">
+            <location file0="C:\Users\--KentMathias--\Documents\r1q2\client\menu.c" file="C:\Users\--KentMathias--\Documents\r1q2\client\menu.c" line="3861" info="Shadow variable"/>
+            <location file0="C:\Users\--KentMathias--\Documents\r1q2\client\menu.c" file="C:\Users\--KentMathias--\Documents\r1q2\client\menu.c" line="3806" info="Shadowed declaration"/>
+            <symbol>c</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;totalheight&apos; is assigned a value that is never used." verbose="Variable &apos;totalheight&apos; is assigned a value that is never used." cwe="563">
+            <location file0="C:\Users\--KentMathias--\Documents\r1q2\client\menu.c" file="C:\Users\--KentMathias--\Documents\r1q2\client\menu.c" line="397"/>
+            <symbol>totalheight</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;totalheight&apos; is assigned a value that is never used." verbose="Variable &apos;totalheight&apos; is assigned a value that is never used." cwe="563">
+            <location file0="C:\Users\--KentMathias--\Documents\r1q2\client\menu.c" file="C:\Users\--KentMathias--\Documents\r1q2\client\menu.c" line="415"/>
+            <symbol>totalheight</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;isdeveloper&apos; is assigned a value that is never used." verbose="Variable &apos;isdeveloper&apos; is assigned a value that is never used." cwe="563">
+            <location file0="C:\Users\--KentMathias--\Documents\r1q2\client\menu.c" file="C:\Users\--KentMathias--\Documents\r1q2\client\menu.c" line="2107"/>
+            <symbol>isdeveloper</symbol>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:1011:8" call-funcname="Com_Error" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="108" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:1011:8" call-funcname="Com_Error" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="136" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/game/q_shared.h:458:5" call-funcname="Com_sprintf" call-argnr="4" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="325" call-argexpr="i" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:131:6" call-funcname="Menu_SetStatusBar" call-argnr="2" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="563" call-argexpr="(void*)0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="1193" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="1201" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="1209" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="1217" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="1330" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="1335" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="1338" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="1341" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="1344" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:1303:13" call-funcname="MouseSpeedFunc" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="1659" call-argexpr="(void*)0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:666:13" call-funcname="Cvar_SetValue" call-argnr="2" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="2190" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:666:13" call-funcname="Cvar_SetValue" call-argnr="2" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="2191" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/game/q_shared.h:458:5" call-funcname="Com_sprintf" call-argnr="5" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="2365" call-argexpr="i" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="2772" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="2773" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="2774" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:2721:13" call-funcname="RulesChangeFunc" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="3032" call-argexpr="(void*)0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:3102:13" call-funcname="DMFlagCallback" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="3451" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/game/q_shared.h:458:5" call-funcname="Com_sprintf" call-argnr="4" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="3627" call-argexpr="i" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/game/q_shared.h:458:5" call-funcname="Com_sprintf" call-argnr="4" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="3656" call-argexpr="index" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:3768:15" call-funcname="FS_ListFiles" call-argnr="4" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="3788" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/game/q_shared.h:542:7" call-funcname="Sys_FindFirst" call-argnr="2" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="3819" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:3768:15" call-funcname="FS_ListFiles" call-argnr="2" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="3831" call-argexpr="npcxfiles" call-argvaluetype="4" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:3768:15" call-funcname="FS_ListFiles" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="3831" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:131:6" call-funcname="Menu_SetStatusBar" call-argnr="2" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="4214" call-argexpr="(void*)0" call-argvaluetype="0" call-argvalue="0"/>  </FileInfo>
+  <FileInfo check="Bounds checking">
+    <ArrayUsage array="keybindings" index="255" fileName="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="656"/>
+    <ArraySize array="chat_custom_cmd" size="32"/>
+    <ArraySize array="chat_custom_prompt" size="32"/>
+    <ArraySize array="cl_dlights" size="32"/>
+    <ArraySize array="cl_entities" size="1024"/>
+    <ArraySize array="cl_localents" size="1024"/>
+    <ArraySize array="cl_parse_entities" size="1024"/>
+    <ArraySize array="crosshair_pic" size="8"/>
+    <ArraySize array="key_repeats" size="256"/>
+    <ArraySize array="keybindings" size="256"/>
+    <ArraySize array="m_layers" size="8"/>
+    <ArraySize array="m_savevalid" size="15"/>
+    <ArraySize array="map_leafs" size="65536"/>
+    <ArraySize array="net_message_buffer" size="4096"/>
+    <ArraySize array="vec3_origin" size="3"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:279:13" my-argnr="3" my-argname="str" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="281"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:646:13" my-argnr="1" my-argname="command" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="652"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:664:13" my-argnr="1" my-argname="command" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="672"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:664:13" my-argnr="2" my-argname="twokeys" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="671"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:3750:17" my-argnr="1" my-argname="skin" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="3755"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:279:13" my-argnr="3" my-argname="str" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="281"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:646:13" my-argnr="1" my-argname="command" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="652"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:664:13" my-argnr="1" my-argname="command" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="672"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:3750:17" my-argnr="1" my-argname="skin" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="3755"/>
+  </FileInfo>
+  <FileInfo check="ctu">
+<function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:1011:8" call-funcname="Com_Error" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="108" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:1011:8" call-funcname="Com_Error" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="136" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/game/q_shared.h:458:5" call-funcname="Com_sprintf" call-argnr="4" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="325" call-argexpr="i" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:131:6" call-funcname="Menu_SetStatusBar" call-argnr="2" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="563" call-argexpr="(void*)0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="1176" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="1184" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="1193" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="1201" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="1209" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="1217" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="1330" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="1335" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="1338" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="1341" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="1344" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:1303:13" call-funcname="MouseSpeedFunc" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="1659" call-argexpr="(void*)0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:666:13" call-funcname="Cvar_SetValue" call-argnr="2" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="2190" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:666:13" call-funcname="Cvar_SetValue" call-argnr="2" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="2191" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/game/q_shared.h:458:5" call-funcname="Com_sprintf" call-argnr="5" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="2365" call-argexpr="i" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="2772" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="2773" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="2774" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:2721:13" call-funcname="RulesChangeFunc" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="3032" call-argexpr="(void*)0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:3102:13" call-funcname="DMFlagCallback" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="3451" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/game/q_shared.h:458:5" call-funcname="Com_sprintf" call-argnr="4" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="3627" call-argexpr="i" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/game/q_shared.h:458:5" call-funcname="Com_sprintf" call-argnr="4" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="3656" call-argexpr="index" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:3768:15" call-funcname="FS_ListFiles" call-argnr="4" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="3788" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/game/q_shared.h:542:7" call-funcname="Sys_FindFirst" call-argnr="2" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="3819" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:3768:15" call-funcname="FS_ListFiles" call-argnr="2" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="3831" call-argexpr="npcxfiles" call-argvaluetype="4" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:3768:15" call-funcname="FS_ListFiles" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="3831" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:131:6" call-funcname="Menu_SetStatusBar" call-argnr="2" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="4214" call-argexpr="(void*)0" call-argvaluetype="0" call-argvalue="0"/>  </FileInfo>
+  <FileInfo check="Bounds checking">
+    <ArrayUsage array="keybindings" index="255" fileName="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="656"/>
+    <ArraySize array="chat_custom_cmd" size="32"/>
+    <ArraySize array="chat_custom_prompt" size="32"/>
+    <ArraySize array="cl_dlights" size="32"/>
+    <ArraySize array="cl_entities" size="1024"/>
+    <ArraySize array="cl_localents" size="1024"/>
+    <ArraySize array="cl_parse_entities" size="1024"/>
+    <ArraySize array="crosshair_pic" size="8"/>
+    <ArraySize array="key_repeats" size="256"/>
+    <ArraySize array="keybindings" size="256"/>
+    <ArraySize array="m_layers" size="8"/>
+    <ArraySize array="m_savevalid" size="15"/>
+    <ArraySize array="map_leafs" size="65536"/>
+    <ArraySize array="net_message_buffer" size="4096"/>
+    <ArraySize array="vec3_origin" size="3"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:279:13" my-argnr="3" my-argname="str" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="281"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:646:13" my-argnr="1" my-argname="command" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="652"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:664:13" my-argnr="1" my-argname="command" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="672"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:664:13" my-argnr="2" my-argname="twokeys" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="671"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:3750:17" my-argnr="1" my-argname="skin" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="3755"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:279:13" my-argnr="3" my-argname="str" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="281"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:646:13" my-argnr="1" my-argname="command" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="652"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:664:13" my-argnr="1" my-argname="command" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="672"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:3750:17" my-argnr="1" my-argname="skin" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="3755"/>
+  </FileInfo>
+        <error id="syntaxError" severity="error" msg="syntax error" verbose="syntax error">
+            <location file0="C:\Users\--KentMathias--\Documents\r1q2\client\menu.c" file="C:\Users\--KentMathias--\Documents\r1q2\curl\curl.h" line="963"/>
+        </error>
+  <FileInfo check="ctu">
+<function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:1011:8" call-funcname="Com_Error" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="108" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:1011:8" call-funcname="Com_Error" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="136" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/game/q_shared.h:458:5" call-funcname="Com_sprintf" call-argnr="4" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="325" call-argexpr="i" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:131:6" call-funcname="Menu_SetStatusBar" call-argnr="2" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="563" call-argexpr="(void*)0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="1176" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="1184" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="1193" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="1201" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="1209" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="1217" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="1330" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="1335" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="1338" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="1341" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="1344" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:1303:13" call-funcname="MouseSpeedFunc" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="1659" call-argexpr="(void*)0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:666:13" call-funcname="Cvar_SetValue" call-argnr="2" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="2190" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:666:13" call-funcname="Cvar_SetValue" call-argnr="2" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="2191" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/game/q_shared.h:458:5" call-funcname="Com_sprintf" call-argnr="5" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="2365" call-argexpr="i" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="2772" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="2773" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="2774" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:2721:13" call-funcname="RulesChangeFunc" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="3032" call-argexpr="(void*)0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:3102:13" call-funcname="DMFlagCallback" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="3451" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/game/q_shared.h:458:5" call-funcname="Com_sprintf" call-argnr="4" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="3627" call-argexpr="i" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/game/q_shared.h:458:5" call-funcname="Com_sprintf" call-argnr="4" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="3656" call-argexpr="index" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:3768:15" call-funcname="FS_ListFiles" call-argnr="4" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="3788" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/game/q_shared.h:542:7" call-funcname="Sys_FindFirst" call-argnr="2" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="3819" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:3768:15" call-funcname="FS_ListFiles" call-argnr="2" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="3831" call-argexpr="npcxfiles" call-argvaluetype="4" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:3768:15" call-funcname="FS_ListFiles" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="3831" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:131:6" call-funcname="Menu_SetStatusBar" call-argnr="2" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="4214" call-argexpr="(void*)0" call-argvaluetype="0" call-argvalue="0"/>  </FileInfo>
+  <FileInfo check="Bounds checking">
+    <ArrayUsage array="keybindings" index="255" fileName="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="656"/>
+    <ArraySize array="chat_custom_cmd" size="32"/>
+    <ArraySize array="chat_custom_prompt" size="32"/>
+    <ArraySize array="cl_dlights" size="32"/>
+    <ArraySize array="cl_entities" size="1024"/>
+    <ArraySize array="cl_localents" size="1024"/>
+    <ArraySize array="cl_parse_entities" size="1024"/>
+    <ArraySize array="crosshair_pic" size="8"/>
+    <ArraySize array="key_repeats" size="256"/>
+    <ArraySize array="keybindings" size="256"/>
+    <ArraySize array="m_layers" size="8"/>
+    <ArraySize array="m_savevalid" size="15"/>
+    <ArraySize array="map_leafs" size="65536"/>
+    <ArraySize array="net_message_buffer" size="4096"/>
+    <ArraySize array="vec3_origin" size="3"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:279:13" my-argnr="3" my-argname="str" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="281"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:646:13" my-argnr="1" my-argname="command" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="652"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:664:13" my-argnr="1" my-argname="command" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="672"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:664:13" my-argnr="2" my-argname="twokeys" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="671"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:3750:17" my-argnr="1" my-argname="skin" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="3755"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:279:13" my-argnr="3" my-argname="str" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="281"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:646:13" my-argnr="1" my-argname="command" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="652"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:664:13" my-argnr="1" my-argname="command" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="672"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:3750:17" my-argnr="1" my-argname="skin" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="3755"/>
+  </FileInfo>
+  <FileInfo check="ctu">
+<function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:1011:8" call-funcname="Com_Error" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="108" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:1011:8" call-funcname="Com_Error" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="136" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/game/q_shared.h:458:5" call-funcname="Com_sprintf" call-argnr="4" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="325" call-argexpr="i" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:131:6" call-funcname="Menu_SetStatusBar" call-argnr="2" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="563" call-argexpr="(void*)0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="1176" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="1184" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="1193" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="1201" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="1209" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="1217" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="1330" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="1335" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="1338" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="1341" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="1344" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:1303:13" call-funcname="MouseSpeedFunc" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="1659" call-argexpr="(void*)0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:666:13" call-funcname="Cvar_SetValue" call-argnr="2" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="2190" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:666:13" call-funcname="Cvar_SetValue" call-argnr="2" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="2191" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/game/q_shared.h:458:5" call-funcname="Com_sprintf" call-argnr="5" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="2365" call-argexpr="i" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="2772" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="2773" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="2774" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:2721:13" call-funcname="RulesChangeFunc" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="3032" call-argexpr="(void*)0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:3102:13" call-funcname="DMFlagCallback" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="3451" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/game/q_shared.h:458:5" call-funcname="Com_sprintf" call-argnr="4" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="3627" call-argexpr="i" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/game/q_shared.h:458:5" call-funcname="Com_sprintf" call-argnr="4" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="3656" call-argexpr="index" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:3768:15" call-funcname="FS_ListFiles" call-argnr="4" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="3788" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/game/q_shared.h:542:7" call-funcname="Sys_FindFirst" call-argnr="2" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="3819" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:3768:15" call-funcname="FS_ListFiles" call-argnr="2" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="3831" call-argexpr="npcxfiles" call-argvaluetype="4" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:3768:15" call-funcname="FS_ListFiles" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="3831" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:131:6" call-funcname="Menu_SetStatusBar" call-argnr="2" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="4214" call-argexpr="(void*)0" call-argvaluetype="0" call-argvalue="0"/>  </FileInfo>
+  <FileInfo check="Bounds checking">
+    <ArrayUsage array="keybindings" index="255" fileName="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="656"/>
+    <ArraySize array="chat_custom_cmd" size="32"/>
+    <ArraySize array="chat_custom_prompt" size="32"/>
+    <ArraySize array="cl_dlights" size="32"/>
+    <ArraySize array="cl_entities" size="1024"/>
+    <ArraySize array="cl_localents" size="1024"/>
+    <ArraySize array="cl_parse_entities" size="1024"/>
+    <ArraySize array="crosshair_pic" size="8"/>
+    <ArraySize array="key_repeats" size="256"/>
+    <ArraySize array="keybindings" size="256"/>
+    <ArraySize array="m_layers" size="8"/>
+    <ArraySize array="m_savevalid" size="15"/>
+    <ArraySize array="map_leafs" size="65536"/>
+    <ArraySize array="net_message_buffer" size="4096"/>
+    <ArraySize array="vec3_origin" size="3"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:279:13" my-argnr="3" my-argname="str" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="281"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:646:13" my-argnr="1" my-argname="command" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="652"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:664:13" my-argnr="1" my-argname="command" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="672"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:664:13" my-argnr="2" my-argname="twokeys" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="671"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:3750:17" my-argnr="1" my-argname="skin" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="3755"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:279:13" my-argnr="3" my-argname="str" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="281"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:646:13" my-argnr="1" my-argname="command" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="652"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:664:13" my-argnr="1" my-argname="command" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="672"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:3750:17" my-argnr="1" my-argname="skin" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="3755"/>
+  </FileInfo>
+  <FileInfo check="ctu">
+<function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:1011:8" call-funcname="Com_Error" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="108" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:1011:8" call-funcname="Com_Error" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="136" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/game/q_shared.h:458:5" call-funcname="Com_sprintf" call-argnr="4" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="325" call-argexpr="i" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:131:6" call-funcname="Menu_SetStatusBar" call-argnr="2" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="563" call-argexpr="(void*)0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="1193" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="1201" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="1209" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="1217" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="1330" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="1335" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="1338" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="1341" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="1344" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:1303:13" call-funcname="MouseSpeedFunc" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="1659" call-argexpr="(void*)0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:666:13" call-funcname="Cvar_SetValue" call-argnr="2" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="2190" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:666:13" call-funcname="Cvar_SetValue" call-argnr="2" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="2191" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/game/q_shared.h:458:5" call-funcname="Com_sprintf" call-argnr="5" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="2365" call-argexpr="i" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="2772" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="2773" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="2774" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:2721:13" call-funcname="RulesChangeFunc" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="3032" call-argexpr="(void*)0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:3102:13" call-funcname="DMFlagCallback" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="3451" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/game/q_shared.h:458:5" call-funcname="Com_sprintf" call-argnr="4" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="3627" call-argexpr="i" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/game/q_shared.h:458:5" call-funcname="Com_sprintf" call-argnr="4" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="3656" call-argexpr="index" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:3768:15" call-funcname="FS_ListFiles" call-argnr="4" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="3788" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/game/q_shared.h:542:7" call-funcname="Sys_FindFirst" call-argnr="2" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="3819" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:3768:15" call-funcname="FS_ListFiles" call-argnr="2" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="3831" call-argexpr="npcxfiles" call-argvaluetype="4" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:3768:15" call-funcname="FS_ListFiles" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="3831" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:131:6" call-funcname="Menu_SetStatusBar" call-argnr="2" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="4214" call-argexpr="(void*)0" call-argvaluetype="0" call-argvalue="0"/>  </FileInfo>
+  <FileInfo check="Bounds checking">
+    <ArrayUsage array="keybindings" index="255" fileName="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="656"/>
+    <ArraySize array="chat_custom_cmd" size="32"/>
+    <ArraySize array="chat_custom_prompt" size="32"/>
+    <ArraySize array="cl_dlights" size="32"/>
+    <ArraySize array="cl_entities" size="1024"/>
+    <ArraySize array="cl_localents" size="1024"/>
+    <ArraySize array="cl_parse_entities" size="1024"/>
+    <ArraySize array="crosshair_pic" size="8"/>
+    <ArraySize array="key_repeats" size="256"/>
+    <ArraySize array="keybindings" size="256"/>
+    <ArraySize array="m_layers" size="8"/>
+    <ArraySize array="m_savevalid" size="15"/>
+    <ArraySize array="map_leafs" size="65536"/>
+    <ArraySize array="net_message_buffer" size="4096"/>
+    <ArraySize array="vec3_origin" size="3"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:279:13" my-argnr="3" my-argname="str" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="281"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:646:13" my-argnr="1" my-argname="command" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="652"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:664:13" my-argnr="1" my-argname="command" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="672"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:664:13" my-argnr="2" my-argname="twokeys" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="671"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:3750:17" my-argnr="1" my-argname="skin" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="3755"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:279:13" my-argnr="3" my-argname="str" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="281"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:646:13" my-argnr="1" my-argname="command" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="652"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:664:13" my-argnr="1" my-argname="command" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="672"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:3750:17" my-argnr="1" my-argname="skin" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="3755"/>
+  </FileInfo>
+  <FileInfo check="ctu">
+<function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:1011:8" call-funcname="Com_Error" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="108" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:1011:8" call-funcname="Com_Error" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="136" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/game/q_shared.h:458:5" call-funcname="Com_sprintf" call-argnr="4" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="325" call-argexpr="i" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:131:6" call-funcname="Menu_SetStatusBar" call-argnr="2" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="563" call-argexpr="(void*)0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="1193" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="1201" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="1209" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="1217" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="1330" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="1335" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="1338" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="1341" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="1344" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:1303:13" call-funcname="MouseSpeedFunc" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="1659" call-argexpr="(void*)0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:666:13" call-funcname="Cvar_SetValue" call-argnr="2" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="2190" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/qcommon/qcommon.h:666:13" call-funcname="Cvar_SetValue" call-argnr="2" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="2191" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/game/q_shared.h:458:5" call-funcname="Com_sprintf" call-argnr="5" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="2365" call-argexpr="i" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="2772" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="2773" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:64:14" call-funcname="ClampCvar" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="2774" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:2721:13" call-funcname="RulesChangeFunc" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="3032" call-argexpr="(void*)0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:3102:13" call-funcname="DMFlagCallback" call-argnr="1" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="3451" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/game/q_shared.h:458:5" call-funcname="Com_sprintf" call-argnr="4" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="3627" call-argexpr="i" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/game/q_shared.h:458:5" call-funcname="Com_sprintf" call-argnr="4" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="3656" call-argexpr="index" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:3768:15" call-funcname="FS_ListFiles" call-argnr="4" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="3788" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/game/q_shared.h:542:7" call-funcname="Sys_FindFirst" call-argnr="2" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="3819" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:3768:15" call-funcname="FS_ListFiles" call-argnr="2" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="3831" call-argexpr="npcxfiles" call-argvaluetype="4" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:3768:15" call-funcname="FS_ListFiles" call-argnr="3" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="3831" call-argexpr="0" call-argvaluetype="0" call-argvalue="0"/><function-call call-id="C:/Users/--KentMathias--/Documents/r1q2/client/qmenu.h:131:6" call-funcname="Menu_SetStatusBar" call-argnr="2" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="4214" call-argexpr="(void*)0" call-argvaluetype="0" call-argvalue="0"/>  </FileInfo>
+  <FileInfo check="Bounds checking">
+    <ArrayUsage array="keybindings" index="255" fileName="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="656"/>
+    <ArraySize array="chat_custom_cmd" size="32"/>
+    <ArraySize array="chat_custom_prompt" size="32"/>
+    <ArraySize array="cl_dlights" size="32"/>
+    <ArraySize array="cl_entities" size="1024"/>
+    <ArraySize array="cl_localents" size="1024"/>
+    <ArraySize array="cl_parse_entities" size="1024"/>
+    <ArraySize array="crosshair_pic" size="8"/>
+    <ArraySize array="key_repeats" size="256"/>
+    <ArraySize array="keybindings" size="256"/>
+    <ArraySize array="m_layers" size="8"/>
+    <ArraySize array="m_savevalid" size="15"/>
+    <ArraySize array="map_leafs" size="65536"/>
+    <ArraySize array="net_message_buffer" size="4096"/>
+    <ArraySize array="vec3_origin" size="3"/>
+  </FileInfo>
+  <FileInfo check="Null pointer">
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:279:13" my-argnr="3" my-argname="str" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="281"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:646:13" my-argnr="1" my-argname="command" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="652"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:664:13" my-argnr="1" my-argname="command" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="672"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:664:13" my-argnr="2" my-argname="twokeys" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="671"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:3750:17" my-argnr="1" my-argname="skin" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="3755"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:279:13" my-argnr="3" my-argname="str" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="281"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:646:13" my-argnr="1" my-argname="command" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="652"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:664:13" my-argnr="1" my-argname="command" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="672"/>
+    <unsafe-usage my-id="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c:3750:17" my-argnr="1" my-argname="skin" filename="C:/Users/--KentMathias--/Documents/r1q2/client/menu.c" linenr="3755"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl functionName="ClampCvar" lineNumber="64"/>
+    <functiondecl functionName="M_Banner" lineNumber="80"/>
+    <functiondecl functionName="M_PushMenu" lineNumber="88"/>
+    <functiondecl functionName="M_ForceMenuOff" lineNumber="122"/>
+    <functiondecl functionName="M_PopMenu" lineNumber="132"/>
+    <functiondecl functionName="Default_MenuKey" lineNumber="147"/>
+    <functiondecl functionName="M_DrawCharacter" lineNumber="274"/>
+    <functiondecl functionName="M_Print" lineNumber="279"/>
+    <functiondecl functionName="M_DrawCursor" lineNumber="314"/>
+    <functiondecl functionName="M_DrawTextBox" lineNumber="336"/>
+    <functiondecl functionName="M_Main_Draw" lineNumber="390"/>
+    <functiondecl functionName="M_Main_Key" lineNumber="439"/>
+    <functiondecl functionName="M_Menu_Main_f" lineNumber="493"/>
+    <functiondecl functionName="Multiplayer_MenuDraw" lineNumber="510"/>
+    <functiondecl functionName="PlayerSetupFunc" lineNumber="518"/>
+    <functiondecl functionName="JoinNetworkServerFunc" lineNumber="523"/>
+    <functiondecl functionName="StartNetworkServerFunc" lineNumber="528"/>
+    <functiondecl functionName="Multiplayer_MenuInit" lineNumber="533"/>
+    <functiondecl functionName="Multiplayer_MenuKey" lineNumber="568"/>
+    <functiondecl functionName="M_Menu_Multiplayer_f" lineNumber="573"/>
+    <functiondecl functionName="M_UnbindCommand" lineNumber="646"/>
+    <functiondecl functionName="M_FindKeysForCommand" lineNumber="664"/>
+    <functiondecl functionName="KeyCursorDrawFunc" lineNumber="690"/>
+    <functiondecl functionName="DrawKeyBindingFunc" lineNumber="698"/>
+    <functiondecl functionName="KeyBindingFunc" lineNumber="728"/>
+    <functiondecl functionName="Keys_MenuInit" lineNumber="743"/>
+    <functiondecl functionName="Keys_MenuDraw" lineNumber="966"/>
+    <functiondecl functionName="Keys_MenuKey" lineNumber="979"/>
+    <functiondecl functionName="M_Menu_Keys_f" lineNumber="1014"/>
+    <functiondecl functionName="CrosshairFunc" lineNumber="1069"/>
+    <functiondecl functionName="CustomizeControlsFunc" lineNumber="1081"/>
+    <functiondecl functionName="DeferFunc" lineNumber="1100"/>
+    <functiondecl functionName="AsyncFunc" lineNumber="1105"/>
+    <functiondecl functionName="AutoFunc" lineNumber="1110"/>
+    <functiondecl functionName="RailTrailFunc" lineNumber="1115"/>
+    <functiondecl functionName="R1Q2_MenuInit" lineNumber="1121"/>
+    <functiondecl functionName="R1Q2_MenuDraw" lineNumber="1270"/>
+    <functiondecl functionName="R1Q2_MenuKey" lineNumber="1277"/>
+    <functiondecl functionName="M_Menu_R1Q2_f" lineNumber="1282"/>
+    <functiondecl functionName="R1Q2OptionsMenu" lineNumber="1288"/>
+    <functiondecl functionName="AlwaysRunFunc" lineNumber="1293"/>
+    <functiondecl functionName="FreeLookFunc" lineNumber="1298"/>
+    <functiondecl functionName="MouseSpeedFunc" lineNumber="1303"/>
+    <functiondecl functionName="ControlsSetMenuItemValues" lineNumber="1321"/>
+    <functiondecl functionName="ControlsResetDefaultsFunc" lineNumber="1355"/>
+    <functiondecl functionName="InvertMouseFunc" lineNumber="1363"/>
+    <functiondecl functionName="LookspringFunc" lineNumber="1368"/>
+    <functiondecl functionName="LookstrafeFunc" lineNumber="1373"/>
+    <functiondecl functionName="UpdateVolumeFunc" lineNumber="1378"/>
+    <functiondecl functionName="UpdateCDVolumeFunc" lineNumber="1383"/>
+    <functiondecl functionName="ConsoleFunc" lineNumber="1389"/>
+    <functiondecl functionName="UpdateSoundQualityFunc" lineNumber="1408"/>
+    <functiondecl functionName="Options_MenuInit" lineNumber="1439"/>
+    <functiondecl functionName="Options_MenuDraw" lineNumber="1649"/>
+    <functiondecl functionName="Options_MenuKey" lineNumber="1656"/>
+    <functiondecl functionName="M_Menu_Options_f" lineNumber="1664"/>
+    <functiondecl functionName="M_Menu_Video_f" lineNumber="1678"/>
+    <functiondecl functionName="M_Credits_MenuDraw" lineNumber="2042"/>
+    <functiondecl functionName="M_Credits_Key" lineNumber="2085"/>
+    <functiondecl functionName="M_Menu_Credits_f" lineNumber="2102"/>
+    <functiondecl functionName="StartGame" lineNumber="2176"/>
+    <functiondecl functionName="EasyGameFunc" lineNumber="2199"/>
+    <functiondecl functionName="MediumGameFunc" lineNumber="2205"/>
+    <functiondecl functionName="HardGameFunc" lineNumber="2211"/>
+    <functiondecl functionName="HardPlusGameFunc" lineNumber="2218"/>
+    <functiondecl functionName="LoadGameFunc" lineNumber="2224"/>
+    <functiondecl functionName="SaveGameFunc" lineNumber="2229"/>
+    <functiondecl functionName="CreditsFunc" lineNumber="2234"/>
+    <functiondecl functionName="Game_MenuInit" lineNumber="2239"/>
+    <functiondecl functionName="Game_MenuDraw" lineNumber="2320"/>
+    <functiondecl functionName="Game_MenuKey" lineNumber="2327"/>
+    <functiondecl functionName="M_Menu_Game_f" lineNumber="2332"/>
+    <functiondecl functionName="Create_Savestrings" lineNumber="2357"/>
+    <functiondecl functionName="LoadGameCallback" lineNumber="2381"/>
+    <functiondecl functionName="LoadGame_MenuInit" lineNumber="2390"/>
+    <functiondecl functionName="LoadGame_MenuDraw" lineNumber="2418"/>
+    <functiondecl functionName="LoadGame_MenuKey" lineNumber="2425"/>
+    <functiondecl functionName="M_Menu_LoadGame_f" lineNumber="2436"/>
+    <functiondecl functionName="SaveGameCallback" lineNumber="2453"/>
+    <functiondecl functionName="SaveGame_MenuDraw" lineNumber="2461"/>
+    <functiondecl functionName="SaveGame_MenuInit" lineNumber="2468"/>
+    <functiondecl functionName="SaveGame_MenuKey" lineNumber="2495"/>
+    <functiondecl functionName="M_Menu_SaveGame_f" lineNumber="2506"/>
+    <functiondecl functionName="M_AddToServerList" lineNumber="2541"/>
+    <functiondecl functionName="JoinServerFunc" lineNumber="2562"/>
+    <functiondecl functionName="AddressBookFunc" lineNumber="2580"/>
+    <functiondecl functionName="SearchLocalGames" lineNumber="2589"/>
+    <functiondecl functionName="SearchLocalGamesFunc" lineNumber="2610"/>
+    <functiondecl functionName="JoinServer_MenuInit" lineNumber="2615"/>
+    <functiondecl functionName="JoinServer_MenuDraw" lineNumber="2667"/>
+    <functiondecl functionName="JoinServer_MenuKey" lineNumber="2674"/>
+    <functiondecl functionName="M_Menu_JoinServer_f" lineNumber="2686"/>
+    <functiondecl functionName="DMOptionsFunc" lineNumber="2714"/>
+    <functiondecl functionName="RulesChangeFunc" lineNumber="2721"/>
+    <functiondecl functionName="StartServerActionFunc" lineNumber="2758"/>
+    <functiondecl functionName="StartServer_MenuInit" lineNumber="2829"/>
+    <functiondecl functionName="StartServer_MenuDraw" lineNumber="3035"/>
+    <functiondecl functionName="StartServer_MenuKey" lineNumber="3043"/>
+    <functiondecl functionName="M_Menu_StartServer_f" lineNumber="3062"/>
+    <functiondecl functionName="DMFlagCallback" lineNumber="3102"/>
+    <functiondecl functionName="DMOptions_MenuInit" lineNumber="3245"/>
+    <functiondecl functionName="DMOptions_MenuDraw" lineNumber="3455"/>
+    <functiondecl functionName="DMOptions_MenuKey" lineNumber="3460"/>
+    <functiondecl functionName="M_Menu_DMOptions_f" lineNumber="3465"/>
+    <functiondecl functionName="DownloadCallback" lineNumber="3487"/>
+    <functiondecl functionName="DownloadOptions_MenuInit" lineNumber="3517"/>
+    <functiondecl functionName="DownloadOptions_MenuDraw" lineNumber="3587"/>
+    <functiondecl functionName="DownloadOptions_MenuKey" lineNumber="3592"/>
+    <functiondecl functionName="M_Menu_DownloadOptions_f" lineNumber="3597"/>
+    <functiondecl functionName="AddressBook_MenuInit" lineNumber="3614"/>
+    <functiondecl functionName="AddressBook_MenuKey" lineNumber="3647"/>
+    <functiondecl functionName="AddressBook_MenuDraw" lineNumber="3663"/>
+    <functiondecl functionName="M_Menu_AddressBook_f" lineNumber="3669"/>
+    <functiondecl functionName="DownloadOptionsFunc" lineNumber="3713"/>
+    <functiondecl functionName="HandednessCallback" lineNumber="3718"/>
+    <functiondecl functionName="RateCallback" lineNumber="3723"/>
+    <functiondecl functionName="ModelCallback" lineNumber="3729"/>
+    <functiondecl functionName="FreeFileList" lineNumber="3735"/>
+    <functiondecl functionName="IconOfSkinExists" lineNumber="3750"/>
+    <functiondecl functionName="PlayerConfig_ScanDirectories" lineNumber="3769"/>
+    <functiondecl functionName="pmicmpfnc" lineNumber="3914"/>
+    <functiondecl functionName="PlayerConfig_MenuInit" lineNumber="3936"/>
+    <functiondecl functionName="PlayerConfig_MenuDraw" lineNumber="4104"/>
+    <functiondecl functionName="PlayerConfig_MenuKey" lineNumber="4172"/>
+    <functiondecl functionName="M_Menu_PlayerConfig_f" lineNumber="4207"/>
+    <functiondecl functionName="M_Menu_Quit_f" lineNumber="4227"/>
+    <functiondecl functionName="M_Init" lineNumber="4243"/>
+    <functiondecl functionName="M_Draw" lineNumber="4270"/>
+    <functiondecl functionName="M_Keydown" lineNumber="4304"/>
+    <functiondecl functionName="ClampCvar" lineNumber="64"/>
+    <functiondecl functionName="M_Banner" lineNumber="80"/>
+    <functiondecl functionName="M_PushMenu" lineNumber="88"/>
+    <functiondecl functionName="M_ForceMenuOff" lineNumber="122"/>
+    <functiondecl functionName="M_PopMenu" lineNumber="132"/>
+    <functiondecl functionName="Default_MenuKey" lineNumber="147"/>
+    <functiondecl functionName="M_DrawCharacter" lineNumber="274"/>
+    <functiondecl functionName="M_Print" lineNumber="279"/>
+    <functiondecl functionName="M_DrawCursor" lineNumber="314"/>
+    <functiondecl functionName="M_DrawTextBox" lineNumber="336"/>
+    <functiondecl functionName="M_Main_Draw" lineNumber="390"/>
+    <functiondecl functionName="M_Main_Key" lineNumber="439"/>
+    <functiondecl functionName="M_Menu_Main_f" lineNumber="493"/>
+    <functiondecl functionName="Multiplayer_MenuDraw" lineNumber="510"/>
+    <functiondecl functionName="PlayerSetupFunc" lineNumber="518"/>
+    <functiondecl functionName="JoinNetworkServerFunc" lineNumber="523"/>
+    <functiondecl functionName="StartNetworkServerFunc" lineNumber="528"/>
+    <functiondecl functionName="Multiplayer_MenuInit" lineNumber="533"/>
+    <functiondecl functionName="Multiplayer_MenuKey" lineNumber="568"/>
+    <functiondecl functionName="M_Menu_Multiplayer_f" lineNumber="573"/>
+    <functiondecl functionName="M_UnbindCommand" lineNumber="646"/>
+    <functiondecl functionName="M_FindKeysForCommand" lineNumber="664"/>
+    <functiondecl functionName="KeyCursorDrawFunc" lineNumber="690"/>
+    <functiondecl functionName="DrawKeyBindingFunc" lineNumber="698"/>
+    <functiondecl functionName="KeyBindingFunc" lineNumber="728"/>
+    <functiondecl functionName="Keys_MenuInit" lineNumber="743"/>
+    <functiondecl functionName="Keys_MenuDraw" lineNumber="966"/>
+    <functiondecl functionName="Keys_MenuKey" lineNumber="979"/>
+    <functiondecl functionName="M_Menu_Keys_f" lineNumber="1014"/>
+    <functiondecl functionName="CrosshairFunc" lineNumber="1069"/>
+    <functiondecl functionName="CustomizeControlsFunc" lineNumber="1081"/>
+    <functiondecl functionName="DirectInputFunc" lineNumber="1087"/>
+    <functiondecl functionName="AccelFixFunc" lineNumber="1093"/>
+    <functiondecl functionName="DeferFunc" lineNumber="1100"/>
+    <functiondecl functionName="AsyncFunc" lineNumber="1105"/>
+    <functiondecl functionName="AutoFunc" lineNumber="1110"/>
+    <functiondecl functionName="RailTrailFunc" lineNumber="1115"/>
+    <functiondecl functionName="R1Q2_MenuInit" lineNumber="1121"/>
+    <functiondecl functionName="R1Q2_MenuDraw" lineNumber="1270"/>
+    <functiondecl functionName="R1Q2_MenuKey" lineNumber="1277"/>
+    <functiondecl functionName="M_Menu_R1Q2_f" lineNumber="1282"/>
+    <functiondecl functionName="R1Q2OptionsMenu" lineNumber="1288"/>
+    <functiondecl functionName="AlwaysRunFunc" lineNumber="1293"/>
+    <functiondecl functionName="FreeLookFunc" lineNumber="1298"/>
+    <functiondecl functionName="MouseSpeedFunc" lineNumber="1303"/>
+    <functiondecl functionName="ControlsSetMenuItemValues" lineNumber="1321"/>
+    <functiondecl functionName="ControlsResetDefaultsFunc" lineNumber="1355"/>
+    <functiondecl functionName="InvertMouseFunc" lineNumber="1363"/>
+    <functiondecl functionName="LookspringFunc" lineNumber="1368"/>
+    <functiondecl functionName="LookstrafeFunc" lineNumber="1373"/>
+    <functiondecl functionName="UpdateVolumeFunc" lineNumber="1378"/>
+    <functiondecl functionName="UpdateCDVolumeFunc" lineNumber="1383"/>
+    <functiondecl functionName="ConsoleFunc" lineNumber="1389"/>
+    <functiondecl functionName="UpdateSoundQualityFunc" lineNumber="1408"/>
+    <functiondecl functionName="Options_MenuInit" lineNumber="1439"/>
+    <functiondecl functionName="Options_MenuDraw" lineNumber="1649"/>
+    <functiondecl functionName="Options_MenuKey" lineNumber="1656"/>
+    <functiondecl functionName="M_Menu_Options_f" lineNumber="1664"/>
+    <functiondecl functionName="M_Menu_Video_f" lineNumber="1678"/>
+    <functiondecl functionName="M_Credits_MenuDraw" lineNumber="2042"/>
+    <functiondecl functionName="M_Credits_Key" lineNumber="2085"/>
+    <functiondecl functionName="M_Menu_Credits_f" lineNumber="2102"/>
+    <functiondecl functionName="StartGame" lineNumber="2176"/>
+    <functiondecl functionName="EasyGameFunc" lineNumber="2199"/>
+    <functiondecl functionName="MediumGameFunc" lineNumber="2205"/>
+    <functiondecl functionName="HardGameFunc" lineNumber="2211"/>
+    <functiondecl functionName="HardPlusGameFunc" lineNumber="2218"/>
+    <functiondecl functionName="LoadGameFunc" lineNumber="2224"/>
+    <functiondecl functionName="SaveGameFunc" lineNumber="2229"/>
+    <functiondecl functionName="CreditsFunc" lineNumber="2234"/>
+    <functiondecl functionName="Game_MenuInit" lineNumber="2239"/>
+    <functiondecl functionName="Game_MenuDraw" lineNumber="2320"/>
+    <functiondecl functionName="Game_MenuKey" lineNumber="2327"/>
+    <functiondecl functionName="M_Menu_Game_f" lineNumber="2332"/>
+    <functiondecl functionName="Create_Savestrings" lineNumber="2357"/>
+    <functiondecl functionName="LoadGameCallback" lineNumber="2381"/>
+    <functiondecl functionName="LoadGame_MenuInit" lineNumber="2390"/>
+    <functiondecl functionName="LoadGame_MenuDraw" lineNumber="2418"/>
+    <functiondecl functionName="LoadGame_MenuKey" lineNumber="2425"/>
+    <functiondecl functionName="M_Menu_LoadGame_f" lineNumber="2436"/>
+    <functiondecl functionName="SaveGameCallback" lineNumber="2453"/>
+    <functiondecl functionName="SaveGame_MenuDraw" lineNumber="2461"/>
+    <functiondecl functionName="SaveGame_MenuInit" lineNumber="2468"/>
+    <functiondecl functionName="SaveGame_MenuKey" lineNumber="2495"/>
+    <functiondecl functionName="M_Menu_SaveGame_f" lineNumber="2506"/>
+    <functiondecl functionName="M_AddToServerList" lineNumber="2541"/>
+    <functiondecl functionName="JoinServerFunc" lineNumber="2562"/>
+    <functiondecl functionName="AddressBookFunc" lineNumber="2580"/>
+    <functiondecl functionName="SearchLocalGames" lineNumber="2589"/>
+    <functiondecl functionName="SearchLocalGamesFunc" lineNumber="2610"/>
+    <functiondecl functionName="JoinServer_MenuInit" lineNumber="2615"/>
+    <functiondecl functionName="JoinServer_MenuDraw" lineNumber="2667"/>
+    <functiondecl functionName="JoinServer_MenuKey" lineNumber="2674"/>
+    <functiondecl functionName="M_Menu_JoinServer_f" lineNumber="2686"/>
+    <functiondecl functionName="DMOptionsFunc" lineNumber="2714"/>
+    <functiondecl functionName="RulesChangeFunc" lineNumber="2721"/>
+    <functiondecl functionName="StartServerActionFunc" lineNumber="2758"/>
+    <functiondecl functionName="StartServer_MenuInit" lineNumber="2829"/>
+    <functiondecl functionName="StartServer_MenuDraw" lineNumber="3035"/>
+    <functiondecl functionName="StartServer_MenuKey" lineNumber="3043"/>
+    <functiondecl functionName="M_Menu_StartServer_f" lineNumber="3062"/>
+    <functiondecl functionName="DMFlagCallback" lineNumber="3102"/>
+    <functiondecl functionName="DMOptions_MenuInit" lineNumber="3245"/>
+    <functiondecl functionName="DMOptions_MenuDraw" lineNumber="3455"/>
+    <functiondecl functionName="DMOptions_MenuKey" lineNumber="3460"/>
+    <functiondecl functionName="M_Menu_DMOptions_f" lineNumber="3465"/>
+    <functiondecl functionName="DownloadCallback" lineNumber="3487"/>
+    <functiondecl functionName="DownloadOptions_MenuInit" lineNumber="3517"/>
+    <functiondecl functionName="DownloadOptions_MenuDraw" lineNumber="3587"/>
+    <functiondecl functionName="DownloadOptions_MenuKey" lineNumber="3592"/>
+    <functiondecl functionName="M_Menu_DownloadOptions_f" lineNumber="3597"/>
+    <functiondecl functionName="AddressBook_MenuInit" lineNumber="3614"/>
+    <functiondecl functionName="AddressBook_MenuKey" lineNumber="3647"/>
+    <functiondecl functionName="AddressBook_MenuDraw" lineNumber="3663"/>
+    <functiondecl functionName="M_Menu_AddressBook_f" lineNumber="3669"/>
+    <functiondecl functionName="DownloadOptionsFunc" lineNumber="3713"/>
+    <functiondecl functionName="HandednessCallback" lineNumber="3718"/>
+    <functiondecl functionName="RateCallback" lineNumber="3723"/>
+    <functiondecl functionName="ModelCallback" lineNumber="3729"/>
+    <functiondecl functionName="FreeFileList" lineNumber="3735"/>
+    <functiondecl functionName="IconOfSkinExists" lineNumber="3750"/>
+    <functiondecl functionName="PlayerConfig_ScanDirectories" lineNumber="3769"/>
+    <functiondecl functionName="pmicmpfnc" lineNumber="3914"/>
+    <functiondecl functionName="PlayerConfig_MenuInit" lineNumber="3936"/>
+    <functiondecl functionName="PlayerConfig_MenuDraw" lineNumber="4104"/>
+    <functiondecl functionName="PlayerConfig_MenuKey" lineNumber="4172"/>
+    <functiondecl functionName="M_Menu_PlayerConfig_f" lineNumber="4207"/>
+    <functiondecl functionName="M_Menu_Quit_f" lineNumber="4227"/>
+    <functiondecl functionName="M_Init" lineNumber="4243"/>
+    <functiondecl functionName="M_Draw" lineNumber="4270"/>
+    <functiondecl functionName="M_Keydown" lineNumber="4304"/>
+    <functiondecl functionName="ClampCvar" lineNumber="64"/>
+    <functiondecl functionName="M_Banner" lineNumber="80"/>
+    <functiondecl functionName="M_PushMenu" lineNumber="88"/>
+    <functiondecl functionName="M_ForceMenuOff" lineNumber="122"/>
+    <functiondecl functionName="M_PopMenu" lineNumber="132"/>
+    <functiondecl functionName="Default_MenuKey" lineNumber="147"/>
+    <functiondecl functionName="M_DrawCharacter" lineNumber="274"/>
+    <functiondecl functionName="M_Print" lineNumber="279"/>
+    <functiondecl functionName="M_DrawCursor" lineNumber="314"/>
+    <functiondecl functionName="M_DrawTextBox" lineNumber="336"/>
+    <functiondecl functionName="M_Main_Draw" lineNumber="390"/>
+    <functiondecl functionName="M_Main_Key" lineNumber="439"/>
+    <functiondecl functionName="M_Menu_Main_f" lineNumber="493"/>
+    <functiondecl functionName="Multiplayer_MenuDraw" lineNumber="510"/>
+    <functiondecl functionName="PlayerSetupFunc" lineNumber="518"/>
+    <functiondecl functionName="JoinNetworkServerFunc" lineNumber="523"/>
+    <functiondecl functionName="StartNetworkServerFunc" lineNumber="528"/>
+    <functiondecl functionName="Multiplayer_MenuInit" lineNumber="533"/>
+    <functiondecl functionName="Multiplayer_MenuKey" lineNumber="568"/>
+    <functiondecl functionName="M_Menu_Multiplayer_f" lineNumber="573"/>
+    <functiondecl functionName="M_UnbindCommand" lineNumber="646"/>
+    <functiondecl functionName="M_FindKeysForCommand" lineNumber="664"/>
+    <functiondecl functionName="KeyCursorDrawFunc" lineNumber="690"/>
+    <functiondecl functionName="DrawKeyBindingFunc" lineNumber="698"/>
+    <functiondecl functionName="KeyBindingFunc" lineNumber="728"/>
+    <functiondecl functionName="Keys_MenuInit" lineNumber="743"/>
+    <functiondecl functionName="Keys_MenuDraw" lineNumber="966"/>
+    <functiondecl functionName="Keys_MenuKey" lineNumber="979"/>
+    <functiondecl functionName="M_Menu_Keys_f" lineNumber="1014"/>
+    <functiondecl functionName="CrosshairFunc" lineNumber="1069"/>
+    <functiondecl functionName="CustomizeControlsFunc" lineNumber="1081"/>
+    <functiondecl functionName="DirectInputFunc" lineNumber="1087"/>
+    <functiondecl functionName="AccelFixFunc" lineNumber="1093"/>
+    <functiondecl functionName="DeferFunc" lineNumber="1100"/>
+    <functiondecl functionName="AsyncFunc" lineNumber="1105"/>
+    <functiondecl functionName="AutoFunc" lineNumber="1110"/>
+    <functiondecl functionName="RailTrailFunc" lineNumber="1115"/>
+    <functiondecl functionName="R1Q2_MenuInit" lineNumber="1121"/>
+    <functiondecl functionName="R1Q2_MenuDraw" lineNumber="1270"/>
+    <functiondecl functionName="R1Q2_MenuKey" lineNumber="1277"/>
+    <functiondecl functionName="M_Menu_R1Q2_f" lineNumber="1282"/>
+    <functiondecl functionName="R1Q2OptionsMenu" lineNumber="1288"/>
+    <functiondecl functionName="AlwaysRunFunc" lineNumber="1293"/>
+    <functiondecl functionName="FreeLookFunc" lineNumber="1298"/>
+    <functiondecl functionName="MouseSpeedFunc" lineNumber="1303"/>
+    <functiondecl functionName="ControlsSetMenuItemValues" lineNumber="1321"/>
+    <functiondecl functionName="ControlsResetDefaultsFunc" lineNumber="1355"/>
+    <functiondecl functionName="InvertMouseFunc" lineNumber="1363"/>
+    <functiondecl functionName="LookspringFunc" lineNumber="1368"/>
+    <functiondecl functionName="LookstrafeFunc" lineNumber="1373"/>
+    <functiondecl functionName="UpdateVolumeFunc" lineNumber="1378"/>
+    <functiondecl functionName="UpdateCDVolumeFunc" lineNumber="1383"/>
+    <functiondecl functionName="ConsoleFunc" lineNumber="1389"/>
+    <functiondecl functionName="UpdateSoundQualityFunc" lineNumber="1408"/>
+    <functiondecl functionName="Options_MenuInit" lineNumber="1439"/>
+    <functiondecl functionName="Options_MenuDraw" lineNumber="1649"/>
+    <functiondecl functionName="Options_MenuKey" lineNumber="1656"/>
+    <functiondecl functionName="M_Menu_Options_f" lineNumber="1664"/>
+    <functiondecl functionName="M_Menu_Video_f" lineNumber="1678"/>
+    <functiondecl functionName="M_Credits_MenuDraw" lineNumber="2042"/>
+    <functiondecl functionName="M_Credits_Key" lineNumber="2085"/>
+    <functiondecl functionName="M_Menu_Credits_f" lineNumber="2102"/>
+    <functiondecl functionName="StartGame" lineNumber="2176"/>
+    <functiondecl functionName="EasyGameFunc" lineNumber="2199"/>
+    <functiondecl functionName="MediumGameFunc" lineNumber="2205"/>
+    <functiondecl functionName="HardGameFunc" lineNumber="2211"/>
+    <functiondecl functionName="HardPlusGameFunc" lineNumber="2218"/>
+    <functiondecl functionName="LoadGameFunc" lineNumber="2224"/>
+    <functiondecl functionName="SaveGameFunc" lineNumber="2229"/>
+    <functiondecl functionName="CreditsFunc" lineNumber="2234"/>
+    <functiondecl functionName="Game_MenuInit" lineNumber="2239"/>
+    <functiondecl functionName="Game_MenuDraw" lineNumber="2320"/>
+    <functiondecl functionName="Game_MenuKey" lineNumber="2327"/>
+    <functiondecl functionName="M_Menu_Game_f" lineNumber="2332"/>
+    <functiondecl functionName="Create_Savestrings" lineNumber="2357"/>
+    <functiondecl functionName="LoadGameCallback" lineNumber="2381"/>
+    <functiondecl functionName="LoadGame_MenuInit" lineNumber="2390"/>
+    <functiondecl functionName="LoadGame_MenuDraw" lineNumber="2418"/>
+    <functiondecl functionName="LoadGame_MenuKey" lineNumber="2425"/>
+    <functiondecl functionName="M_Menu_LoadGame_f" lineNumber="2436"/>
+    <functiondecl functionName="SaveGameCallback" lineNumber="2453"/>
+    <functiondecl functionName="SaveGame_MenuDraw" lineNumber="2461"/>
+    <functiondecl functionName="SaveGame_MenuInit" lineNumber="2468"/>
+    <functiondecl functionName="SaveGame_MenuKey" lineNumber="2495"/>
+    <functiondecl functionName="M_Menu_SaveGame_f" lineNumber="2506"/>
+    <functiondecl functionName="M_AddToServerList" lineNumber="2541"/>
+    <functiondecl functionName="JoinServerFunc" lineNumber="2562"/>
+    <functiondecl functionName="AddressBookFunc" lineNumber="2580"/>
+    <functiondecl functionName="SearchLocalGames" lineNumber="2589"/>
+    <functiondecl functionName="SearchLocalGamesFunc" lineNumber="2610"/>
+    <functiondecl functionName="JoinServer_MenuInit" lineNumber="2615"/>
+    <functiondecl functionName="JoinServer_MenuDraw" lineNumber="2667"/>
+    <functiondecl functionName="JoinServer_MenuKey" lineNumber="2674"/>
+    <functiondecl functionName="M_Menu_JoinServer_f" lineNumber="2686"/>
+    <functiondecl functionName="DMOptionsFunc" lineNumber="2714"/>
+    <functiondecl functionName="RulesChangeFunc" lineNumber="2721"/>
+    <functiondecl functionName="StartServerActionFunc" lineNumber="2758"/>
+    <functiondecl functionName="StartServer_MenuInit" lineNumber="2829"/>
+    <functiondecl functionName="StartServer_MenuDraw" lineNumber="3035"/>
+    <functiondecl functionName="StartServer_MenuKey" lineNumber="3043"/>
+    <functiondecl functionName="M_Menu_StartServer_f" lineNumber="3062"/>
+    <functiondecl functionName="DMFlagCallback" lineNumber="3102"/>
+    <functiondecl functionName="DMOptions_MenuInit" lineNumber="3245"/>
+    <functiondecl functionName="DMOptions_MenuDraw" lineNumber="3455"/>
+    <functiondecl functionName="DMOptions_MenuKey" lineNumber="3460"/>
+    <functiondecl functionName="M_Menu_DMOptions_f" lineNumber="3465"/>
+    <functiondecl functionName="DownloadCallback" lineNumber="3487"/>
+    <functiondecl functionName="DownloadOptions_MenuInit" lineNumber="3517"/>
+    <functiondecl functionName="DownloadOptions_MenuDraw" lineNumber="3587"/>
+    <functiondecl functionName="DownloadOptions_MenuKey" lineNumber="3592"/>
+    <functiondecl functionName="M_Menu_DownloadOptions_f" lineNumber="3597"/>
+    <functiondecl functionName="AddressBook_MenuInit" lineNumber="3614"/>
+    <functiondecl functionName="AddressBook_MenuKey" lineNumber="3647"/>
+    <functiondecl functionName="AddressBook_MenuDraw" lineNumber="3663"/>
+    <functiondecl functionName="M_Menu_AddressBook_f" lineNumber="3669"/>
+    <functiondecl functionName="DownloadOptionsFunc" lineNumber="3713"/>
+    <functiondecl functionName="HandednessCallback" lineNumber="3718"/>
+    <functiondecl functionName="RateCallback" lineNumber="3723"/>
+    <functiondecl functionName="ModelCallback" lineNumber="3729"/>
+    <functiondecl functionName="FreeFileList" lineNumber="3735"/>
+    <functiondecl functionName="IconOfSkinExists" lineNumber="3750"/>
+    <functiondecl functionName="PlayerConfig_ScanDirectories" lineNumber="3769"/>
+    <functiondecl functionName="pmicmpfnc" lineNumber="3914"/>
+    <functiondecl functionName="PlayerConfig_MenuInit" lineNumber="3936"/>
+    <functiondecl functionName="PlayerConfig_MenuDraw" lineNumber="4104"/>
+    <functiondecl functionName="PlayerConfig_MenuKey" lineNumber="4172"/>
+    <functiondecl functionName="M_Menu_PlayerConfig_f" lineNumber="4207"/>
+    <functiondecl functionName="M_Menu_Quit_f" lineNumber="4227"/>
+    <functiondecl functionName="M_Init" lineNumber="4243"/>
+    <functiondecl functionName="M_Draw" lineNumber="4270"/>
+    <functiondecl functionName="M_Keydown" lineNumber="4304"/>
+    <functiondecl functionName="ClampCvar" lineNumber="64"/>
+    <functiondecl functionName="M_Banner" lineNumber="80"/>
+    <functiondecl functionName="M_PushMenu" lineNumber="88"/>
+    <functiondecl functionName="M_ForceMenuOff" lineNumber="122"/>
+    <functiondecl functionName="M_PopMenu" lineNumber="132"/>
+    <functiondecl functionName="Default_MenuKey" lineNumber="147"/>
+    <functiondecl functionName="M_DrawCharacter" lineNumber="274"/>
+    <functiondecl functionName="M_Print" lineNumber="279"/>
+    <functiondecl functionName="M_DrawCursor" lineNumber="314"/>
+    <functiondecl functionName="M_DrawTextBox" lineNumber="336"/>
+    <functiondecl functionName="M_Main_Draw" lineNumber="390"/>
+    <functiondecl functionName="M_Main_Key" lineNumber="439"/>
+    <functiondecl functionName="M_Menu_Main_f" lineNumber="493"/>
+    <functiondecl functionName="Multiplayer_MenuDraw" lineNumber="510"/>
+    <functiondecl functionName="PlayerSetupFunc" lineNumber="518"/>
+    <functiondecl functionName="JoinNetworkServerFunc" lineNumber="523"/>
+    <functiondecl functionName="StartNetworkServerFunc" lineNumber="528"/>
+    <functiondecl functionName="Multiplayer_MenuInit" lineNumber="533"/>
+    <functiondecl functionName="Multiplayer_MenuKey" lineNumber="568"/>
+    <functiondecl functionName="M_Menu_Multiplayer_f" lineNumber="573"/>
+    <functiondecl functionName="M_UnbindCommand" lineNumber="646"/>
+    <functiondecl functionName="M_FindKeysForCommand" lineNumber="664"/>
+    <functiondecl functionName="KeyCursorDrawFunc" lineNumber="690"/>
+    <functiondecl functionName="DrawKeyBindingFunc" lineNumber="698"/>
+    <functiondecl functionName="KeyBindingFunc" lineNumber="728"/>
+    <functiondecl functionName="Keys_MenuInit" lineNumber="743"/>
+    <functiondecl functionName="Keys_MenuDraw" lineNumber="966"/>
+    <functiondecl functionName="Keys_MenuKey" lineNumber="979"/>
+    <functiondecl functionName="M_Menu_Keys_f" lineNumber="1014"/>
+    <functiondecl functionName="CrosshairFunc" lineNumber="1069"/>
+    <functiondecl functionName="CustomizeControlsFunc" lineNumber="1081"/>
+    <functiondecl functionName="DirectInputFunc" lineNumber="1087"/>
+    <functiondecl functionName="AccelFixFunc" lineNumber="1093"/>
+    <functiondecl functionName="DeferFunc" lineNumber="1100"/>
+    <functiondecl functionName="AsyncFunc" lineNumber="1105"/>
+    <functiondecl functionName="AutoFunc" lineNumber="1110"/>
+    <functiondecl functionName="RailTrailFunc" lineNumber="1115"/>
+    <functiondecl functionName="R1Q2_MenuInit" lineNumber="1121"/>
+    <functiondecl functionName="R1Q2_MenuDraw" lineNumber="1270"/>
+    <functiondecl functionName="R1Q2_MenuKey" lineNumber="1277"/>
+    <functiondecl functionName="M_Menu_R1Q2_f" lineNumber="1282"/>
+    <functiondecl functionName="R1Q2OptionsMenu" lineNumber="1288"/>
+    <functiondecl functionName="AlwaysRunFunc" lineNumber="1293"/>
+    <functiondecl functionName="FreeLookFunc" lineNumber="1298"/>
+    <functiondecl functionName="MouseSpeedFunc" lineNumber="1303"/>
+    <functiondecl functionName="ControlsSetMenuItemValues" lineNumber="1321"/>
+    <functiondecl functionName="ControlsResetDefaultsFunc" lineNumber="1355"/>
+    <functiondecl functionName="InvertMouseFunc" lineNumber="1363"/>
+    <functiondecl functionName="LookspringFunc" lineNumber="1368"/>
+    <functiondecl functionName="LookstrafeFunc" lineNumber="1373"/>
+    <functiondecl functionName="UpdateVolumeFunc" lineNumber="1378"/>
+    <functiondecl functionName="UpdateCDVolumeFunc" lineNumber="1383"/>
+    <functiondecl functionName="ConsoleFunc" lineNumber="1389"/>
+    <functiondecl functionName="UpdateSoundQualityFunc" lineNumber="1408"/>
+    <functiondecl functionName="Options_MenuInit" lineNumber="1439"/>
+    <functiondecl functionName="Options_MenuDraw" lineNumber="1649"/>
+    <functiondecl functionName="Options_MenuKey" lineNumber="1656"/>
+    <functiondecl functionName="M_Menu_Options_f" lineNumber="1664"/>
+    <functiondecl functionName="M_Menu_Video_f" lineNumber="1678"/>
+    <functiondecl functionName="M_Credits_MenuDraw" lineNumber="2042"/>
+    <functiondecl functionName="M_Credits_Key" lineNumber="2085"/>
+    <functiondecl functionName="M_Menu_Credits_f" lineNumber="2102"/>
+    <functiondecl functionName="StartGame" lineNumber="2176"/>
+    <functiondecl functionName="EasyGameFunc" lineNumber="2199"/>
+    <functiondecl functionName="MediumGameFunc" lineNumber="2205"/>
+    <functiondecl functionName="HardGameFunc" lineNumber="2211"/>
+    <functiondecl functionName="HardPlusGameFunc" lineNumber="2218"/>
+    <functiondecl functionName="LoadGameFunc" lineNumber="2224"/>
+    <functiondecl functionName="SaveGameFunc" lineNumber="2229"/>
+    <functiondecl functionName="CreditsFunc" lineNumber="2234"/>
+    <functiondecl functionName="Game_MenuInit" lineNumber="2239"/>
+    <functiondecl functionName="Game_MenuDraw" lineNumber="2320"/>
+    <functiondecl functionName="Game_MenuKey" lineNumber="2327"/>
+    <functiondecl functionName="M_Menu_Game_f" lineNumber="2332"/>
+    <functiondecl functionName="Create_Savestrings" lineNumber="2357"/>
+    <functiondecl functionName="LoadGameCallback" lineNumber="2381"/>
+    <functiondecl functionName="LoadGame_MenuInit" lineNumber="2390"/>
+    <functiondecl functionName="LoadGame_MenuDraw" lineNumber="2418"/>
+    <functiondecl functionName="LoadGame_MenuKey" lineNumber="2425"/>
+    <functiondecl functionName="M_Menu_LoadGame_f" lineNumber="2436"/>
+    <functiondecl functionName="SaveGameCallback" lineNumber="2453"/>
+    <functiondecl functionName="SaveGame_MenuDraw" lineNumber="2461"/>
+    <functiondecl functionName="SaveGame_MenuInit" lineNumber="2468"/>
+    <functiondecl functionName="SaveGame_MenuKey" lineNumber="2495"/>
+    <functiondecl functionName="M_Menu_SaveGame_f" lineNumber="2506"/>
+    <functiondecl functionName="M_AddToServerList" lineNumber="2541"/>
+    <functiondecl functionName="JoinServerFunc" lineNumber="2562"/>
+    <functiondecl functionName="AddressBookFunc" lineNumber="2580"/>
+    <functiondecl functionName="SearchLocalGames" lineNumber="2589"/>
+    <functiondecl functionName="SearchLocalGamesFunc" lineNumber="2610"/>
+    <functiondecl functionName="JoinServer_MenuInit" lineNumber="2615"/>
+    <functiondecl functionName="JoinServer_MenuDraw" lineNumber="2667"/>
+    <functiondecl functionName="JoinServer_MenuKey" lineNumber="2674"/>
+    <functiondecl functionName="M_Menu_JoinServer_f" lineNumber="2686"/>
+    <functiondecl functionName="DMOptionsFunc" lineNumber="2714"/>
+    <functiondecl functionName="RulesChangeFunc" lineNumber="2721"/>
+    <functiondecl functionName="StartServerActionFunc" lineNumber="2758"/>
+    <functiondecl functionName="StartServer_MenuInit" lineNumber="2829"/>
+    <functiondecl functionName="StartServer_MenuDraw" lineNumber="3035"/>
+    <functiondecl functionName="StartServer_MenuKey" lineNumber="3043"/>
+    <functiondecl functionName="M_Menu_StartServer_f" lineNumber="3062"/>
+    <functiondecl functionName="DMFlagCallback" lineNumber="3102"/>
+    <functiondecl functionName="DMOptions_MenuInit" lineNumber="3245"/>
+    <functiondecl functionName="DMOptions_MenuDraw" lineNumber="3455"/>
+    <functiondecl functionName="DMOptions_MenuKey" lineNumber="3460"/>
+    <functiondecl functionName="M_Menu_DMOptions_f" lineNumber="3465"/>
+    <functiondecl functionName="DownloadCallback" lineNumber="3487"/>
+    <functiondecl functionName="DownloadOptions_MenuInit" lineNumber="3517"/>
+    <functiondecl functionName="DownloadOptions_MenuDraw" lineNumber="3587"/>
+    <functiondecl functionName="DownloadOptions_MenuKey" lineNumber="3592"/>
+    <functiondecl functionName="M_Menu_DownloadOptions_f" lineNumber="3597"/>
+    <functiondecl functionName="AddressBook_MenuInit" lineNumber="3614"/>
+    <functiondecl functionName="AddressBook_MenuKey" lineNumber="3647"/>
+    <functiondecl functionName="AddressBook_MenuDraw" lineNumber="3663"/>
+    <functiondecl functionName="M_Menu_AddressBook_f" lineNumber="3669"/>
+    <functiondecl functionName="DownloadOptionsFunc" lineNumber="3713"/>
+    <functiondecl functionName="HandednessCallback" lineNumber="3718"/>
+    <functiondecl functionName="RateCallback" lineNumber="3723"/>
+    <functiondecl functionName="ModelCallback" lineNumber="3729"/>
+    <functiondecl functionName="FreeFileList" lineNumber="3735"/>
+    <functiondecl functionName="IconOfSkinExists" lineNumber="3750"/>
+    <functiondecl functionName="PlayerConfig_ScanDirectories" lineNumber="3769"/>
+    <functiondecl functionName="pmicmpfnc" lineNumber="3914"/>
+    <functiondecl functionName="PlayerConfig_MenuInit" lineNumber="3936"/>
+    <functiondecl functionName="PlayerConfig_MenuDraw" lineNumber="4104"/>
+    <functiondecl functionName="PlayerConfig_MenuKey" lineNumber="4172"/>
+    <functiondecl functionName="M_Menu_PlayerConfig_f" lineNumber="4207"/>
+    <functiondecl functionName="M_Menu_Quit_f" lineNumber="4227"/>
+    <functiondecl functionName="M_Init" lineNumber="4243"/>
+    <functiondecl functionName="M_Draw" lineNumber="4270"/>
+    <functiondecl functionName="M_Keydown" lineNumber="4304"/>
+    <functiondecl functionName="ClampCvar" lineNumber="64"/>
+    <functiondecl functionName="M_Banner" lineNumber="80"/>
+    <functiondecl functionName="M_PushMenu" lineNumber="88"/>
+    <functiondecl functionName="M_ForceMenuOff" lineNumber="122"/>
+    <functiondecl functionName="M_PopMenu" lineNumber="132"/>
+    <functiondecl functionName="Default_MenuKey" lineNumber="147"/>
+    <functiondecl functionName="M_DrawCharacter" lineNumber="274"/>
+    <functiondecl functionName="M_Print" lineNumber="279"/>
+    <functiondecl functionName="M_DrawCursor" lineNumber="314"/>
+    <functiondecl functionName="M_DrawTextBox" lineNumber="336"/>
+    <functiondecl functionName="M_Main_Draw" lineNumber="390"/>
+    <functiondecl functionName="M_Main_Key" lineNumber="439"/>
+    <functiondecl functionName="M_Menu_Main_f" lineNumber="493"/>
+    <functiondecl functionName="Multiplayer_MenuDraw" lineNumber="510"/>
+    <functiondecl functionName="PlayerSetupFunc" lineNumber="518"/>
+    <functiondecl functionName="JoinNetworkServerFunc" lineNumber="523"/>
+    <functiondecl functionName="StartNetworkServerFunc" lineNumber="528"/>
+    <functiondecl functionName="Multiplayer_MenuInit" lineNumber="533"/>
+    <functiondecl functionName="Multiplayer_MenuKey" lineNumber="568"/>
+    <functiondecl functionName="M_Menu_Multiplayer_f" lineNumber="573"/>
+    <functiondecl functionName="M_UnbindCommand" lineNumber="646"/>
+    <functiondecl functionName="M_FindKeysForCommand" lineNumber="664"/>
+    <functiondecl functionName="KeyCursorDrawFunc" lineNumber="690"/>
+    <functiondecl functionName="DrawKeyBindingFunc" lineNumber="698"/>
+    <functiondecl functionName="KeyBindingFunc" lineNumber="728"/>
+    <functiondecl functionName="Keys_MenuInit" lineNumber="743"/>
+    <functiondecl functionName="Keys_MenuDraw" lineNumber="966"/>
+    <functiondecl functionName="Keys_MenuKey" lineNumber="979"/>
+    <functiondecl functionName="M_Menu_Keys_f" lineNumber="1014"/>
+    <functiondecl functionName="CrosshairFunc" lineNumber="1069"/>
+    <functiondecl functionName="CustomizeControlsFunc" lineNumber="1081"/>
+    <functiondecl functionName="DeferFunc" lineNumber="1100"/>
+    <functiondecl functionName="AsyncFunc" lineNumber="1105"/>
+    <functiondecl functionName="AutoFunc" lineNumber="1110"/>
+    <functiondecl functionName="RailTrailFunc" lineNumber="1115"/>
+    <functiondecl functionName="R1Q2_MenuInit" lineNumber="1121"/>
+    <functiondecl functionName="R1Q2_MenuDraw" lineNumber="1270"/>
+    <functiondecl functionName="R1Q2_MenuKey" lineNumber="1277"/>
+    <functiondecl functionName="M_Menu_R1Q2_f" lineNumber="1282"/>
+    <functiondecl functionName="R1Q2OptionsMenu" lineNumber="1288"/>
+    <functiondecl functionName="AlwaysRunFunc" lineNumber="1293"/>
+    <functiondecl functionName="FreeLookFunc" lineNumber="1298"/>
+    <functiondecl functionName="MouseSpeedFunc" lineNumber="1303"/>
+    <functiondecl functionName="ControlsSetMenuItemValues" lineNumber="1321"/>
+    <functiondecl functionName="ControlsResetDefaultsFunc" lineNumber="1355"/>
+    <functiondecl functionName="InvertMouseFunc" lineNumber="1363"/>
+    <functiondecl functionName="LookspringFunc" lineNumber="1368"/>
+    <functiondecl functionName="LookstrafeFunc" lineNumber="1373"/>
+    <functiondecl functionName="UpdateVolumeFunc" lineNumber="1378"/>
+    <functiondecl functionName="UpdateCDVolumeFunc" lineNumber="1383"/>
+    <functiondecl functionName="ConsoleFunc" lineNumber="1389"/>
+    <functiondecl functionName="UpdateSoundQualityFunc" lineNumber="1408"/>
+    <functiondecl functionName="Options_MenuInit" lineNumber="1439"/>
+    <functiondecl functionName="Options_MenuDraw" lineNumber="1649"/>
+    <functiondecl functionName="Options_MenuKey" lineNumber="1656"/>
+    <functiondecl functionName="M_Menu_Options_f" lineNumber="1664"/>
+    <functiondecl functionName="M_Menu_Video_f" lineNumber="1678"/>
+    <functiondecl functionName="M_Credits_MenuDraw" lineNumber="2042"/>
+    <functiondecl functionName="M_Credits_Key" lineNumber="2085"/>
+    <functiondecl functionName="M_Menu_Credits_f" lineNumber="2102"/>
+    <functiondecl functionName="StartGame" lineNumber="2176"/>
+    <functiondecl functionName="EasyGameFunc" lineNumber="2199"/>
+    <functiondecl functionName="MediumGameFunc" lineNumber="2205"/>
+    <functiondecl functionName="HardGameFunc" lineNumber="2211"/>
+    <functiondecl functionName="HardPlusGameFunc" lineNumber="2218"/>
+    <functiondecl functionName="LoadGameFunc" lineNumber="2224"/>
+    <functiondecl functionName="SaveGameFunc" lineNumber="2229"/>
+    <functiondecl functionName="CreditsFunc" lineNumber="2234"/>
+    <functiondecl functionName="Game_MenuInit" lineNumber="2239"/>
+    <functiondecl functionName="Game_MenuDraw" lineNumber="2320"/>
+    <functiondecl functionName="Game_MenuKey" lineNumber="2327"/>
+    <functiondecl functionName="M_Menu_Game_f" lineNumber="2332"/>
+    <functiondecl functionName="Create_Savestrings" lineNumber="2357"/>
+    <functiondecl functionName="LoadGameCallback" lineNumber="2381"/>
+    <functiondecl functionName="LoadGame_MenuInit" lineNumber="2390"/>
+    <functiondecl functionName="LoadGame_MenuDraw" lineNumber="2418"/>
+    <functiondecl functionName="LoadGame_MenuKey" lineNumber="2425"/>
+    <functiondecl functionName="M_Menu_LoadGame_f" lineNumber="2436"/>
+    <functiondecl functionName="SaveGameCallback" lineNumber="2453"/>
+    <functiondecl functionName="SaveGame_MenuDraw" lineNumber="2461"/>
+    <functiondecl functionName="SaveGame_MenuInit" lineNumber="2468"/>
+    <functiondecl functionName="SaveGame_MenuKey" lineNumber="2495"/>
+    <functiondecl functionName="M_Menu_SaveGame_f" lineNumber="2506"/>
+    <functiondecl functionName="M_AddToServerList" lineNumber="2541"/>
+    <functiondecl functionName="JoinServerFunc" lineNumber="2562"/>
+    <functiondecl functionName="AddressBookFunc" lineNumber="2580"/>
+    <functiondecl functionName="SearchLocalGames" lineNumber="2589"/>
+    <functiondecl functionName="SearchLocalGamesFunc" lineNumber="2610"/>
+    <functiondecl functionName="JoinServer_MenuInit" lineNumber="2615"/>
+    <functiondecl functionName="JoinServer_MenuDraw" lineNumber="2667"/>
+    <functiondecl functionName="JoinServer_MenuKey" lineNumber="2674"/>
+    <functiondecl functionName="M_Menu_JoinServer_f" lineNumber="2686"/>
+    <functiondecl functionName="DMOptionsFunc" lineNumber="2714"/>
+    <functiondecl functionName="RulesChangeFunc" lineNumber="2721"/>
+    <functiondecl functionName="StartServerActionFunc" lineNumber="2758"/>
+    <functiondecl functionName="StartServer_MenuInit" lineNumber="2829"/>
+    <functiondecl functionName="StartServer_MenuDraw" lineNumber="3035"/>
+    <functiondecl functionName="StartServer_MenuKey" lineNumber="3043"/>
+    <functiondecl functionName="M_Menu_StartServer_f" lineNumber="3062"/>
+    <functiondecl functionName="DMFlagCallback" lineNumber="3102"/>
+    <functiondecl functionName="DMOptions_MenuInit" lineNumber="3245"/>
+    <functiondecl functionName="DMOptions_MenuDraw" lineNumber="3455"/>
+    <functiondecl functionName="DMOptions_MenuKey" lineNumber="3460"/>
+    <functiondecl functionName="M_Menu_DMOptions_f" lineNumber="3465"/>
+    <functiondecl functionName="DownloadCallback" lineNumber="3487"/>
+    <functiondecl functionName="DownloadOptions_MenuInit" lineNumber="3517"/>
+    <functiondecl functionName="DownloadOptions_MenuDraw" lineNumber="3587"/>
+    <functiondecl functionName="DownloadOptions_MenuKey" lineNumber="3592"/>
+    <functiondecl functionName="M_Menu_DownloadOptions_f" lineNumber="3597"/>
+    <functiondecl functionName="AddressBook_MenuInit" lineNumber="3614"/>
+    <functiondecl functionName="AddressBook_MenuKey" lineNumber="3647"/>
+    <functiondecl functionName="AddressBook_MenuDraw" lineNumber="3663"/>
+    <functiondecl functionName="M_Menu_AddressBook_f" lineNumber="3669"/>
+    <functiondecl functionName="DownloadOptionsFunc" lineNumber="3713"/>
+    <functiondecl functionName="HandednessCallback" lineNumber="3718"/>
+    <functiondecl functionName="RateCallback" lineNumber="3723"/>
+    <functiondecl functionName="ModelCallback" lineNumber="3729"/>
+    <functiondecl functionName="FreeFileList" lineNumber="3735"/>
+    <functiondecl functionName="IconOfSkinExists" lineNumber="3750"/>
+    <functiondecl functionName="PlayerConfig_ScanDirectories" lineNumber="3769"/>
+    <functiondecl functionName="pmicmpfnc" lineNumber="3914"/>
+    <functiondecl functionName="PlayerConfig_MenuInit" lineNumber="3936"/>
+    <functiondecl functionName="PlayerConfig_MenuDraw" lineNumber="4104"/>
+    <functiondecl functionName="PlayerConfig_MenuKey" lineNumber="4172"/>
+    <functiondecl functionName="M_Menu_PlayerConfig_f" lineNumber="4207"/>
+    <functiondecl functionName="M_Menu_Quit_f" lineNumber="4227"/>
+    <functiondecl functionName="M_Init" lineNumber="4243"/>
+    <functiondecl functionName="M_Draw" lineNumber="4270"/>
+    <functiondecl functionName="M_Keydown" lineNumber="4304"/>
+    <functiondecl functionName="ClampCvar" lineNumber="64"/>
+    <functiondecl functionName="M_Banner" lineNumber="80"/>
+    <functiondecl functionName="M_PushMenu" lineNumber="88"/>
+    <functiondecl functionName="M_ForceMenuOff" lineNumber="122"/>
+    <functiondecl functionName="M_PopMenu" lineNumber="132"/>
+    <functiondecl functionName="Default_MenuKey" lineNumber="147"/>
+    <functiondecl functionName="M_DrawCharacter" lineNumber="274"/>
+    <functiondecl functionName="M_Print" lineNumber="279"/>
+    <functiondecl functionName="M_DrawCursor" lineNumber="314"/>
+    <functiondecl functionName="M_DrawTextBox" lineNumber="336"/>
+    <functiondecl functionName="M_Main_Draw" lineNumber="390"/>
+    <functiondecl functionName="M_Main_Key" lineNumber="439"/>
+    <functiondecl functionName="M_Menu_Main_f" lineNumber="493"/>
+    <functiondecl functionName="Multiplayer_MenuDraw" lineNumber="510"/>
+    <functiondecl functionName="PlayerSetupFunc" lineNumber="518"/>
+    <functiondecl functionName="JoinNetworkServerFunc" lineNumber="523"/>
+    <functiondecl functionName="StartNetworkServerFunc" lineNumber="528"/>
+    <functiondecl functionName="Multiplayer_MenuInit" lineNumber="533"/>
+    <functiondecl functionName="Multiplayer_MenuKey" lineNumber="568"/>
+    <functiondecl functionName="M_Menu_Multiplayer_f" lineNumber="573"/>
+    <functiondecl functionName="M_UnbindCommand" lineNumber="646"/>
+    <functiondecl functionName="M_FindKeysForCommand" lineNumber="664"/>
+    <functiondecl functionName="KeyCursorDrawFunc" lineNumber="690"/>
+    <functiondecl functionName="DrawKeyBindingFunc" lineNumber="698"/>
+    <functiondecl functionName="KeyBindingFunc" lineNumber="728"/>
+    <functiondecl functionName="Keys_MenuInit" lineNumber="743"/>
+    <functiondecl functionName="Keys_MenuDraw" lineNumber="966"/>
+    <functiondecl functionName="Keys_MenuKey" lineNumber="979"/>
+    <functiondecl functionName="M_Menu_Keys_f" lineNumber="1014"/>
+    <functiondecl functionName="CrosshairFunc" lineNumber="1069"/>
+    <functiondecl functionName="CustomizeControlsFunc" lineNumber="1081"/>
+    <functiondecl functionName="DeferFunc" lineNumber="1100"/>
+    <functiondecl functionName="AsyncFunc" lineNumber="1105"/>
+    <functiondecl functionName="AutoFunc" lineNumber="1110"/>
+    <functiondecl functionName="RailTrailFunc" lineNumber="1115"/>
+    <functiondecl functionName="R1Q2_MenuInit" lineNumber="1121"/>
+    <functiondecl functionName="R1Q2_MenuDraw" lineNumber="1270"/>
+    <functiondecl functionName="R1Q2_MenuKey" lineNumber="1277"/>
+    <functiondecl functionName="M_Menu_R1Q2_f" lineNumber="1282"/>
+    <functiondecl functionName="R1Q2OptionsMenu" lineNumber="1288"/>
+    <functiondecl functionName="AlwaysRunFunc" lineNumber="1293"/>
+    <functiondecl functionName="FreeLookFunc" lineNumber="1298"/>
+    <functiondecl functionName="MouseSpeedFunc" lineNumber="1303"/>
+    <functiondecl functionName="ControlsSetMenuItemValues" lineNumber="1321"/>
+    <functiondecl functionName="ControlsResetDefaultsFunc" lineNumber="1355"/>
+    <functiondecl functionName="InvertMouseFunc" lineNumber="1363"/>
+    <functiondecl functionName="LookspringFunc" lineNumber="1368"/>
+    <functiondecl functionName="LookstrafeFunc" lineNumber="1373"/>
+    <functiondecl functionName="UpdateVolumeFunc" lineNumber="1378"/>
+    <functiondecl functionName="UpdateCDVolumeFunc" lineNumber="1383"/>
+    <functiondecl functionName="ConsoleFunc" lineNumber="1389"/>
+    <functiondecl functionName="UpdateSoundQualityFunc" lineNumber="1408"/>
+    <functiondecl functionName="Options_MenuInit" lineNumber="1439"/>
+    <functiondecl functionName="Options_MenuDraw" lineNumber="1649"/>
+    <functiondecl functionName="Options_MenuKey" lineNumber="1656"/>
+    <functiondecl functionName="M_Menu_Options_f" lineNumber="1664"/>
+    <functiondecl functionName="M_Menu_Video_f" lineNumber="1678"/>
+    <functiondecl functionName="M_Credits_MenuDraw" lineNumber="2042"/>
+    <functiondecl functionName="M_Credits_Key" lineNumber="2085"/>
+    <functiondecl functionName="M_Menu_Credits_f" lineNumber="2102"/>
+    <functiondecl functionName="StartGame" lineNumber="2176"/>
+    <functiondecl functionName="EasyGameFunc" lineNumber="2199"/>
+    <functiondecl functionName="MediumGameFunc" lineNumber="2205"/>
+    <functiondecl functionName="HardGameFunc" lineNumber="2211"/>
+    <functiondecl functionName="HardPlusGameFunc" lineNumber="2218"/>
+    <functiondecl functionName="LoadGameFunc" lineNumber="2224"/>
+    <functiondecl functionName="SaveGameFunc" lineNumber="2229"/>
+    <functiondecl functionName="CreditsFunc" lineNumber="2234"/>
+    <functiondecl functionName="Game_MenuInit" lineNumber="2239"/>
+    <functiondecl functionName="Game_MenuDraw" lineNumber="2320"/>
+    <functiondecl functionName="Game_MenuKey" lineNumber="2327"/>
+    <functiondecl functionName="M_Menu_Game_f" lineNumber="2332"/>
+    <functiondecl functionName="Create_Savestrings" lineNumber="2357"/>
+    <functiondecl functionName="LoadGameCallback" lineNumber="2381"/>
+    <functiondecl functionName="LoadGame_MenuInit" lineNumber="2390"/>
+    <functiondecl functionName="LoadGame_MenuDraw" lineNumber="2418"/>
+    <functiondecl functionName="LoadGame_MenuKey" lineNumber="2425"/>
+    <functiondecl functionName="M_Menu_LoadGame_f" lineNumber="2436"/>
+    <functiondecl functionName="SaveGameCallback" lineNumber="2453"/>
+    <functiondecl functionName="SaveGame_MenuDraw" lineNumber="2461"/>
+    <functiondecl functionName="SaveGame_MenuInit" lineNumber="2468"/>
+    <functiondecl functionName="SaveGame_MenuKey" lineNumber="2495"/>
+    <functiondecl functionName="M_Menu_SaveGame_f" lineNumber="2506"/>
+    <functiondecl functionName="M_AddToServerList" lineNumber="2541"/>
+    <functiondecl functionName="JoinServerFunc" lineNumber="2562"/>
+    <functiondecl functionName="AddressBookFunc" lineNumber="2580"/>
+    <functiondecl functionName="SearchLocalGames" lineNumber="2589"/>
+    <functiondecl functionName="SearchLocalGamesFunc" lineNumber="2610"/>
+    <functiondecl functionName="JoinServer_MenuInit" lineNumber="2615"/>
+    <functiondecl functionName="JoinServer_MenuDraw" lineNumber="2667"/>
+    <functiondecl functionName="JoinServer_MenuKey" lineNumber="2674"/>
+    <functiondecl functionName="M_Menu_JoinServer_f" lineNumber="2686"/>
+    <functiondecl functionName="DMOptionsFunc" lineNumber="2714"/>
+    <functiondecl functionName="RulesChangeFunc" lineNumber="2721"/>
+    <functiondecl functionName="StartServerActionFunc" lineNumber="2758"/>
+    <functiondecl functionName="StartServer_MenuInit" lineNumber="2829"/>
+    <functiondecl functionName="StartServer_MenuDraw" lineNumber="3035"/>
+    <functiondecl functionName="StartServer_MenuKey" lineNumber="3043"/>
+    <functiondecl functionName="M_Menu_StartServer_f" lineNumber="3062"/>
+    <functiondecl functionName="DMFlagCallback" lineNumber="3102"/>
+    <functiondecl functionName="DMOptions_MenuInit" lineNumber="3245"/>
+    <functiondecl functionName="DMOptions_MenuDraw" lineNumber="3455"/>
+    <functiondecl functionName="DMOptions_MenuKey" lineNumber="3460"/>
+    <functiondecl functionName="M_Menu_DMOptions_f" lineNumber="3465"/>
+    <functiondecl functionName="DownloadCallback" lineNumber="3487"/>
+    <functiondecl functionName="DownloadOptions_MenuInit" lineNumber="3517"/>
+    <functiondecl functionName="DownloadOptions_MenuDraw" lineNumber="3587"/>
+    <functiondecl functionName="DownloadOptions_MenuKey" lineNumber="3592"/>
+    <functiondecl functionName="M_Menu_DownloadOptions_f" lineNumber="3597"/>
+    <functiondecl functionName="AddressBook_MenuInit" lineNumber="3614"/>
+    <functiondecl functionName="AddressBook_MenuKey" lineNumber="3647"/>
+    <functiondecl functionName="AddressBook_MenuDraw" lineNumber="3663"/>
+    <functiondecl functionName="M_Menu_AddressBook_f" lineNumber="3669"/>
+    <functiondecl functionName="DownloadOptionsFunc" lineNumber="3713"/>
+    <functiondecl functionName="HandednessCallback" lineNumber="3718"/>
+    <functiondecl functionName="RateCallback" lineNumber="3723"/>
+    <functiondecl functionName="ModelCallback" lineNumber="3729"/>
+    <functiondecl functionName="FreeFileList" lineNumber="3735"/>
+    <functiondecl functionName="IconOfSkinExists" lineNumber="3750"/>
+    <functiondecl functionName="PlayerConfig_ScanDirectories" lineNumber="3769"/>
+    <functiondecl functionName="pmicmpfnc" lineNumber="3914"/>
+    <functiondecl functionName="PlayerConfig_MenuInit" lineNumber="3936"/>
+    <functiondecl functionName="PlayerConfig_MenuDraw" lineNumber="4104"/>
+    <functiondecl functionName="PlayerConfig_MenuKey" lineNumber="4172"/>
+    <functiondecl functionName="M_Menu_PlayerConfig_f" lineNumber="4207"/>
+    <functiondecl functionName="M_Menu_Quit_f" lineNumber="4227"/>
+    <functiondecl functionName="M_Init" lineNumber="4243"/>
+    <functiondecl functionName="M_Draw" lineNumber="4270"/>
+    <functiondecl functionName="M_Keydown" lineNumber="4304"/>
+    <functioncall functionName="AccelFixFunc"/>
+    <functioncall functionName="AddressBookFunc"/>
+    <functioncall functionName="AddressBook_MenuDraw"/>
+    <functioncall functionName="AddressBook_MenuInit"/>
+    <functioncall functionName="AddressBook_MenuKey"/>
+    <functioncall functionName="AlwaysRunFunc"/>
+    <functioncall functionName="AsyncFunc"/>
+    <functioncall functionName="AutoFunc"/>
+    <functioncall functionName="CLSET_FPS"/>
+    <functioncall functionName="CLSET_MAX"/>
+    <functioncall functionName="CLSET_NOBLEND"/>
+    <functioncall functionName="CLSET_NOGUN"/>
+    <functioncall functionName="CLSET_PLAYERUPDATE_REQUESTS"/>
+    <functioncall functionName="CLSET_RECORDING"/>
+    <functioncall functionName="CL_PingServers_f"/>
+    <functioncall functionName="CL_Quit_f"/>
+    <functioncall functionName="CL_Snd_Restart_f"/>
+    <functioncall functionName="COM_Parse"/>
+    <functioncall functionName="CalcFov"/>
+    <functioncall functionName="Cbuf_AddText"/>
+    <functioncall functionName="Cbuf_Execute"/>
+    <functioncall functionName="Cbuf_InsertText"/>
+    <functioncall functionName="ClampCvar"/>
+    <functioncall functionName="Cmd_AddCommand"/>
+    <functioncall functionName="Com_Error"/>
+    <functioncall functionName="Com_sprintf"/>
+    <functioncall functionName="Con_ClearNotify"/>
+    <functioncall functionName="ConsoleFunc"/>
+    <functioncall functionName="ControlsResetDefaultsFunc"/>
+    <functioncall functionName="ControlsSetMenuItemValues"/>
+    <functioncall functionName="Create_Savestrings"/>
+    <functioncall functionName="CreditsFunc"/>
+    <functioncall functionName="CrosshairFunc"/>
+    <functioncall functionName="CustomizeControlsFunc"/>
+    <functioncall functionName="Cvar_ForceSet"/>
+    <functioncall functionName="Cvar_Get"/>
+    <functioncall functionName="Cvar_IntValue"/>
+    <functioncall functionName="Cvar_Set"/>
+    <functioncall functionName="Cvar_SetValue"/>
+    <functioncall functionName="Cvar_VariableString"/>
+    <functioncall functionName="Cvar_VariableValue"/>
+    <functioncall functionName="DMFlagCallback"/>
+    <functioncall functionName="DMOptionsFunc"/>
+    <functioncall functionName="DMOptions_MenuDraw"/>
+    <functioncall functionName="DMOptions_MenuInit"/>
+    <functioncall functionName="DMOptions_MenuKey"/>
+    <functioncall functionName="Default_MenuKey"/>
+    <functioncall functionName="DeferFunc"/>
+    <functioncall functionName="Developer_searchpath"/>
+    <functioncall functionName="DirectInputFunc"/>
+    <functioncall functionName="DownloadCallback"/>
+    <functioncall functionName="DownloadOptionsFunc"/>
+    <functioncall functionName="DownloadOptions_MenuDraw"/>
+    <functioncall functionName="DownloadOptions_MenuInit"/>
+    <functioncall functionName="DownloadOptions_MenuKey"/>
+    <functioncall functionName="DrawChar"/>
+    <functioncall functionName="DrawFadeScreen"/>
+    <functioncall functionName="DrawGetPicSize"/>
+    <functioncall functionName="DrawKeyBindingFunc"/>
+    <functioncall functionName="DrawPic"/>
+    <functioncall functionName="EVENT_NONE"/>
+    <functioncall functionName="EV_FALL"/>
+    <functioncall functionName="EV_FALLFAR"/>
+    <functioncall functionName="EV_FALLSHORT"/>
+    <functioncall functionName="EV_FOOTSTEP"/>
+    <functioncall functionName="EV_ITEM_RESPAWN"/>
+    <functioncall functionName="EV_OTHER_TELEPORT"/>
+    <functioncall functionName="EV_PLAYER_TELEPORT"/>
+    <functioncall functionName="EasyGameFunc"/>
+    <functioncall functionName="EndFrame"/>
+    <functioncall functionName="FS_FreeFile"/>
+    <functioncall functionName="FS_Gamedir"/>
+    <functioncall functionName="FS_ListFiles"/>
+    <functioncall functionName="FS_LoadFile"/>
+    <functioncall functionName="FS_NextPath"/>
+    <functioncall functionName="FS_Read"/>
+    <functioncall functionName="Field_Key"/>
+    <functioncall functionName="FreeFileList"/>
+    <functioncall functionName="FreeLookFunc"/>
+    <functioncall functionName="Game_MenuDraw"/>
+    <functioncall functionName="Game_MenuInit"/>
+    <functioncall functionName="Game_MenuKey"/>
+    <functioncall functionName="HANDLE_DUPE"/>
+    <functioncall functionName="HANDLE_NONE"/>
+    <functioncall functionName="HANDLE_OPEN"/>
+    <functioncall functionName="HandednessCallback"/>
+    <functioncall functionName="HardGameFunc"/>
+    <functioncall functionName="HardPlusGameFunc"/>
+    <functioncall functionName="IN_Restart_f"/>
+    <functioncall functionName="IconOfSkinExists"/>
+    <functioncall functionName="InvertMouseFunc"/>
+    <functioncall functionName="JoinNetworkServerFunc"/>
+    <functioncall functionName="JoinServerFunc"/>
+    <functioncall functionName="JoinServer_MenuDraw"/>
+    <functioncall functionName="JoinServer_MenuInit"/>
+    <functioncall functionName="JoinServer_MenuKey"/>
+    <functioncall functionName="KeyBindingFunc"/>
+    <functioncall functionName="KeyCursorDrawFunc"/>
+    <functioncall functionName="Key_ClearStates"/>
+    <functioncall functionName="Key_ClearTyping"/>
+    <functioncall functionName="Key_KeynumToString"/>
+    <functioncall functionName="Key_SetBinding"/>
+    <functioncall functionName="Keys_MenuDraw"/>
+    <functioncall functionName="Keys_MenuInit"/>
+    <functioncall functionName="Keys_MenuKey"/>
+    <functioncall functionName="LoadGameCallback"/>
+    <functioncall functionName="LoadGameFunc"/>
+    <functioncall functionName="LoadGame_MenuDraw"/>
+    <functioncall functionName="LoadGame_MenuInit"/>
+    <functioncall functionName="LoadGame_MenuKey"/>
+    <functioncall functionName="LookspringFunc"/>
+    <functioncall functionName="LookstrafeFunc"/>
+    <functioncall functionName="MULTICAST_ALL"/>
+    <functioncall functionName="MULTICAST_ALL_R"/>
+    <functioncall functionName="MULTICAST_PHS"/>
+    <functioncall functionName="MULTICAST_PHS_R"/>
+    <functioncall functionName="MULTICAST_PVS"/>
+    <functioncall functionName="MULTICAST_PVS_R"/>
+    <functioncall functionName="M_Banner"/>
+    <functioncall functionName="M_Credits_Key"/>
+    <functioncall functionName="M_Credits_MenuDraw"/>
+    <functioncall functionName="M_DrawCharacter"/>
+    <functioncall functionName="M_DrawCursor"/>
+    <functioncall functionName="M_DrawTextBox"/>
+    <functioncall functionName="M_FindKeysForCommand"/>
+    <functioncall functionName="M_ForceMenuOff"/>
+    <functioncall functionName="M_Main_Draw"/>
+    <functioncall functionName="M_Main_Key"/>
+    <functioncall functionName="M_Menu_AddressBook_f"/>
+    <functioncall functionName="M_Menu_Credits_f"/>
+    <functioncall functionName="M_Menu_DMOptions_f"/>
+    <functioncall functionName="M_Menu_DownloadOptions_f"/>
+    <functioncall functionName="M_Menu_Game_f"/>
+    <functioncall functionName="M_Menu_JoinServer_f"/>
+    <functioncall functionName="M_Menu_Keys_f"/>
+    <functioncall functionName="M_Menu_LoadGame_f"/>
+    <functioncall functionName="M_Menu_Main_f"/>
+    <functioncall functionName="M_Menu_Multiplayer_f"/>
+    <functioncall functionName="M_Menu_Options_f"/>
+    <functioncall functionName="M_Menu_PlayerConfig_f"/>
+    <functioncall functionName="M_Menu_Quit_f"/>
+    <functioncall functionName="M_Menu_R1Q2_f"/>
+    <functioncall functionName="M_Menu_SaveGame_f"/>
+    <functioncall functionName="M_Menu_StartServer_f"/>
+    <functioncall functionName="M_Menu_Video_f"/>
+    <functioncall functionName="M_PopMenu"/>
+    <functioncall functionName="M_Print"/>
+    <functioncall functionName="M_PushMenu"/>
+    <functioncall functionName="M_UnbindCommand"/>
+    <functioncall functionName="MediumGameFunc"/>
+    <functioncall functionName="Menu_AddItem"/>
+    <functioncall functionName="Menu_AdjustCursor"/>
+    <functioncall functionName="Menu_Center"/>
+    <functioncall functionName="Menu_Draw"/>
+    <functioncall functionName="Menu_DrawString"/>
+    <functioncall functionName="Menu_ItemAtCursor"/>
+    <functioncall functionName="Menu_SelectItem"/>
+    <functioncall functionName="Menu_SetStatusBar"/>
+    <functioncall functionName="Menu_SlideItem"/>
+    <functioncall functionName="ModelCallback"/>
+    <functioncall functionName="MouseSpeedFunc"/>
+    <functioncall functionName="Multiplayer_MenuDraw"/>
+    <functioncall functionName="Multiplayer_MenuInit"/>
+    <functioncall functionName="Multiplayer_MenuKey"/>
+    <functioncall functionName="NA_BROADCAST"/>
+    <functioncall functionName="NA_IP"/>
+    <functioncall functionName="NA_LOOPBACK"/>
+    <functioncall functionName="NET_AdrToString"/>
+    <functioncall functionName="NS_CLIENT"/>
+    <functioncall functionName="NS_SERVER"/>
+    <functioncall functionName="Options_MenuDraw"/>
+    <functioncall functionName="Options_MenuInit"/>
+    <functioncall functionName="Options_MenuKey"/>
+    <functioncall functionName="PM_DEAD"/>
+    <functioncall functionName="PM_FREEZE"/>
+    <functioncall functionName="PM_GIB"/>
+    <functioncall functionName="PM_NORMAL"/>
+    <functioncall functionName="PM_SPECTATOR"/>
+    <functioncall functionName="PlayerConfig_MenuDraw"/>
+    <functioncall functionName="PlayerConfig_MenuInit"/>
+    <functioncall functionName="PlayerConfig_MenuKey"/>
+    <functioncall functionName="PlayerConfig_ScanDirectories"/>
+    <functioncall functionName="PlayerSetupFunc"/>
+    <functioncall functionName="Q_stricmp"/>
+    <functioncall functionName="R1Q2OptionsMenu"/>
+    <functioncall functionName="R1Q2_MenuDraw"/>
+    <functioncall functionName="R1Q2_MenuInit"/>
+    <functioncall functionName="R1Q2_MenuKey"/>
+    <functioncall functionName="RailTrailFunc"/>
+    <functioncall functionName="RateCallback"/>
+    <functioncall functionName="RegisterModel"/>
+    <functioncall functionName="RegisterPic"/>
+    <functioncall functionName="RegisterSkin"/>
+    <functioncall functionName="RenderFrame"/>
+    <functioncall functionName="RulesChangeFunc"/>
+    <functioncall functionName="SCR_DirtyScreen"/>
+    <functioncall functionName="SEEK_END"/>
+    <functioncall functionName="SEEK_SET"/>
+    <functioncall functionName="SVSET_FPS"/>
+    <functioncall functionName="SVSET_MAX"/>
+    <functioncall functionName="SVSET_PLAYERUPDATES"/>
+    <functioncall functionName="S_StartLocalSound"/>
+    <functioncall functionName="SaveGameCallback"/>
+    <functioncall functionName="SaveGameFunc"/>
+    <functioncall functionName="SaveGame_MenuDraw"/>
+    <functioncall functionName="SaveGame_MenuInit"/>
+    <functioncall functionName="SaveGame_MenuKey"/>
+    <functioncall functionName="SearchLocalGames"/>
+    <functioncall functionName="SearchLocalGamesFunc"/>
+    <functioncall functionName="StartGame"/>
+    <functioncall functionName="StartNetworkServerFunc"/>
+    <functioncall functionName="StartServerActionFunc"/>
+    <functioncall functionName="StartServer_MenuDraw"/>
+    <functioncall functionName="StartServer_MenuInit"/>
+    <functioncall functionName="StartServer_MenuKey"/>
+    <functioncall functionName="Sys_FindClose"/>
+    <functioncall functionName="Sys_FindFirst"/>
+    <functioncall functionName="Sys_Milliseconds"/>
+    <functioncall functionName="TAGMALLOC_ALIAS"/>
+    <functioncall functionName="TAGMALLOC_BLACKHOLE"/>
+    <functioncall functionName="TAGMALLOC_CLIENTS"/>
+    <functioncall functionName="TAGMALLOC_CLIENT_DLL"/>
+    <functioncall functionName="TAGMALLOC_CLIENT_DOWNLOAD"/>
+    <functioncall functionName="TAGMALLOC_CLIENT_IGNORE"/>
+    <functioncall functionName="TAGMALLOC_CLIENT_KEYBIND"/>
+    <functioncall functionName="TAGMALLOC_CLIENT_LOC"/>
+    <functioncall functionName="TAGMALLOC_CLIENT_SFX"/>
+    <functioncall functionName="TAGMALLOC_CLIENT_SOUNDCACHE"/>
+    <functioncall functionName="TAGMALLOC_CL_BASELINES"/>
+    <functioncall functionName="TAGMALLOC_CL_ENTS"/>
+    <functioncall functionName="TAGMALLOC_CL_MESSAGES"/>
+    <functioncall functionName="TAGMALLOC_CL_PARTICLES"/>
+    <functioncall functionName="TAGMALLOC_CMD"/>
+    <functioncall functionName="TAGMALLOC_CMDBANS"/>
+    <functioncall functionName="TAGMALLOC_CMDBUFF"/>
+    <functioncall functionName="TAGMALLOC_CMDTOKEN"/>
+    <functioncall functionName="TAGMALLOC_CVAR"/>
+    <functioncall functionName="TAGMALLOC_CVARBANS"/>
+    <functioncall functionName="TAGMALLOC_FSCACHE"/>
+    <functioncall functionName="TAGMALLOC_FSLOADFILE"/>
+    <functioncall functionName="TAGMALLOC_FSLOADPAK"/>
+    <functioncall functionName="TAGMALLOC_LINK"/>
+    <functioncall functionName="TAGMALLOC_LOADMAP"/>
+    <functioncall functionName="TAGMALLOC_LRCON"/>
+    <functioncall functionName="TAGMALLOC_MAX_TAGS"/>
+    <functioncall functionName="TAGMALLOC_NOT_TAGGED"/>
+    <functioncall functionName="TAGMALLOC_REDBLACK"/>
+    <functioncall functionName="TAGMALLOC_SEARCHPATH"/>
+    <functioncall functionName="TAGMALLOC_TRIGGER"/>
+    <functioncall functionName="TE_BFG_BIGEXPLOSION"/>
+    <functioncall functionName="TE_BFG_EXPLOSION"/>
+    <functioncall functionName="TE_BFG_LASER"/>
+    <functioncall functionName="TE_BLASTER"/>
+    <functioncall functionName="TE_BLASTER2"/>
+    <functioncall functionName="TE_BLOOD"/>
+    <functioncall functionName="TE_BLUEHYPERBLASTER"/>
+    <functioncall functionName="TE_BOSSTPORT"/>
+    <functioncall functionName="TE_BUBBLETRAIL"/>
+    <functioncall functionName="TE_BUBBLETRAIL2"/>
+    <functioncall functionName="TE_BULLET_SPARKS"/>
+    <functioncall functionName="TE_CHAINFIST_SMOKE"/>
+    <functioncall functionName="TE_DBALL_GOAL"/>
+    <functioncall functionName="TE_DEBUGTRAIL"/>
+    <functioncall functionName="TE_ELECTRIC_SPARKS"/>
+    <functioncall functionName="TE_EXPLOSION1"/>
+    <functioncall functionName="TE_EXPLOSION1_BIG"/>
+    <functioncall functionName="TE_EXPLOSION1_NP"/>
+    <functioncall functionName="TE_EXPLOSION2"/>
+    <functioncall functionName="TE_FLAME"/>
+    <functioncall functionName="TE_FLASHLIGHT"/>
+    <functioncall functionName="TE_FLECHETTE"/>
+    <functioncall functionName="TE_FORCEWALL"/>
+    <functioncall functionName="TE_GRAPPLE_CABLE"/>
+    <functioncall functionName="TE_GREENBLOOD"/>
+    <functioncall functionName="TE_GRENADE_EXPLOSION"/>
+    <functioncall functionName="TE_GRENADE_EXPLOSION_WATER"/>
+    <functioncall functionName="TE_GUNSHOT"/>
+    <functioncall functionName="TE_HEATBEAM"/>
+    <functioncall functionName="TE_HEATBEAM_SPARKS"/>
+    <functioncall functionName="TE_HEATBEAM_STEAM"/>
+    <functioncall functionName="TE_LASER_SPARKS"/>
+    <functioncall functionName="TE_LIGHTNING"/>
+    <functioncall functionName="TE_MEDIC_CABLE_ATTACK"/>
+    <functioncall functionName="TE_MONSTER_HEATBEAM"/>
+    <functioncall functionName="TE_MOREBLOOD"/>
+    <functioncall functionName="TE_NUKEBLAST"/>
+    <functioncall functionName="TE_PARASITE_ATTACK"/>
+    <functioncall functionName="TE_PLAIN_EXPLOSION"/>
+    <functioncall functionName="TE_PLASMA_EXPLOSION"/>
+    <functioncall functionName="TE_RAILTRAIL"/>
+    <functioncall functionName="TE_RAILTRAIL2"/>
+    <functioncall functionName="TE_ROCKET_EXPLOSION"/>
+    <functioncall functionName="TE_ROCKET_EXPLOSION_WATER"/>
+    <functioncall functionName="TE_SCREEN_SPARKS"/>
+    <functioncall functionName="TE_SHIELD_SPARKS"/>
+    <functioncall functionName="TE_SHOTGUN"/>
+    <functioncall functionName="TE_SPARKS"/>
+    <functioncall functionName="TE_SPLASH"/>
+    <functioncall functionName="TE_STEAM"/>
+    <functioncall functionName="TE_TELEPORT_EFFECT"/>
+    <functioncall functionName="TE_TRACKER_EXPLOSION"/>
+    <functioncall functionName="TE_TUNNEL_SPARKS"/>
+    <functioncall functionName="TE_WELDING_SPARKS"/>
+    <functioncall functionName="TE_WIDOWBEAMOUT"/>
+    <functioncall functionName="TE_WIDOWSPLASH"/>
+    <functioncall functionName="UpdateCDVolumeFunc"/>
+    <functioncall functionName="UpdateSoundQualityFunc"/>
+    <functioncall functionName="UpdateVolumeFunc"/>
+    <functioncall functionName="VID_MenuDraw"/>
+    <functioncall functionName="VID_MenuInit"/>
+    <functioncall functionName="VID_MenuKey"/>
+    <functioncall functionName="_a"/>
+    <functioncall functionName="_b"/>
+    <functioncall functionName="_filelength"/>
+    <functioncall functionName="_fileno"/>
+    <functioncall functionName="_snprintf"/>
+    <functioncall functionName="_strcmpi"/>
+    <functioncall functionName="_strdup"/>
+    <functioncall functionName="a"/>
+    <functioncall functionName="adr"/>
+    <functioncall functionName="atof"/>
+    <functioncall functionName="atoi"/>
+    <functioncall functionName="attractloop"/>
+    <functioncall functionName="b"/>
+    <functioncall functionName="bind_grab"/>
+    <functioncall functionName="bold"/>
+    <functioncall functionName="break"/>
+    <functioncall functionName="buffer"/>
+    <functioncall functionName="ca_active"/>
+    <functioncall functionName="ca_connected"/>
+    <functioncall functionName="ca_connecting"/>
+    <functioncall functionName="ca_disconnected"/>
+    <functioncall functionName="ca_uninitialized"/>
+    <functioncall functionName="cached"/>
+    <functioncall functionName="cd_music_items"/>
+    <functioncall functionName="char"/>
+    <functioncall functionName="clc_bad"/>
+    <functioncall functionName="clc_move"/>
+    <functioncall functionName="clc_multimoves"/>
+    <functioncall functionName="clc_nop"/>
+    <functioncall functionName="clc_setting"/>
+    <functioncall functionName="clc_stringcmd"/>
+    <functioncall functionName="clc_userinfo"/>
+    <functioncall functionName="cmd"/>
+    <functioncall functionName="command"/>
+    <functioncall functionName="compatibility_items"/>
+    <functioncall functionName="continue"/>
+    <functioncall functionName="count"/>
+    <functioncall functionName="creditsBuffer"/>
+    <functioncall functionName="creditsIndex"/>
+    <functioncall functionName="credits_start_time"/>
+    <functioncall functionName="crosshair_names"/>
+    <functioncall functionName="currentdirectory"/>
+    <functioncall functionName="currentdirectoryindex"/>
+    <functioncall functionName="currentskin"/>
+    <functioncall functionName="currentskinindex"/>
+    <functioncall functionName="cursorname"/>
+    <functioncall functionName="curvalue"/>
+    <functioncall functionName="cx"/>
+    <functioncall functionName="cy"/>
+    <functioncall functionName="default"/>
+    <functioncall functionName="dinputnames"/>
+    <functioncall functionName="directory"/>
+    <functioncall functionName="dirnames"/>
+    <functioncall functionName="displayname"/>
+    <functioncall functionName="dm_coop_names"/>
+    <functioncall functionName="dm_coop_names_rogue"/>
+    <functioncall functionName="dmoptions_statusbar"/>
+    <functioncall functionName="draw"/>
+    <functioncall functionName="entity"/>
+    <functioncall functionName="f"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="fclose"/>
+    <functioncall functionName="findname"/>
+    <functioncall functionName="flags"/>
+    <functioncall functionName="float"/>
+    <functioncall functionName="fopen"/>
+    <functioncall functionName="for"/>
+    <functioncall functionName="fov_x"/>
+    <functioncall functionName="fp"/>
+    <functioncall functionName="fraglimit"/>
+    <functioncall functionName="fread"/>
+    <functioncall functionName="free"/>
+    <functioncall functionName="fseek"/>
+    <functioncall functionName="ftell"/>
+    <functioncall functionName="h"/>
+    <functioncall functionName="handedness"/>
+    <functioncall functionName="height"/>
+    <functioncall functionName="i"/>
+    <functioncall functionName="idcredits"/>
+    <functioncall functionName="if"/>
+    <functioncall functionName="index"/>
+    <functioncall functionName="info"/>
+    <functioncall functionName="int"/>
+    <functioncall functionName="intvalue"/>
+    <functioncall functionName="ip"/>
+    <functioncall functionName="item"/>
+    <functioncall functionName="itemnames"/>
+    <functioncall functionName="j"/>
+    <functioncall functionName="k"/>
+    <functioncall functionName="key"/>
+    <functioncall functionName="key_console"/>
+    <functioncall functionName="key_game"/>
+    <functioncall functionName="key_menu"/>
+    <functioncall functionName="key_message"/>
+    <functioncall functionName="keys"/>
+    <functioncall functionName="l"/>
+    <functioncall functionName="length"/>
+    <functioncall functionName="list"/>
+    <functioncall functionName="litname"/>
+    <functioncall functionName="longname"/>
+    <functioncall functionName="m"/>
+    <functioncall functionName="m_drawfunc"/>
+    <functioncall functionName="m_entersound"/>
+    <functioncall functionName="m_keyfunc"/>
+    <functioncall functionName="m_main_cursor"/>
+    <functioncall functionName="m_menudepth"/>
+    <functioncall functionName="m_num_servers"/>
+    <functioncall functionName="malloc"/>
+    <functioncall functionName="mapnames"/>
+    <functioncall functionName="mapsname"/>
+    <functioncall functionName="maxclients"/>
+    <functioncall functionName="memset"/>
+    <functioncall functionName="menu_in_sound"/>
+    <functioncall functionName="menu_move_sound"/>
+    <functioncall functionName="menu_out_sound"/>
+    <functioncall functionName="n"/>
+    <functioncall functionName="name"/>
+    <functioncall functionName="ndirs"/>
+    <functioncall functionName="npcxfiles"/>
+    <functioncall functionName="npms"/>
+    <functioncall functionName="nskins"/>
+    <functioncall functionName="num"/>
+    <functioncall functionName="nummaps"/>
+    <functioncall functionName="oldorigin"/>
+    <functioncall functionName="origin"/>
+    <functioncall functionName="p"/>
+    <functioncall functionName="path"/>
+    <functioncall functionName="pcxnames"/>
+    <functioncall functionName="pmicmpfnc"/>
+    <functioncall functionName="port"/>
+    <functioncall functionName="ps_active"/>
+    <functioncall functionName="ps_none"/>
+    <functioncall functionName="ps_pending"/>
+    <functioncall functionName="qsort"/>
+    <functioncall functionName="quality_items"/>
+    <functioncall functionName="rate_names"/>
+    <functioncall functionName="rate_tbl"/>
+    <functioncall functionName="realtime"/>
+    <functioncall functionName="refdef"/>
+    <functioncall functionName="return"/>
+    <functioncall functionName="roguecredits"/>
+    <functioncall functionName="s"/>
+    <functioncall functionName="s_addressbook_menu"/>
+    <functioncall functionName="s_allow_download_box"/>
+    <functioncall functionName="s_allow_download_maps_box"/>
+    <functioncall functionName="s_allow_download_models_box"/>
+    <functioncall functionName="s_allow_download_players_box"/>
+    <functioncall functionName="s_allow_download_sounds_box"/>
+    <functioncall functionName="s_allow_exit_box"/>
+    <functioncall functionName="s_armor_box"/>
+    <functioncall functionName="s_blankline"/>
+    <functioncall functionName="s_credits_action"/>
+    <functioncall functionName="s_dmoptions_menu"/>
+    <functioncall functionName="s_download_title"/>
+    <functioncall functionName="s_downloadoptions_menu"/>
+    <functioncall functionName="s_easy_game_action"/>
+    <functioncall functionName="s_falls_box"/>
+    <functioncall functionName="s_fixed_fov_box"/>
+    <functioncall functionName="s_force_respawn_box"/>
+    <functioncall functionName="s_fraglimit_field"/>
+    <functioncall functionName="s_friendlyfire_box"/>
+    <functioncall functionName="s_game_menu"/>
+    <functioncall functionName="s_hard_game_action"/>
+    <functioncall functionName="s_hardplus_game_action"/>
+    <functioncall functionName="s_health_box"/>
+    <functioncall functionName="s_hostname_field"/>
+    <functioncall functionName="s_infinite_ammo_box"/>
+    <functioncall functionName="s_instant_powerups_box"/>
+    <functioncall functionName="s_join_network_server_action"/>
+    <functioncall functionName="s_joinserver_address_book_action"/>
+    <functioncall functionName="s_joinserver_menu"/>
+    <functioncall functionName="s_joinserver_search_action"/>
+    <functioncall functionName="s_joinserver_server_actions"/>
+    <functioncall functionName="s_joinserver_server_title"/>
+    <functioncall functionName="s_keys_attack_action"/>
+    <functioncall functionName="s_keys_backpedal_action"/>
+    <functioncall functionName="s_keys_center_view_action"/>
+    <functioncall functionName="s_keys_change_weapon_action"/>
+    <functioncall functionName="s_keys_help_computer_action"/>
+    <functioncall functionName="s_keys_inv_drop_action"/>
+    <functioncall functionName="s_keys_inv_next_action"/>
+    <functioncall functionName="s_keys_inv_prev_action"/>
+    <functioncall functionName="s_keys_inv_use_action"/>
+    <functioncall functionName="s_keys_inventory_action"/>
+    <functioncall functionName="s_keys_keyboard_look_action"/>
+    <functioncall functionName="s_keys_look_down_action"/>
+    <functioncall functionName="s_keys_look_up_action"/>
+    <functioncall functionName="s_keys_menu"/>
+    <functioncall functionName="s_keys_mouse_look_action"/>
+    <functioncall functionName="s_keys_move_down_action"/>
+    <functioncall functionName="s_keys_move_up_action"/>
+    <functioncall functionName="s_keys_run_action"/>
+    <functioncall functionName="s_keys_sidestep_action"/>
+    <functioncall functionName="s_keys_step_left_action"/>
+    <functioncall functionName="s_keys_step_right_action"/>
+    <functioncall functionName="s_keys_turn_left_action"/>
+    <functioncall functionName="s_keys_turn_right_action"/>
+    <functioncall functionName="s_keys_walk_forward_action"/>
+    <functioncall functionName="s_load_game_action"/>
+    <functioncall functionName="s_loadgame_menu"/>
+    <functioncall functionName="s_maxclients_field"/>
+    <functioncall functionName="s_medium_game_action"/>
+    <functioncall functionName="s_multiplayer_menu"/>
+    <functioncall functionName="s_no_mines_box"/>
+    <functioncall functionName="s_no_nukes_box"/>
+    <functioncall functionName="s_no_spheres_box"/>
+    <functioncall functionName="s_numplayermodels"/>
+    <functioncall functionName="s_options_alwaysrun_box"/>
+    <functioncall functionName="s_options_cdvolume_box"/>
+    <functioncall functionName="s_options_compatibility_list"/>
+    <functioncall functionName="s_options_console_action"/>
+    <functioncall functionName="s_options_crosshair_box"/>
+    <functioncall functionName="s_options_customize_options_action"/>
+    <functioncall functionName="s_options_defaults_action"/>
+    <functioncall functionName="s_options_freelook_box"/>
+    <functioncall functionName="s_options_invertmouse_box"/>
+    <functioncall functionName="s_options_lookspring_box"/>
+    <functioncall functionName="s_options_lookstrafe_box"/>
+    <functioncall functionName="s_options_menu"/>
+    <functioncall functionName="s_options_quality_list"/>
+    <functioncall functionName="s_options_r1q2_action"/>
+    <functioncall functionName="s_options_sensitivity_slider"/>
+    <functioncall functionName="s_options_sfxvolume_slider"/>
+    <functioncall functionName="s_player_config_menu"/>
+    <functioncall functionName="s_player_download_action"/>
+    <functioncall functionName="s_player_hand_title"/>
+    <functioncall functionName="s_player_handedness_box"/>
+    <functioncall functionName="s_player_model_box"/>
+    <functioncall functionName="s_player_model_title"/>
+    <functioncall functionName="s_player_name_field"/>
+    <functioncall functionName="s_player_rate_box"/>
+    <functioncall functionName="s_player_rate_title"/>
+    <functioncall functionName="s_player_setup_action"/>
+    <functioncall functionName="s_player_skin_box"/>
+    <functioncall functionName="s_player_skin_title"/>
+    <functioncall functionName="s_pmi"/>
+    <functioncall functionName="s_pmnames"/>
+    <functioncall functionName="s_powerups_box"/>
+    <functioncall functionName="s_quad_drop_box"/>
+    <functioncall functionName="s_r1q2_async"/>
+    <functioncall functionName="s_r1q2_autorecord"/>
+    <functioncall functionName="s_r1q2_defer"/>
+    <functioncall functionName="s_r1q2_dinput"/>
+    <functioncall functionName="s_r1q2_options_menu"/>
+    <functioncall functionName="s_r1q2_warning"/>
+    <functioncall functionName="s_r1q2_warning2"/>
+    <functioncall functionName="s_r1q2_winxp"/>
+    <functioncall functionName="s_r1q2_xaniarail"/>
+    <functioncall functionName="s_rules_box"/>
+    <functioncall functionName="s_samelevel_box"/>
+    <functioncall functionName="s_save_game_action"/>
+    <functioncall functionName="s_savegame_menu"/>
+    <functioncall functionName="s_spawn_farthest_box"/>
+    <functioncall functionName="s_stack_double_box"/>
+    <functioncall functionName="s_start_network_server_action"/>
+    <functioncall functionName="s_startmap_list"/>
+    <functioncall functionName="s_startserver_dmoptions_action"/>
+    <functioncall functionName="s_startserver_menu"/>
+    <functioncall functionName="s_startserver_start_action"/>
+    <functioncall functionName="s_teamplay_box"/>
+    <functioncall functionName="s_timelimit_field"/>
+    <functioncall functionName="s_weapons_stay_box"/>
+    <functioncall functionName="scratch"/>
+    <functioncall functionName="self"/>
+    <functioncall functionName="server_state"/>
+    <functioncall functionName="setvalue"/>
+    <functioncall functionName="shortname"/>
+    <functioncall functionName="sizeof"/>
+    <functioncall functionName="skin"/>
+    <functioncall functionName="skindisplaynames"/>
+    <functioncall functionName="skinnames"/>
+    <functioncall functionName="snprintf"/>
+    <functioncall functionName="spot"/>
+    <functioncall functionName="sprintf"/>
+    <functioncall functionName="squality"/>
+    <functioncall functionName="ss_cinematic"/>
+    <functioncall functionName="ss_dead"/>
+    <functioncall functionName="ss_demo"/>
+    <functioncall functionName="ss_game"/>
+    <functioncall functionName="ss_loading"/>
+    <functioncall functionName="ss_pic"/>
+    <functioncall functionName="startmap"/>
+    <functioncall functionName="strcasecmp"/>
+    <functioncall functionName="strcat"/>
+    <functioncall functionName="strchr"/>
+    <functioncall functionName="strcmp"/>
+    <functioncall functionName="strcpy"/>
+    <functioncall functionName="strdup"/>
+    <functioncall functionName="string"/>
+    <functioncall functionName="stringoffset"/>
+    <functioncall functionName="strlen"/>
+    <functioncall functionName="strncmp"/>
+    <functioncall functionName="strncpy"/>
+    <functioncall functionName="strrchr"/>
+    <functioncall functionName="strstr"/>
+    <functioncall functionName="svc_bad"/>
+    <functioncall functionName="svc_centerprint"/>
+    <functioncall functionName="svc_configstring"/>
+    <functioncall functionName="svc_deltapacketentities"/>
+    <functioncall functionName="svc_disconnect"/>
+    <functioncall functionName="svc_download"/>
+    <functioncall functionName="svc_frame"/>
+    <functioncall functionName="svc_inventory"/>
+    <functioncall functionName="svc_layout"/>
+    <functioncall functionName="svc_max_enttypes"/>
+    <functioncall functionName="svc_muzzleflash"/>
+    <functioncall functionName="svc_muzzleflash2"/>
+    <functioncall functionName="svc_nop"/>
+    <functioncall functionName="svc_packetentities"/>
+    <functioncall functionName="svc_playerinfo"/>
+    <functioncall functionName="svc_playerupdate"/>
+    <functioncall functionName="svc_print"/>
+    <functioncall functionName="svc_reconnect"/>
+    <functioncall functionName="svc_serverdata"/>
+    <functioncall functionName="svc_setting"/>
+    <functioncall functionName="svc_sound"/>
+    <functioncall functionName="svc_spawnbaseline"/>
+    <functioncall functionName="svc_stufftext"/>
+    <functioncall functionName="svc_temp_entity"/>
+    <functioncall functionName="svc_zdownload"/>
+    <functioncall functionName="svc_zpacket"/>
+    <functioncall functionName="switch"/>
+    <functioncall functionName="teamplay_names"/>
+    <functioncall functionName="timelimit"/>
+    <functioncall functionName="toupper"/>
+    <functioncall functionName="true"/>
+    <functioncall functionName="va"/>
+    <functioncall functionName="value"/>
+    <functioncall functionName="w"/>
+    <functioncall functionName="while"/>
+    <functioncall functionName="width"/>
+    <functioncall functionName="x"/>
+    <functioncall functionName="xanianames"/>
+    <functioncall functionName="xatcredits"/>
+    <functioncall functionName="xoffset"/>
+    <functioncall functionName="y"/>
+    <functioncall functionName="yaw"/>
+    <functioncall functionName="yes_no_names"/>
+    <functioncall functionName="yesno_names"/>
+    <functioncall functionName="ystart"/>
+  </FileInfo>
+</analyzerinfo>
