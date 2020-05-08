@@ -67,7 +67,7 @@
       <PrecompiledHeaderOutputFile>.\./build/temp/ref_gl/debug\ref_gl.pch</PrecompiledHeaderOutputFile>
       <ObjectFileName>.\./build/temp/ref_gl/debug\</ObjectFileName>
       <ProgramDataBaseFileName>.\./build/temp/ref_gl/debug\</ProgramDataBaseFileName>
-      <AdditionalIncludeDirectories>C:\Users\--KentMathias--\Documents\r1q2\include;C:\Users\--KentMathias--\Documents\r1q2\include\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\include\zlib;$(SolutionDir)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Midl>
       <SuppressStartupBanner>true</SuppressStartupBanner>
@@ -93,7 +93,7 @@
       <ImportLibrary>.\./build/binaries/debug\ref_r1gl.lib</ImportLibrary>
       <AdditionalDependencies>winmm.lib;libpng.lib;jpeg.lib;glut.lib;glut32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ModuleDefinitionFile>.\ref_gl.def</ModuleDefinitionFile>
-      <AdditionalLibraryDirectories>C:\Users\--KentMathias--\Documents\r1q2\lib;C:\Users\--KentMathias--\Documents\r1q2\lib\zlib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)\lib;$(SolutionDir)\lib\zlib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
     </Link>
   </ItemDefinitionGroup>
