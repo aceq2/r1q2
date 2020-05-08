@@ -107,7 +107,7 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{0AC0B0A5-E974-4582-8075-68E8CD05C6B2}</ProjectGuid>
     <RootNamespace>quake2</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">

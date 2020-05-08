@@ -364,3 +364,6 @@ ASALocalRun/
 
 # MFractors (Xamarin productivity tool) working folder
 .mfractor/
+
+# r1q2 specific
+ref_gl/build/
