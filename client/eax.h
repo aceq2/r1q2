@@ -13,7 +13,7 @@
 extern "C" {
 #endif // __cplusplus
 
-#ifndef OPENAL
+#ifndef USE_OPENAL
 	#include <dsound.h>
 	/*
 	* EAX Wrapper Interface (using Direct X 7) {4FF53B81-1CE0-11d3-AAB8-00A0C95949D5}

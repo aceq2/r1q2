@@ -204,6 +204,12 @@
     <ClCompile Include="strafe_helper.c">
       <Filter>Source Files\client</Filter>
     </ClCompile>
+    <ClCompile Include="win32\qal_win.c">
+      <Filter>Source Files\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="win32\alw_win.c">
+      <Filter>Source Files\win32</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="win32\winquake.h">
