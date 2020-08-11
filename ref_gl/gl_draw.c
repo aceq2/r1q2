@@ -448,8 +448,8 @@ Draw_Fill
 
 Fills a box of pixels with a single color
 =============
-*/
-void EXPORT Draw_Fill (int x, int y, int w, int h, int c)
+*/ //Added alphachannel for r1q2jump speehud
+void Draw_Fill(int x, int y, int w, int h, int c)
 {
 	union
 	{
@@ -457,32 +457,41 @@ void EXPORT Draw_Fill (int x, int y, int w, int h, int c)
 		byte		v[4];
 	} color;
 
-	if ( (unsigned)c > 255)
-		ri.Sys_Error (ERR_FATAL, "Draw_Fill: bad color");
+	if ((unsigned)c > 255)
+		ri.Sys_Error(ERR_FATAL, "Draw_Fill: bad color");
 
-	qglDisable (GL_TEXTURE_2D);
-	GL_CheckForError ();
+	qglDisable(GL_TEXTURE_2D);
+
+	qglDisable(GL_ALPHA_TEST); //r1q2speedhud
+	qglEnable(GL_BLEND);//r1q2speedhud
+	qglBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);//r1q2speedhud
+
+	GL_CheckForError();
 
 	color.c = d_8to24table[c];
-	qglColor3f (color.v[0]/255.0f,
-		color.v[1]/255.0f,
-		color.v[2]/255.0f);
+	qglColor4f(color.v[0] / 255.0f,
+		color.v[1] / 255.0f,
+		color.v[2] / 255.0f,
+		gl_drawalpha->value / 1.0f);
 
-	qglBegin (GL_QUADS);
+	qglBegin(GL_QUADS);
 
-	qglVertex2i (x,y);
-	qglVertex2i (x+w, y);
-	qglVertex2i (x+w, y+h);
-	qglVertex2i (x, y+h);
+	qglVertex2i(x, y);
+	qglVertex2i(x + w, y);
+	qglVertex2i(x + w, y + h);
+	qglVertex2i(x, y + h);
 
-	qglEnd ();
-	GL_CheckForError ();
+	qglEnd();
+	qglDisable(GL_BLEND); //r1q2speedhud
+	qglEnable(GL_ALPHA_TEST); //r1q2speedhud
 
-	qglColor3f (1,1,1);
-	GL_CheckForError ();
+	GL_CheckForError();
 
-	qglEnable (GL_TEXTURE_2D);
-	GL_CheckForError ();
+	qglColor3f(1, 1, 1);
+	GL_CheckForError();
+
+	qglEnable(GL_TEXTURE_2D);
+	GL_CheckForError();
 }
 
 //=============================================================================

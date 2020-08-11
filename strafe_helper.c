@@ -1,4 +1,5 @@
 #include "strafe_helper.h"
+#include "gl_local.h"
 
 static float sign(const float value)
 {

@@ -304,6 +304,9 @@ extern	cvar_t	*gl_pic_scale;
 
 extern	cvar_t	*vid_restore_on_switch;
 
+//r1q2 speedhud
+extern	cvar_t	*gl_drawalpha;
+
 extern int		usingmodifiedlightmaps;
 
 extern	int		defer_drawing;

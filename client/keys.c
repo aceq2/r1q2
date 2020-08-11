@@ -222,7 +222,45 @@ static void Key_CompleteCommand (void) {
 	char			*partial;
 	int				aliasCnt, cmdCnt, cvarCnt, len, offset;
 	qboolean		checkCmds = true;
+	const char		*temp_cmd;
+	const char		*temp_string;
+	int				i;
+	int				cmdLen;
 
+	if (match_found) {
+		if (match_found > 16)
+			return;
+		cmdName = NULL;
+		temp_string = (char*)malloc(strlen(matchingcmds));
+		strcpy(temp_string, matchingcmds);
+		i = 0;
+		temp_cmd = strtok(temp_string, "\n");
+		if (cmdnr >= match_found)
+			cmdnr = 0;
+		while(i<cmdnr) {
+			temp_cmd = strtok(NULL, "\n");
+			i++;
+		}
+		free(temp_string);
+		cmdnr++;
+		cmdName = temp_cmd;
+		goto cmd;
+		/*//output command..
+		cmdLen = (int)strlen(temp_cmd);
+		if (cmdLen + 2 >= MAXCMDLINE)
+		{
+			Com_DPrintf("Key_CompleteCommand: expansion would overflow command buffer\n");
+			return;
+		}
+		strcpy(key_lines[edit_line] + 1, temp_cmd);
+		key_linepos = 1 + cmdLen;
+		key_lines[edit_line][key_linepos] = ' ';
+		key_linepos++;
+		key_lines[edit_line][key_linepos] = 0;
+		
+		return;*/
+	}
+	
 	partial = key_lines[edit_line]+1;
 	// skip '/' and '\'
 	if ((*partial == '\\') || (*partial == '/'))
@@ -309,6 +347,8 @@ static void Key_CompleteCommand (void) {
 		}
 	}
 
+	matchingcmds = (char *)malloc(16);
+	sprintf(matchingcmds, "");
 	//
 	// check for partial match
 	//
@@ -319,8 +359,12 @@ static void Key_CompleteCommand (void) {
 			if (!Q_strncasecmp (partial, cmd->name, len)) {
 				//if (cmdCnt == 0)
 				//{
+					matchingcmds = (char *)realloc(matchingcmds, strlen(matchingcmds) + cmd->name + 1);
+					strcat(matchingcmds, cmd->name);
+					strcat(matchingcmds, "\n");
 					cmdFound = cmd;
 					cmdCnt++;
+					
 				//}
 
 				/*if (cmd->compFrame != compFrame)
@@ -334,6 +378,9 @@ static void Key_CompleteCommand (void) {
 			if (!Q_strncasecmp (partial, alias->name, len)) {
 				//if (aliasCnt == 0)
 				//{
+					matchingcmds = (char *)realloc(matchingcmds, strlen(matchingcmds) + alias->name + 1);
+					strcat(matchingcmds, alias->name);
+					strcat(matchingcmds, "\n");
 					aliasFound = alias;
 					aliasCnt++;
 				//}
@@ -349,6 +396,9 @@ static void Key_CompleteCommand (void) {
 		if (!Q_strncasecmp (partial, cvar->name, len)) {
 			//if (cvarCnt == 0)
 			//{
+				matchingcmds = (char *)realloc(matchingcmds, strlen(matchingcmds) + cvar->name + 1);
+				strcat(matchingcmds, cvar->name);
+				strcat(matchingcmds, "\n");
 				cvarFound = cvar;
 				cvarCnt++;
 			//}
@@ -358,6 +408,7 @@ static void Key_CompleteCommand (void) {
 		}
 	}
 
+	match_found = aliasCnt + cmdCnt + cvarCnt;
 	//
 	// return a match if only one was found, otherwise list matches
 	//
@@ -372,7 +423,8 @@ static void Key_CompleteCommand (void) {
 			cmdName = NULL;
 	} else {
 		if (aliasCnt + cmdCnt + cvarCnt)
-			Com_Printf ("\nPossible matches:\n", LOG_CLIENT);
+			Com_Printf ("\nFound %i possible matches:\n", LOG_CLIENT, match_found);
+		/*
 		if (aliasCnt > 0) {
 			//Cbuf_AddText ("echo ----\n echo Matching aliases:\n echo ----\n");
 			Cbuf_AddText (va ("aliaslist %s\n", partial));
@@ -386,12 +438,13 @@ static void Key_CompleteCommand (void) {
 		if (cvarCnt > 0) {
 			//Cbuf_AddText ("echo ----\n echo Matching cvars:\n echo ----\n");
 			Cbuf_AddText (va ("cvarlist %s\n", partial));
-		}
+		}*/
+		Com_Printf("%s", LOG_CLIENT, matchingcmds);
 	}
 
+cmd:
 	if (cmdName)
 	{
-		int cmdLen;
 		cmdLen = (int)strlen(cmdName);
 		if (cmdLen + offset + 2 >= MAXCMDLINE)
 		{
@@ -569,8 +622,9 @@ void Key_Console (int key)
 			len--;
 			for (var = cvar_vars->next ; var ; var = var->next)
 			{
-				if (strcmp(var->name, fragment) >= 0 && strcmp(best, var->name) > 0)
+				if (strcmp(var->name, fragment) >= 0 && strcmp(best, var->name) > 0) {
 					best = var->name;
+				}
 				if (strcmp(var->name, least) < 0)
 					least = var->name;
 			}
@@ -602,6 +656,13 @@ void Key_Console (int key)
 			Key_CompleteCommandOld();
 		}
 		return;
+	}
+	
+	if (match_found && key != K_TAB) // so it will not flood
+	{
+		free(matchingcmds);
+		match_found = 0;
+		cmdnr = 0;
 	}
 
 	if ( key == K_LEFTARROW )
@@ -1185,7 +1246,7 @@ void Key_Init (void)
 	Cmd_AddCommand ("unbindall",Key_Unbindall_f);
 	Cmd_AddCommand ("bindlist",Key_Bindlist_f);
 
-	cl_cmdcomplete = Cvar_Get ("cl_cmdcomplete", "0", 0);
+	cl_cmdcomplete = Cvar_Get ("cl_cmdcomplete", "2", 0); //changed to 2 as default..
 }
 
 void Key_GenerateRepeats (void)

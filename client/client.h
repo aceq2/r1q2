@@ -841,6 +841,13 @@ void CL_PredictMovement (void);
 
 void CL_FixCvarCheats (void);
 
+//
+// keys.c
+//
+int				match_found;
+int				cmdnr;
+const char		*matchingcmds;
+
 #ifdef CLIENT_DLL
 typedef struct
 {

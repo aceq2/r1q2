@@ -206,6 +206,9 @@ qboolean load_png_wals = true;
 qboolean load_tga_wals = true;
 qboolean load_jpg_wals = true;
 
+//r1q2 speedhud
+cvar_t	*gl_drawalpha;
+
 extern cvar_t		*gl_contrast;
 
 /*
@@ -1428,6 +1431,7 @@ void R_Register( void )
 
 	gl_pic_scale = ri.Cvar_Get ("gl_pic_scale", "1", 0);
 	//r1ch end my shit
+	gl_drawalpha = ri.Cvar_Get("gl_drawalpha", "0.5", 0);
 
 	gl_drawbuffer = ri.Cvar_Get( "gl_drawbuffer", "GL_BACK", 0 );
 	gl_swapinterval = ri.Cvar_Get( "gl_swapinterval", "1", CVAR_ARCHIVE );
